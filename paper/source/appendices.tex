@@ -1,0 +1,186 @@
+\chapter{Evidence and reproducibility}
+\label{app:evidence}
+
+\section{What the manuscript and its companion files reproduce}
+
+The companion source builds this manuscript and its figures from explicit equations and saved numerical summaries. It does not rerun the historical scientific studies. Rebuilding a plot from a retained table is different from regenerating its histories, refitting its models and recalibrating its test. Each derived data file and figure records its source in the figure manifest. Illustrative mathematical figures are labelled as such; they are not synthetic catalogue outcomes.
+
+The earlier 40-page manuscript and third-party catalogue records are not redistributed in this public repository. The catalogue provider, access locations, selection rules, original snapshot hashes and terms are documented in \path{docs/data.md}. Reacquiring a live catalogue does not guarantee recovery of the historical snapshot. The earlier manuscript's frozen catalogue, original fitting code, complete optimization records and editable source remain unavailable.
+
+The principal data snapshot was retrieved on 15 October 2026 from GeoNet's WFS interface. Its selected CSV is \path{iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv}, with SHA256
+\begin{quote}\small\ttfamily
+feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e.
+\end{quote}
+The saved metadata defines the exact geographic, depth, magnitude, event-type and clock rules. The 1960-origin observation window is 24,394 days, with 15 October 2026 excluded. The archived FDSN selection contains 914 events: all 913 primary IDs and one additional ID. These are two interfaces/snapshots from one provider, not independent physical catalogues.
+
+\section{Canonical authorities for the main results}
+
+Table~\ref{tab:authority_map} gives the archive-relative entry points needed to inspect the main claims. Narrative summaries point to their underlying machine-readable outputs. A source report establishes what was reported and retained; a hash establishes byte consistency. Neither alone certifies a physical mechanism or every historical execution.
+
+The public per-authority register \path{paper/supplements/source_availability.json} records which files are included here and which remain references to the research archive. The historical source index is retained as metadata in \path{provenance/historical_v4_source_index.json}; its old included paths describe release v4, not this repository. The compact public repository retains the reusable numerical implementation and selected result summaries, rather than the complete investigation record. No third-party event records or earlier manuscript PDF are redistributed.
+
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.20\textwidth-2\tabcolsep\relax}@{}}
+\caption{Canonical source map. Display names identify archive-relative authorities; stable IDs map to the full paths in the source index. This is not a promise that every historical payload is embedded in a compact manuscript release.}\label{tab:authority_map}\\
+\toprule
+Topic & Authority and scope \\
+\midrule
+\endfirsthead
+\toprule Topic & Authority and scope \\\midrule
+\endhead
+Finite-mode analysis & \nolinkurl{A_finite_mode_audit.md}; accompanying \texttt{S21}: \nolinkurl{A_theorems.tex}. State assumptions, construction, coupling and approximation scope. \\
+% Exact archive paths: iteration_4/reports/A_finite_mode_audit.md; iteration_4/manuscript_revisions/A_theorems.tex
+Exact memory and response & \nolinkurl{B_memory_response.md}; \texttt{S22}: \nolinkurl{B_propositions.tex}. No-feedback obstructions and the auxiliary response are separate results. \\
+% Exact archive paths: iteration_4/reports/B_memory_response.md; iteration_4/manuscript_revisions/B_propositions.tex
+Identification and score bounds & \texttt{S23}: \nolinkurl{C_identifiability.md}; \texttt{S03}: \nolinkurl{restricted_score_bound.md}; \texttt{S06}: \nolinkurl{power_response_corollary.md}. Positive-feedback and fixed-rule assumptions apply locally to each proposition. \\
+% Exact archive paths: iteration_4/reports/C_identifiability.md; iteration_13/reports/restricted_score_bound.md; iteration_15/reports/power_response_corollary.md
+Amplitude profiling & \texttt{S12}: \nolinkurl{A_amplitude_proposition.md}; \texttt{S13}: \nolinkurl{background_balance_corollary.md}. Conditional negative-log-likelihood calculus, not a global optimizer theorem. \\
+% Exact archive paths: iteration_23/reports/A_amplitude_proposition.md; iteration_23/reports/background_balance_corollary.md
+Reconstructed catalogue & \texttt{S24}: \nolinkurl{catalogue_metadata.json}; \texttt{S25}: \nolinkurl{research_report.md}. Archived new snapshot, selection and independent reconstruction. \\
+% Exact archive paths: iteration_5/data/processed/catalogue_metadata.json; iteration_5/reports/research_report.md
+Known-law comparison & \texttt{S09}: \nolinkurl{completed_evaluation.md}; \nolinkurl{completed_results.json}. All 2,149 scores accepted, including five validated imports; no new histories for this comparison. \\
+% Exact archive paths: iteration_19/reports/completed_evaluation.md; iteration_19/reports/completed_results.json
+Background comparison & \texttt{S11}: \nolinkurl{research_report.md}; \nolinkurl{completion_summary.json}. Accepted completion of the supplied-background and estimated-background procedures. \\
+% Exact archive paths: iteration_22/reports/research_report.md; iteration_22/results/completion_summary.json
+Optimizer robustness & \texttt{S14}: \nolinkurl{research_report.md}. Ten selected difficult histories; the earlier preparation and failed strict branches are not substituted for completion. \\
+% Exact archive paths: iteration_24/completion/reports/research_report.md
+Raw ablation & \texttt{S15}: \nolinkurl{research_report.md}. Ten-history level/trend raw-statistic comparison, not calibrated power. \\
+% Exact archive paths: iteration_25/completion/reports/research_report.md
+Level-only calibration & \texttt{S16}: \nolinkurl{research_report.md}; \texttt{M09}: \nolinkurl{summary.json}. All 2,149 fresh fits and accepted matched-null decisions. \\
+% Exact archive paths: iteration_26/completion/reports/research_report.md; iteration_26/completion/results/summary.json
+Observed prediction & \texttt{S19}: \nolinkurl{research_report.md}; \texttt{M18}: \nolinkurl{summary.json}. Three folds, five declared families, 612 scored test events. \\
+% Exact archive paths: iteration_27/reports/research_report.md; iteration_27/results/observed_analysis/summary.json
+Heterogeneity and source sensitivity & \texttt{S20}: \nolinkurl{research_report.md}; \nolinkurl{summary.json}; \nolinkurl{A_source_comparison.json}. Fixed-parameter temporal decomposition and matched source-value sensitivity. \\
+% Exact archive paths: iteration_28/reports/research_report.md; iteration_28/results/publication/summary.json; iteration_28/results/A_source_comparison.json
+\bottomrule
+\end{longtable}
+
+
+\section{Stable source supplement identifiers}\label{sec:source-supplements}
+The identifiers below replace internal report-title fragments in the main text. Each points to the exact archived document, not to a proposition in this manuscript. The public repository retains their stable identifiers and historical paths as provenance metadata; the public availability register identifies the subset actually included. Historical documentary reports are not all distributed here. These are documentary sources, not newly reproduced scientific runs.
+% Exact archive paths: supplements/source_evidence/; supplements/source_index.json
+
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.09\textwidth}>{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.09\textwidth-2\tabcolsep\relax}@{}}
+\caption{Stable documentary source keys and display filenames. Full original archive-relative paths are retained in the source index for provenance.}\label{tab:source-keys}\\
+\toprule Key & Archived document \\ \midrule\endfirsthead
+\toprule Key & Archived document \\ \midrule\endhead
+\hypertarget{S01}{}\label{source:S01}\texttt{S01} & \nolinkurl{summary.json} \\
+% Exact archive paths: iteration_12/results/aggregate/2026-10-16T061247128773_0000/summary.json
+\hypertarget{S02}{}\label{source:S02}\texttt{S02} & \nolinkurl{reference_score_geometry.md} \\
+% Exact archive paths: iteration_13/reports/reference_score_geometry.md
+\hypertarget{S03}{}\label{source:S03}\texttt{S03} & \nolinkurl{restricted_score_bound.md} \\
+% Exact archive paths: iteration_13/reports/restricted_score_bound.md
+\hypertarget{S04}{}\label{source:S04}\texttt{S04} & \nolinkurl{stable_process_irregular_score.md} \\
+% Exact archive paths: iteration_13/reports/stable_process_irregular_score.md
+\hypertarget{S05}{}\label{source:S05}\texttt{S05} & \nolinkurl{positive_eta_response.md} \\
+% Exact archive paths: iteration_15/reports/positive_eta_response.md
+\hypertarget{S06}{}\label{source:S06}\texttt{S06} & \nolinkurl{power_response_corollary.md} \\
+% Exact archive paths: iteration_15/reports/power_response_corollary.md
+\hypertarget{S07}{}\label{source:S07}\texttt{S07} & \nolinkurl{power_engine.py} \\
+% Exact archive paths: iteration_16/code/power_engine.py
+\hypertarget{S08}{}\label{source:S08}\texttt{S08} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_16/reports/research_report.md
+\hypertarget{S09}{}\label{source:S09}\texttt{S09} & \nolinkurl{completed_evaluation.md} \\
+% Exact archive paths: iteration_19/reports/completed_evaluation.md
+\hypertarget{S10}{}\label{source:S10}\texttt{S10} & \nolinkurl{restricted_history.py} \\
+% Exact archive paths: iteration_20/code/restricted_history.py
+\hypertarget{S11}{}\label{source:S11}\texttt{S11} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_22/reports/research_report.md
+\hypertarget{S12}{}\label{source:S12}\texttt{S12} & \nolinkurl{A_amplitude_proposition.md} \\
+% Exact archive paths: iteration_23/reports/A_amplitude_proposition.md
+\hypertarget{S13}{}\label{source:S13}\texttt{S13} & \nolinkurl{background_balance_corollary.md} \\
+% Exact archive paths: iteration_23/reports/background_balance_corollary.md
+\hypertarget{S14}{}\label{source:S14}\texttt{S14} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_24/completion/reports/research_report.md
+\hypertarget{S15}{}\label{source:S15}\texttt{S15} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_25/completion/reports/research_report.md
+\hypertarget{S16}{}\label{source:S16}\texttt{S16} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_26/completion/reports/research_report.md
+\hypertarget{S17}{}\label{source:S17}\texttt{S17} & \nolinkurl{adequacy.py} \\
+% Exact archive paths: iteration_27/code/adequacy.py
+\hypertarget{S18}{}\label{source:S18}\texttt{S18} & \nolinkurl{observed_frozen.json} \\
+% Exact archive paths: iteration_27/configs/observed_frozen.json
+\hypertarget{S19}{}\label{source:S19}\texttt{S19} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_27/reports/research_report.md
+\hypertarget{S20}{}\label{source:S20}\texttt{S20} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_28/reports/research_report.md
+\hypertarget{S21}{}\label{source:S21}\texttt{S21} & \nolinkurl{A_theorems.tex} \\
+% Exact archive paths: iteration_4/manuscript_revisions/A_theorems.tex
+\hypertarget{S22}{}\label{source:S22}\texttt{S22} & \nolinkurl{B_propositions.tex} \\
+% Exact archive paths: iteration_4/manuscript_revisions/B_propositions.tex
+\hypertarget{S23}{}\label{source:S23}\texttt{S23} & \nolinkurl{C_identifiability.md} \\
+% Exact archive paths: iteration_4/reports/C_identifiability.md
+\hypertarget{S24}{}\label{source:S24}\texttt{S24} & \nolinkurl{catalogue_metadata.json} \\
+% Exact archive paths: iteration_5/data/processed/catalogue_metadata.json
+\hypertarget{S25}{}\label{source:S25}\texttt{S25} & \nolinkurl{research_report.md} \\
+% Exact archive paths: iteration_5/reports/research_report.md
+\hypertarget{S26}{}\label{source:S26}\texttt{S26} & \nolinkurl{SUPERVISOR_REVIEW_ADDENDUM.txt} \\
+% Exact archive paths: review_handoff/2026-10-18/deepseek_cli_review_20261018-115244/SUPERVISOR_REVIEW_ADDENDUM.txt
+\hypertarget{S27}{}\label{source:S27}\texttt{S27} & \nolinkurl{research_handoff.md} \\
+% Exact archive paths: review_handoff/2026-10-18/output/research_handoff.md
+\bottomrule
+\end{longtable}
+
+\section{Completed evidence and unfinished branches}
+
+The initial calibration retained 1,999 cases for each of two restrictions, or 3,998 rows, under its declared recovery policy. The later paired study completed 150 fresh pairs, or 300 full-fit cases. The known-law and background comparisons reused specified saved histories and retained their reference/query identities. Fresh fitting of a saved history is not a fresh independent catalogue replication. The smaller planning cohorts were not pooled with the later cohort to improve its reported precision.
+
+The observed five-family comparison completed all 477 planned records, 411 mandatory optimization start lineages and 30 selected numerical controls. Its separate horizon feasibility branch completed 27 of 30 fit-pair cases: one remained resource limited and two pending. With only five null paths per horizon, it could not calibrate a five-percent add-one test, since the minimum attainable rank would be $1/6$. There is consequently no completed horizon power study or sufficient-event-count estimate to report. The unfinished cases remain explicit and are not counted as non-rejections.
+
+The final fixed-parameter audit completed 90 evaluations, 45 quadrature-order pairs, 18 temporal additivity controls and 913 source matches. It did not introduce a spatial model, new fitting, new simulation or another catalogue download. Spatial and mark group tables partition event terms; their absence of a local compensator is a limit of the object computed, not a missing integral that can be supplied by arbitrarily allocating the national exposure.
+
+\section{Numerical control is not a statistical or physical certificate}
+
+The likelihood uses predictable pre-event features, the full observation window and its quiet intervals. Numerical controls compare the declared finite-mixture/clock representation and quadrature refinements at selected points. An empirical envelope or agreement at two orders is not a proven integration-error bound. Histories with extreme marks or closely spaced clocks remain in the procedure through declared numerical policies; unresolved outcomes cannot be silently converted into non-rejections.
+
+Likewise, a solver's small gradient, successful exit or repeated winner is not a global optimality theorem. The ten-history robustness study materially reduces the appeal of merely increasing optimizer limits on that selected set, without validating all historical fits. The mathematical convexity of the conditional amplitude objective is narrower than joint convexity of the remaining profile. The manuscript retains these distinctions when interpreting the numerical evidence.
+
+The completed summaries were accepted within the research archive's internal review. This manuscript does not present model-assisted agreement as independent academic refereeing. This work is presented under the collective attribution Inhibitory Earthquake Models collaboration. Drefetr and magna-nz, identified by their GitHub handles, are human collaborators alongside the AI collaborators Claude, Astra, Sol, DeepSeek agents and Argon; neither human is designated the main author. The bulk of the project work was performed by AI agents: Claude and Astra developed the initial outline and specification; Sol coordinated an agent swarm comprising Sol and DeepSeek subagents; Astra and Argon provided review. These roles describe the development history supplied by the human collaborators, rather than independently verified model identities for every historical call. The release-v4 finalisation used native Codex agents without external DeepSeek calls. Reviewing retained sources and arithmetic is distinct from rerunning the historical studies.
+
+\chapter{Notation and scope}
+\label{app:notation}
+
+\begin{longtable}{@{}p{0.17\textwidth}p{0.78\textwidth}@{}}
+\caption{Core notation. Individual propositions specify any additional conditions and distinguish the physical and diagnostic uses.}\\
+\toprule Symbol & Meaning \\
+\midrule\endfirsthead
+\toprule Symbol & Meaning \\\midrule\endhead
+$T_i,M_i$ & Event time and fresh magnitude/mark; predictable intensity at $T_i$ uses strictly earlier events. \\
+$\Phi_s,h_e$ & Stress relaxation and triggering density. A shared restriction may relate them, but they are varied separately when testing identification. \\
+$X$ & Latent physical stress, including specified loading, initial state and event depletion. \\
+$B(t)$ & Independently specified diagnostic background; it may be nonstationary and is not the physical loading closure. \\
+$G_s(t),H_e(t)$ & Marked diagnostic depletion and normalized triggering features based on past history. \\
+$\eta$ & Nonnegative diagnostic inhibition coefficient; it is not automatically the original physical stress parameter. \\
+$n$ & Physical mean productivity $n=\mathbb E_F\kappa(M)<1$; in the diagnostic convention $\mathbb E_F\kappa(Q)=1$ and $n$ is the coefficient outside $H_e$. \\
+$\ell,F$ & In Chapter~\ref{ch:inference}, log-likelihood and its negative; $F$ elsewhere denotes the mark law and $\ell$ the auxiliary response slope. Local definitions fix these uses. \\
+$A=e^a,p_i$ & Background amplitude and fitted background mixture weight at event $i$. The weights are not identified causal parent labels. \\
+$\alpha$ & Fractional relaxation index where used, with its permitted range stated in the relevant model. \\
+$\beta$ & Excess-mark rate in the exponential mark model; locally $\beta=1-\alpha$ in the auxiliary response. A plug-in mark-rate estimate is not automatically a joint marked-intensity MLE. \\
+\bottomrule
+\end{longtable}
+
+\chapter{Focused literature comparisons}
+\label{app:literature_status}
+
+The literature audit identifies comparisons that are complete at their stated scope and questions that remain open. This record is useful for publication wording: it prevents a verified specialization from becoming a first-result claim, while retaining a worthwhile derivation even if a more general prior result exists.
+
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.23\textwidth-2\tabcolsep\relax}@{}}
+\caption{Contribution classifications and exact comparison boundaries. No unresolved comparison is used as evidence of novelty.}\label{tab:contribution-classification}\\
+\toprule Result & Classification and source comparison \\ \midrule\endfirsthead
+\toprule Result & Classification and source comparison \\ \midrule\endhead
+Mittag--Leffler triggering & \textbf{Inherited component / application}. \citet{DavisBaeumerWang2024}, equations (11)--(12) of the reviewed preprint, already gives the derivative-related triggering kernel and marked productivity. \\
+Shared depletion and triggering & \textbf{Model specialization; no priority claim}. \citet{PetrilloZhuangLippiello2023}, equations (10)--(11), uses an additive permanent correction; the present restriction multiplies a positive background by relaxing depletion and sets \(h=-\Phi'\). An equation difference does not establish firstness. \\
+Theorem~\ref{thm:finite_mode} & \textbf{Application of weak Harris theory}. The model-specific construction, drift and coupling verify the hypotheses of \citet{HairerMattinglyScheutzow2011}, Theorem 4.8 and Corollary 4.11. Exact inclusion in \citet{BremaudMassoulie1996} remains unresolved. \\
+Proposition~\ref{prop:heavy-moments} & \textbf{Self-contained moment derivation}. A recent-jump truncation argument identifies the divergent second moments while retaining first-moment stability; no priority claim. \\
+Propositions~\ref{prop:quantitative-kernel}--\ref{prop:qualitative-kernel} & \textbf{Coupling derivations / scope correction}. Quantitative half-line control and qualitative local truncation are distinct. The correction does not establish an invariant infinite-mode limit. \\
+Proposition~\ref{prop:exact-obstruction} & \textbf{Compensated shot-noise specialization}. The displayed characteristic-function and moment arguments apply to the stated no-feedback submodel; no general nonlinear or novelty claim. \\
+Proposition~\ref{prop:auxiliary-response} & \textbf{Self-contained linear specialization}. The explicit resolvent uses established Stieltjes/complete-Bernstein relaxation tools; see \citet{MeerschaertToaldo2019}, Section 2.1. Its nonlinear interpretation remains restricted. \\
+Zero-feedback nonidentification & \textbf{Direct observation-law consequence}. At fixed finite loading and initial stress, stress memory vanishes from the diagnostic law at zero feedback. The singular divergent-loading closure is separate. \\
+Positive-feedback identification & \textbf{Restricted nonlinear derivation; no priority claim}. The known-transform, empty-history, unbounded-mark experiment differs from the linear representation setting of \citet{DavisKresinBaeumerWang2026}, Theorem 3. It does not establish finite-catalogue estimation. \\
+Visibility and score bounds & \textbf{Self-contained finite-horizon derivations}. Matched nonnegative histories and the stated weighted moment conditions are essential. No general information, boundary asymptotics or universal detection threshold follows. \\
+Proposition~\ref{prop:regional_nonclosure} & \textbf{Conditional pooling algebra}. Equal total depletion need not give equal summed local rates. No empirical attribution to pooling follows. \\
+Conditional amplitude profile & \textbf{Finite-history calculus / convexity application}. The conditional profile, its balance and curvature do not establish a global optimum over trend and inhibition. \\
+Fixed-rule positive-inhibition response & \textbf{Likelihood differentiation derivation}. The fixed complete-data rule and positive-inhibition envelope differ from the fitted diagnostic setting in \citet{KlingVetter2024}. No monotonicity or boundary calibration is claimed. \\
+\bottomrule
+\end{longtable}
+
+The archived detailed comparison is \path{iteration_4/reports/E_literature.md}, with its equation-level matrix in \path{iteration_4/reports/literature_matrix.csv}. Some entries rely on reviewed full text, while the unresolved spectrum comparison relies on verified bibliography and abstract rather than the missing substitution. That distinction is preserved here. The primary contribution should be described as a restricted analysis and evidence-backed assessment of the shared-memory proposal until each stronger originality statement is individually justified.

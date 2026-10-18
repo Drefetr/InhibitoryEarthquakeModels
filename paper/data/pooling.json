@@ -1,0 +1,21 @@
+{
+  "type": "exact algebraic illustration",
+  "eta": 1,
+  "B1_over_B": 1,
+  "B2_over_B": 1,
+  "states": [
+    [
+      0.0,
+      0.6931471805599453
+    ],
+    [
+      0.34657359027997264,
+      0.34657359027997264
+    ]
+  ],
+  "local_intensity_over_B": [
+    1.5,
+    1.4142135623730951
+  ],
+  "pooled_rule_over_B": 1.0
+}

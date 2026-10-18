@@ -1,0 +1,799 @@
+{
+  "scope": "Public repository membership only; see provenance/historical_v4_source_index.json for immutable historical IDs and pins.",
+  "entries": [
+    {
+      "id": null,
+      "original_path": "inputs/manuscript_v2.pdf",
+      "expected_source_pin": {
+        "bytes": 886754,
+        "sha256": "c2e87f13d87136f3851964433527942ac8ca69d88a45815751c9c7253b12e5ed"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M01",
+      "original_path": "iteration_12/code/clock_simulator.py",
+      "expected_source_pin": {
+        "bytes": 13599,
+        "sha256": "b12d998dc03565812e2dbbafce020b23d0ebeb684b96c93ba26ee69064b72e69"
+      },
+      "public_path": "engine/iteration_12/code/clock_simulator.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "b12d998dc03565812e2dbbafce020b23d0ebeb684b96c93ba26ee69064b72e69",
+        "bytes": 13599
+      }
+    },
+    {
+      "id": "M02",
+      "original_path": "iteration_12/code/paired_history.py",
+      "expected_source_pin": {
+        "bytes": 8948,
+        "sha256": "3950696b888b1a0d7c55a4448f9283c9376ef246296ad9181d273a53e7380e5a"
+      },
+      "public_path": "engine/iteration_12/code/paired_history.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "3950696b888b1a0d7c55a4448f9283c9376ef246296ad9181d273a53e7380e5a",
+        "bytes": 8948
+      }
+    },
+    {
+      "id": "M03",
+      "original_path": "iteration_12/code/stable_history.py",
+      "expected_source_pin": {
+        "bytes": 16351,
+        "sha256": "f2ed43402c17203c900642b584db591638fbd27474c9669bffa4a43379bdaa30"
+      },
+      "public_path": "engine/iteration_12/code/stable_history.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "f2ed43402c17203c900642b584db591638fbd27474c9669bffa4a43379bdaa30",
+        "bytes": 16351
+      }
+    },
+    {
+      "id": "S01",
+      "original_path": "iteration_12/results/aggregate/2026-10-16T061247128773_0000/summary.json",
+      "expected_source_pin": {
+        "bytes": 2935,
+        "sha256": "05738575873e38fcce3f855f0942e8660d0813771f2bb67cd3cec66400d7fb6a"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S02",
+      "original_path": "iteration_13/reports/reference_score_geometry.md",
+      "expected_source_pin": {
+        "bytes": 6659,
+        "sha256": "c187cfe09306276d7a0c14d40fd24daba4639a8c023e6f4df95067300cc224ce"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S03",
+      "original_path": "iteration_13/reports/restricted_score_bound.md",
+      "expected_source_pin": {
+        "bytes": 7576,
+        "sha256": "d7e1dca33bcebf5e196db773b7a1b38978265c48ca61822f1edd3dbc78dc5998"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S04",
+      "original_path": "iteration_13/reports/stable_process_irregular_score.md",
+      "expected_source_pin": {
+        "bytes": 3736,
+        "sha256": "f5a547887544d7419482febf0f944c88d6da8c27e0ef2e972199932e08e3425d"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S05",
+      "original_path": "iteration_15/reports/positive_eta_response.md",
+      "expected_source_pin": {
+        "bytes": 8778,
+        "sha256": "bf2f3491e1fd1487d9fac6452160d0aca47bc35c38f6d2a09a619dd9dbd5dbee"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S06",
+      "original_path": "iteration_15/reports/power_response_corollary.md",
+      "expected_source_pin": {
+        "bytes": 2826,
+        "sha256": "e43160034faceb2132ac06bb3bd42766db9c264aafbde8daa61f5ec23b528a73"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S07",
+      "original_path": "iteration_16/code/power_engine.py",
+      "expected_source_pin": {
+        "bytes": 21600,
+        "sha256": "ef30070265e638be5d0441ac362e48dc88c3da9d534775bc2bf4850120b8e757"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S08",
+      "original_path": "iteration_16/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 8712,
+        "sha256": "a83bd516aaa824aa3b1023dde9b1ce6ebe14806a02841e4500584a3df3080297"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M04",
+      "original_path": "iteration_17/code/oracle_likelihood.py",
+      "expected_source_pin": {
+        "bytes": 11576,
+        "sha256": "6e8fa9ce82cb5c2d100adaf8065138172830618da49047e9c5aa73ccfaa3bb46"
+      },
+      "public_path": "engine/iteration_17/code/oracle_likelihood.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "6e8fa9ce82cb5c2d100adaf8065138172830618da49047e9c5aa73ccfaa3bb46",
+        "bytes": 11576
+      }
+    },
+    {
+      "id": "S09",
+      "original_path": "iteration_19/reports/completed_evaluation.md",
+      "expected_source_pin": {
+        "bytes": 8593,
+        "sha256": "bdf00666695436c36d7eddb5b1009cbf2df4019cf48ec6fc78f2ec958626e77a"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_19/reports/completed_results.json",
+      "expected_source_pin": {
+        "bytes": 4145,
+        "sha256": "26597c2fa85bff0d99af5b3ed91bba8bb0e9201c960bd2d65bf5ed12371736c2"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M05",
+      "original_path": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+      "expected_source_pin": {
+        "bytes": 668072,
+        "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M06",
+      "original_path": "iteration_20/code/restricted_fit.py",
+      "expected_source_pin": {
+        "bytes": 19307,
+        "sha256": "29663cb80701a90332b0dfe0876f5b2a64a6d0841b6c9de66f80aade8beba418"
+      },
+      "public_path": "engine/iteration_20/code/restricted_fit.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "29663cb80701a90332b0dfe0876f5b2a64a6d0841b6c9de66f80aade8beba418",
+        "bytes": 19307
+      }
+    },
+    {
+      "id": "S10",
+      "original_path": "iteration_20/code/restricted_history.py",
+      "expected_source_pin": {
+        "bytes": 12995,
+        "sha256": "0d3e2b538a2757343424ab13cb891d605225451e5db728739d0723624b0691f5"
+      },
+      "public_path": "engine/iteration_20/code/restricted_history.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "0d3e2b538a2757343424ab13cb891d605225451e5db728739d0723624b0691f5",
+        "bytes": 12995
+      }
+    },
+    {
+      "id": "M07",
+      "original_path": "iteration_21/configs/staged_full_frozen.json",
+      "expected_source_pin": {
+        "bytes": 107939,
+        "sha256": "91d98445f0b722bf960fa0ea331f10a592547f23ae35a74723ad57cbd7a77d65"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_21/results/analysis/2026-10-17T004327174461_0000/summary.json",
+      "expected_source_pin": {
+        "bytes": 2069349,
+        "sha256": "56da11135e920e0ced7ee5173d0bfe064a3802ecaf566d6ba7b6d11b75123823"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S11",
+      "original_path": "iteration_22/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 10109,
+        "sha256": "4c63eb8468001bfa641d391a63429f23532cc66e7dd24f0e44c0c82665e81464"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_22/results/completion_summary.json",
+      "expected_source_pin": {
+        "bytes": 4703,
+        "sha256": "eacc22edff91224c27f66004a667eff4cb43d6a22666e4f05688e611c88dfec8"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S12",
+      "original_path": "iteration_23/reports/A_amplitude_proposition.md",
+      "expected_source_pin": {
+        "bytes": 6089,
+        "sha256": "4e9247a25359fe30c09ac7620f663c5c8513d45d30de81db64961b19b2a567ea"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S13",
+      "original_path": "iteration_23/reports/background_balance_corollary.md",
+      "expected_source_pin": {
+        "bytes": 3904,
+        "sha256": "6aa1f5239fea315372ee64d18108684f75177505765a57d1161206cf8e32ab9a"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M08",
+      "original_path": "iteration_24/code/profile_optimizer.py",
+      "expected_source_pin": {
+        "bytes": 35022,
+        "sha256": "f0ab547015736eb9bfd6a3f3b8d08e60420516fda91a828149e5a5f087d9aff8"
+      },
+      "public_path": "engine/iteration_24/code/profile_optimizer.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "f0ab547015736eb9bfd6a3f3b8d08e60420516fda91a828149e5a5f087d9aff8",
+        "bytes": 35022
+      }
+    },
+    {
+      "id": "S14",
+      "original_path": "iteration_24/completion/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 10075,
+        "sha256": "ed47a11081df7f66bdf7eec8ba50e4157db0b552e2051172927644ff01619dd5"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S15",
+      "original_path": "iteration_25/completion/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 9722,
+        "sha256": "73a06f07f6a670846fc1a97b9c8981b12a6250e08957052ba3abc564d7ada673"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S16",
+      "original_path": "iteration_26/completion/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 10109,
+        "sha256": "ee7fb0a68e7c2d10fd87314e1aefe9b078c526aa07d3790d5911f9c63ef5e606"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M09",
+      "original_path": "iteration_26/completion/results/summary.json",
+      "expected_source_pin": {
+        "bytes": 6726,
+        "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M10",
+      "original_path": "iteration_26/configs/D_search_spec.json",
+      "expected_source_pin": {
+        "bytes": 1465,
+        "sha256": "be15022224d2930881706c4b7f0545729e06efb6fb17c2ded18687803a6f24dd"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M11",
+      "original_path": "iteration_26/configs/full_protocol_frozen.json",
+      "expected_source_pin": {
+        "bytes": 195630,
+        "sha256": "4212d4c08fcd20382e3217f59ab3cdb2a0a28cf5ef641d5a2a69d75a2c8fd1da"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_26/results/analysis/2026-10-17T125009077299_0000/summary.json",
+      "expected_source_pin": {
+        "bytes": 1850004,
+        "sha256": "0c46b5756ef92965263112738baea86914da2e95d4aa00609c5931a750540aca"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S17",
+      "original_path": "iteration_27/code/adequacy.py",
+      "expected_source_pin": {
+        "bytes": 33190,
+        "sha256": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90"
+      },
+      "public_path": "engine/iteration_27/code/adequacy.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90",
+        "bytes": 33190
+      }
+    },
+    {
+      "id": "M12",
+      "original_path": "iteration_27/code/run_adequacy.py",
+      "expected_source_pin": {
+        "bytes": 8884,
+        "sha256": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36"
+      },
+      "public_path": "engine/iteration_27/code/run_adequacy.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36",
+        "bytes": 8884
+      }
+    },
+    {
+      "id": "M13",
+      "original_path": "iteration_27/configs/D_interface.json",
+      "expected_source_pin": {
+        "bytes": 4047,
+        "sha256": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be"
+      },
+      "public_path": "engine/iteration_27/configs/D_interface.json",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be",
+        "bytes": 4047
+      }
+    },
+    {
+      "id": "S18",
+      "original_path": "iteration_27/configs/observed_frozen.json",
+      "expected_source_pin": {
+        "bytes": 12394,
+        "sha256": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222"
+      },
+      "public_path": "engine/iteration_27/configs/observed_frozen.json",
+      "status": "included",
+      "scope_note": "Public operational adaptation; historical expected source pin is retained separately. See provenance/public_adaptations.json.",
+      "verified_public_pin": {
+        "sha256": "f08ebeddf0a7c210dba42748f5e578d2d8d189476cb8c69e1da4e41dff5eb63c",
+        "bytes": 13282
+      }
+    },
+    {
+      "id": "M14",
+      "original_path": "iteration_27/logs/completion_manifest.json",
+      "expected_source_pin": {
+        "bytes": 21834,
+        "sha256": "30589e8a624e7e548a67aa8c7e13a5a29bd3fcdb7b249a8e8aa600dac9f14be7"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M15",
+      "original_path": "iteration_27/logs/completion_verification.json",
+      "expected_source_pin": {
+        "bytes": 601,
+        "sha256": "a0f174ff75efc0b0c9c3ae65e390d384ee3a3c25b1e2ac45016b5bdccf64782e"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S19",
+      "original_path": "iteration_27/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 13148,
+        "sha256": "005ddd8f858d8f7abb1697964b765c5614807aa838ca854b76cc09bb11305def"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M16",
+      "original_path": "iteration_27/results/observed.json",
+      "expected_source_pin": {
+        "bytes": 3570617,
+        "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M17",
+      "original_path": "iteration_27/results/observed_analysis/fold_scores.csv",
+      "expected_source_pin": {
+        "bytes": 5100,
+        "sha256": "204e556f54f98b9836ff6127e7f097289aaddd0efa7adcaf3db0d08d8f86c000"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M18",
+      "original_path": "iteration_27/results/observed_analysis/summary.json",
+      "expected_source_pin": {
+        "bytes": 28300,
+        "sha256": "da1ead8a2a439486b7f980d908770364451911f33e5008de5355b4b3219003a8"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M19",
+      "original_path": "iteration_27/reviews/A_completion_review.json",
+      "expected_source_pin": {
+        "bytes": 40732,
+        "sha256": "8726bbc99d907b61181430fd9bb1caa81e3613119ae1a066e39d792255acaff8"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M20",
+      "original_path": "iteration_27/reviews/C_completion_review.json",
+      "expected_source_pin": {
+        "bytes": 41033,
+        "sha256": "f3f7fabf2245f4c4e6dce6dd19f7148af6493cadd976c4e98a8b18df2c6ff2bf"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M21",
+      "original_path": "iteration_28/configs/numerical_frozen.json",
+      "expected_source_pin": {
+        "bytes": 16032,
+        "sha256": "2636262990a11edb1f4b0ae6122370b26d7c0d49b590094af83644b7cbe5a6fd"
+      },
+      "public_path": "engine/iteration_28/configs/numerical_frozen.json",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "2636262990a11edb1f4b0ae6122370b26d7c0d49b590094af83644b7cbe5a6fd",
+        "bytes": 16032
+      }
+    },
+    {
+      "id": "S20",
+      "original_path": "iteration_28/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 14235,
+        "sha256": "ac8c90ab66635503db555859923802e4c78d12b006783d787c200a8624af150d"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_28/results/A_source_comparison.json",
+      "expected_source_pin": {
+        "bytes": 3232014,
+        "sha256": "9d0f19af2f72faef086fde7a3d45ef543bd543b5dbe45472a3a8e4382713a073"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_28/results/numerical_audit/global_decomposition.csv",
+      "expected_source_pin": {
+        "bytes": 3131,
+        "sha256": "882dad47a23be9b11fb72b4c2d0e36cf119410b1b63a6e0f7dae7bb5272fa570"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_28/results/numerical_audit/temporal_comparisons.csv",
+      "expected_source_pin": {
+        "bytes": 6659,
+        "sha256": "ff9d404e127b4642b50331abf7de02cb6d5e5b0f9f8adf078bf17cffa6f43b19"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_28/results/publication/summary.json",
+      "expected_source_pin": {
+        "bytes": 21942,
+        "sha256": "e68300ad349bb521dc5411c8c278d12c7a2d20252eccd37fffdbe50cb667e926"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S21",
+      "original_path": "iteration_4/manuscript_revisions/A_theorems.tex",
+      "expected_source_pin": {
+        "bytes": 9863,
+        "sha256": "1ce605fab245ad1e7617716866b3bd95a913afe5b7dbc8467a62835463db1f57"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S22",
+      "original_path": "iteration_4/manuscript_revisions/B_propositions.tex",
+      "expected_source_pin": {
+        "bytes": 7889,
+        "sha256": "716dfcf13ffaf46c4c8ea9f735ea8a3a8b809dab92512987da3dd96b4ec102c7"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_4/reports/A_finite_mode_audit.md",
+      "expected_source_pin": {
+        "bytes": 19925,
+        "sha256": "ac08f0f7af92af586efe9fc5410a2b3f4fec12538b1e76209abd0c8411f285e8"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_4/reports/B_memory_response.md",
+      "expected_source_pin": {
+        "bytes": 22042,
+        "sha256": "01db0a434c2045aca393cacaea5ceb9810e6006382382149374665e44b7057e6"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S23",
+      "original_path": "iteration_4/reports/C_identifiability.md",
+      "expected_source_pin": {
+        "bytes": 26047,
+        "sha256": "d95c276aa2eab3c50a36aebda9f4fcf5f4dff13459ed95f717464c3ac8599185"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_4/reports/E_literature.md",
+      "expected_source_pin": {
+        "bytes": 13259,
+        "sha256": "968423b383984ca270b0ee1b198b1de3393d90beb3b0fbb0b530222e97bf7c74"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": null,
+      "original_path": "iteration_4/reports/literature_matrix.csv",
+      "expected_source_pin": {
+        "bytes": 4317,
+        "sha256": "a6240b64f65fe18b3e46f213ad5a8b5ceef71ebe37c7bd536c6d24240cbb9535"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M22",
+      "original_path": "iteration_5/code/empirical_process.py",
+      "expected_source_pin": {
+        "bytes": 13080,
+        "sha256": "9d8bc923cc87eba586bd0dee721245be73f2bbf623c90e00e138a18198d45ea0"
+      },
+      "public_path": "engine/iteration_5/code/empirical_process.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "9d8bc923cc87eba586bd0dee721245be73f2bbf623c90e00e138a18198d45ea0",
+        "bytes": 13080
+      }
+    },
+    {
+      "id": "M23",
+      "original_path": "iteration_5/code/kernels.py",
+      "expected_source_pin": {
+        "bytes": 5359,
+        "sha256": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae"
+      },
+      "public_path": "engine/iteration_5/code/kernels.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae",
+        "bytes": 5359
+      }
+    },
+    {
+      "id": "M24",
+      "original_path": "iteration_5/code/prepare_catalogue.py",
+      "expected_source_pin": {
+        "bytes": 27002,
+        "sha256": "60431d02fd433412fa76130f82452f8ca2ed804bef846f27b7c20eabde08a610"
+      },
+      "public_path": "engine/iteration_5/code/prepare_catalogue.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "60431d02fd433412fa76130f82452f8ca2ed804bef846f27b7c20eabde08a610",
+        "bytes": 27002
+      }
+    },
+    {
+      "id": "S24",
+      "original_path": "iteration_5/data/processed/catalogue_metadata.json",
+      "expected_source_pin": {
+        "bytes": 23906,
+        "sha256": "a166602040591234639bdf1acc69a509603bbab53e54948619a1c011fc98492d"
+      },
+      "public_path": "provenance/catalogue_snapshot_metadata.json",
+      "status": "partially-represented",
+      "scope_note": "Named metadata extract; per-event records removed. Expected pin is the historical full file; public pin belongs only to this extract.",
+      "verified_public_pin": {
+        "sha256": "1ebff42b90d356dc4a0b119aa317817726e3e3e6804d803b436446428bfb2259",
+        "bytes": 16755
+      }
+    },
+    {
+      "id": "M25",
+      "original_path": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+      "expected_source_pin": {
+        "bytes": 109747,
+        "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S25",
+      "original_path": "iteration_5/reports/research_report.md",
+      "expected_source_pin": {
+        "bytes": 10880,
+        "sha256": "ec2dfa1277ced128249215522795903910ee92713f0a6e9e9592733d80bf28c0"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "M26",
+      "original_path": "iteration_9/code/numerical_fit.py",
+      "expected_source_pin": {
+        "bytes": 10378,
+        "sha256": "ab9f517ab6065f952a22e5ad02e72dd8111f1ad18c405527f3a461f556ea6bc1"
+      },
+      "public_path": "engine/iteration_9/code/numerical_fit.py",
+      "status": "included",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes.",
+      "verified_public_pin": {
+        "sha256": "ab9f517ab6065f952a22e5ad02e72dd8111f1ad18c405527f3a461f556ea6bc1",
+        "bytes": 10378
+      }
+    },
+    {
+      "id": "S26",
+      "original_path": "review_handoff/2026-10-18/deepseek_cli_review_20261018-115244/SUPERVISOR_REVIEW_ADDENDUM.txt",
+      "expected_source_pin": {
+        "bytes": 9256,
+        "sha256": "97931a43bacfd440f2fd7460171d3338c02e19a1bd9be68e384f66a17b833b4c"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    },
+    {
+      "id": "S27",
+      "original_path": "review_handoff/2026-10-18/output/research_handoff.md",
+      "expected_source_pin": {
+        "bytes": 31214,
+        "sha256": "81abbc78516fd8ac37fbac2f7d0c4aa2a21ab92b9057217d208d09c7709beb3b"
+      },
+      "public_path": null,
+      "status": "not-distributed",
+      "scope_note": "Public extraction membership; historical archive availability does not imply public bytes."
+    }
+  ]
+}

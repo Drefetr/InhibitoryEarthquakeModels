@@ -1,0 +1,17 @@
+{
+  "pdf_sha256": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
+  "pages": 64,
+  "duplicate_labels": [],
+  "undefined_cross_references": [],
+  "missing_bibliography_keys": [],
+  "missing_figures": [],
+  "overfull_boxes": 0,
+  "undefined_warnings": 0,
+  "missing_glyph_warnings": 0,
+  "underfull_boxes": 0,
+  "replacement_characters": 0,
+  "edge_text_blocks": [],
+  "render_scale": 1.7,
+  "scope": "production checks; page images require visual review",
+  "passed": true
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "fold": "fold_50",
+    "bin": "0",
+    "event_logratio": "-2.8912444043750796",
+    "compensator_contribution": "2.4642696171245717",
+    "full_marked_logscore_difference": "-0.42697478725050075"
+  },
+  {
+    "fold": "fold_50",
+    "bin": "1",
+    "event_logratio": "-16.87537810029393",
+    "compensator_contribution": "7.143815356721138",
+    "full_marked_logscore_difference": "-9.731562743572795"
+  },
+  {
+    "fold": "fold_50",
+    "bin": "2",
+    "event_logratio": "-8.696130839154748",
+    "compensator_contribution": "4.642114807209932",
+    "full_marked_logscore_difference": "-4.054016031944826"
+  },
+  {
+    "fold": "fold_50",
+    "bin": "3",
+    "event_logratio": "-5.252451316251282",
+    "compensator_contribution": "2.947447426208992",
+    "full_marked_logscore_difference": "-2.3050038900423147"
+  },
+  {
+    "fold": "fold_65",
+    "bin": "0",
+    "event_logratio": "-0.17528309536011122",
+    "compensator_contribution": "0.28993116356517845",
+    "full_marked_logscore_difference": "0.11464806820506368"
+  },
+  {
+    "fold": "fold_65",
+    "bin": "1",
+    "event_logratio": "0.25342430593948606",
+    "compensator_contribution": "-0.6956274934794635",
+    "full_marked_logscore_difference": "-0.4422031875399739"
+  },
+  {
+    "fold": "fold_65",
+    "bin": "2",
+    "event_logratio": "-0.08495333529600657",
+    "compensator_contribution": "0.42597355200975073",
+    "full_marked_logscore_difference": "0.34102021671371574"
+  },
+  {
+    "fold": "fold_65",
+    "bin": "3",
+    "event_logratio": "-1.7791149829163118",
+    "compensator_contribution": "1.690372594986158",
+    "full_marked_logscore_difference": "-0.08874238793015365"
+  },
+  {
+    "fold": "fold_80",
+    "bin": "0",
+    "event_logratio": "-0.3078171617587344",
+    "compensator_contribution": "0.2835988808122494",
+    "full_marked_logscore_difference": "-0.024218280946485038"
+  },
+  {
+    "fold": "fold_80",
+    "bin": "1",
+    "event_logratio": "-2.305454517429453",
+    "compensator_contribution": "1.8473789627945507",
+    "full_marked_logscore_difference": "-0.45807555463490246"
+  },
+  {
+    "fold": "fold_80",
+    "bin": "2",
+    "event_logratio": "-1.333008659388497",
+    "compensator_contribution": "0.9764483682064906",
+    "full_marked_logscore_difference": "-0.3565602911819781"
+  },
+  {
+    "fold": "fold_80",
+    "bin": "3",
+    "event_logratio": "-0.48455578543939737",
+    "compensator_contribution": "0.29338529076956377",
+    "full_marked_logscore_difference": "-0.1911704946698194"
+  }
+]

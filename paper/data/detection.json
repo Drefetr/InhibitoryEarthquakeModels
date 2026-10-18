@@ -1,0 +1,187 @@
+{
+  "Fixed-eta oracle": {
+    "reference_requested": 999,
+    "reference_resolved": 999,
+    "reference_complete": true,
+    "heldout_null_size": {
+      "requested": 1000,
+      "rejections": 50,
+      "resolved": 1000,
+      "unknown": 0,
+      "conditional_frequency": 0.05,
+      "monte_carlo_se": 0.006892024376045111,
+      "exact_binomial_95_interval": [
+        0.0373353976046618,
+        0.06539048791549364
+      ],
+      "accounting_bounds": [
+        0.05,
+        0.05
+      ]
+    },
+    "alternative_frequency": {
+      "requested": 150,
+      "rejections": 150,
+      "resolved": 150,
+      "unknown": 0,
+      "conditional_frequency": 1.0,
+      "monte_carlo_se": 0.0,
+      "exact_binomial_95_interval": [
+        0.9757074028338915,
+        1.0
+      ],
+      "accounting_bounds": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "Eta fit; background supplied": {
+    "reference_requested": 999,
+    "reference_resolved": 999,
+    "reference_complete": true,
+    "heldout_null_size": {
+      "requested": 1000,
+      "rejections": 49,
+      "resolved": 1000,
+      "unknown": 0,
+      "conditional_frequency": 0.049,
+      "monte_carlo_se": 0.006826346021115542,
+      "exact_binomial_95_interval": [
+        0.036467059172047823,
+        0.06426605314016964
+      ],
+      "accounting_bounds": [
+        0.049,
+        0.049
+      ]
+    },
+    "alternative_frequency": {
+      "requested": 150,
+      "rejections": 150,
+      "resolved": 150,
+      "unknown": 0,
+      "conditional_frequency": 1.0,
+      "monte_carlo_se": 0.0,
+      "exact_binomial_95_interval": [
+        0.9757074028338915,
+        1.0
+      ],
+      "accounting_bounds": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "Level fit; trend supplied": {
+    "reference_requested": 999,
+    "reference_resolved": 999,
+    "reference_complete": true,
+    "heldout_null_size": {
+      "requested": 1000,
+      "rejections": 46,
+      "resolved": 1000,
+      "unknown": 0,
+      "conditional_frequency": 0.046,
+      "monte_carlo_se": 0.006624499981130651,
+      "exact_binomial_95_interval": [
+        0.0338714985476779,
+        0.06088355271374263
+      ],
+      "accounting_bounds": [
+        0.046,
+        0.046
+      ]
+    },
+    "alternative_frequency": {
+      "requested": 150,
+      "rejections": 123,
+      "resolved": 150,
+      "unknown": 0,
+      "conditional_frequency": 0.82,
+      "monte_carlo_se": 0.03136877428271625,
+      "exact_binomial_95_interval": [
+        0.7490221049939838,
+        0.8779003724223797
+      ],
+      "accounting_bounds": [
+        0.82,
+        0.82
+      ]
+    }
+  },
+  "Level and trend fit": {
+    "reference_requested": 999,
+    "reference_resolved": 999,
+    "reference_complete": true,
+    "heldout_null_size": {
+      "requested": 1000,
+      "rejections": 44,
+      "resolved": 1000,
+      "unknown": 0,
+      "conditional_frequency": 0.044,
+      "monte_carlo_se": 0.006485676526007136,
+      "exact_binomial_95_interval": [
+        0.032149497010871414,
+        0.058620419206330925
+      ],
+      "accounting_bounds": [
+        0.044,
+        0.044
+      ]
+    },
+    "alternative_frequency": {
+      "requested": 150,
+      "rejections": 68,
+      "resolved": 150,
+      "unknown": 0,
+      "conditional_frequency": 0.4533333333333333,
+      "monte_carlo_se": 0.04064662529839529,
+      "exact_binomial_95_interval": [
+        0.3719742109510012,
+        0.5365724144187041
+      ],
+      "accounting_bounds": [
+        0.4533333333333333,
+        0.4533333333333333
+      ]
+    }
+  },
+  "Historical fuller fit": {
+    "reference_requested": 999,
+    "reference_complete": true,
+    "reference_resolved": 999,
+    "heldout_null_size": {
+      "requested": 1000,
+      "rejections": 50,
+      "resolved": 1000,
+      "unknown": 0,
+      "conditional_frequency": 0.05,
+      "monte_carlo_se": 0.006892024376045111,
+      "exact_binomial_95_interval": [
+        0.0373353976046618,
+        0.06539048791549364
+      ],
+      "accounting_bounds": [
+        0.05,
+        0.05
+      ]
+    },
+    "alternative_frequency": {
+      "requested": 150,
+      "rejections": 57,
+      "resolved": 150,
+      "unknown": 0,
+      "conditional_frequency": 0.38,
+      "monte_carlo_se": 0.0396316371938716,
+      "exact_binomial_95_interval": [
+        0.30207718425429364,
+        0.4627631120547151
+      ],
+      "accounting_bounds": [
+        0.38,
+        0.38
+      ]
+    }
+  }
+}

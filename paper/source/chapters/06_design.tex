@@ -1,0 +1,138 @@
+\chapter{Design and Interpretation of the Finite-History Experiment}
+\label{ch:design}
+
+This chapter specifies the finite-history experiment used to study detection of the diagnostic inhibition term. The quantity of primary interest is a diagnostic inhibition parameter, \(\eta\), not the physical loading parameter of the original process model. The distinction is substantive. Within the diagnostic family, a positive \(\eta\) suppresses the background contribution after the specified history feature is represented. It does not identify the original physical loading parameter, nor does it establish a unique physical mechanism. The experiment is therefore an inference study about a class of fitted laws, not a reconstruction of a complete physical loading history.
+
+The synthetic construction is model-correct relative to the laws it generates: histories are produced from the stated marked point-process model, evaluated under that model, and compared without introducing an external observation model. Geography, changing observation practices, and missing parents are deliberately omitted. Consequently, agreement or disagreement among procedures on these histories measures behavior within a specified filtration and law class. It cannot by itself establish that the same procedures are adequate for a catalogue affected by spatial heterogeneity, reporting changes, or genealogical incompleteness.
+
+\section{The Diagnostic Law and Its History}
+
+For a history \(\mathcal H_t\), let
+\begin{equation}
+\lambda_\eta(t)
+=
+\exp\!\left\{a+d\left(\frac{2t}{T}-1\right)\right\}
+\exp\{-\eta G_s(t)\}
++
+nH_e(t),
+\label{eq:experiment-intensity}
+\end{equation}
+where
+\[
+B(t)
+=
+\exp\!\left\{a+d\left(\frac{2t}{T}-1\right)\right\}.
+\]
+Here \(a\) controls the background level, \(d\) the linear trend in transformed time, \(n\) the additive triggering scale, and \(\eta\) the diagnostic inhibition of marked stress memory. The feature \(G_s(t)\) is a nonnegative marked stress-memory feature, while \(H_e(t)\) is a normalized marked triggering feature. The interpretation of \(\eta\) is conditional on the represented triggering process and on the specified background: it is an attenuation of the first term in \eqref{eq:experiment-intensity}, not a declaration that the physical process is governed by an equivalent coefficient.
+
+Both \(G_s\) and \(H_e\) are functions of the strictly earlier history. If event \(i\) has time \(t_i\) and mark \(m_i\), the predictable intensity used for that event is \(\lambda_\eta(t_i-)\). The mark \(m_i\) affects later stress memory and later triggering but cannot affect the intensity immediately before its own occurrence. This timing convention prevents circular use of the event being evaluated and is essential to the likelihood interpretation below.
+
+The numerical kernels are positive normalized finite spectral mixtures. They represent the stress and triggering responses with a finite number of modes rather than by evaluating the exact Mittag--Leffler kernel. In the shared implementation, the kernel scale parameters are \(\alpha=0.5\) and \(\tau=1\), and the normalized mixture comprises \(195\) modes. Although the modes may approximate a long-memory response, the finite mixture is itself the implemented model. For magnitude excess \(m_i=M_i-M_0\), the implemented features are
+\begin{align}
+ G_s(t)&=\sum_{t_i<t} e^{\gamma(m_i-1)}\Phi_s(t-t_i),
+       &\gamma&=\tfrac34\log 10,\\
+ H_e(t)&=\sum_{t_i<t}(1-r)e^{\beta r m_i}h_e(t-t_i).
+ \label{eq:diagnostic-features}
+\end{align}
+The relaxation kernel has the form \(\Phi_s(u)=\sum_qw_qe^{-\rho_qu}\), with positive weights summing to one. The corresponding triggering density is \(h_e(u)=\sum_qv_q\zeta_qe^{-\zeta_qu}\), with positive weights summing to one and positive rates. Thus \(\Phi_s(0)=1\) and \(\int_0^\infty h_e(u)\,du=1\). Sharing the relaxation parameters means using a common survival kernel and its negative derivative as the triggering density, rather than setting the two functions equal. The stress-mark normalization is the declared magnitude-six reference when \(M_0=5\). These formulas are explicit in \sourcesupp{S10} and \sourcesupp{S17}. Conclusions therefore apply to the finite mixture that was used, not automatically to every exact infinite-mode limit.
+
+\paragraph{Finite spectral recipe.}
+The generating relaxation uses log rates \(v_j=0.4j\), \(j=-97,\ldots,97\), and rates \(\rho_j=e^{v_j}/\tau\) in days\(^{-1}\), with \(\alpha=0.5\) and \(\tau=1\) day. Before normalization its weights are
+\[
+ \widetilde w_j=\frac{0.4\sin(\pi\alpha)}{2\pi\{\cosh(\alpha v_j)+\cos(\pi\alpha)\}},
+\]
+with both endpoint weights halved, then \(w_j=\widetilde w_j/\sum_k\widetilde w_k\). More generally the implemented endpoint index is
+\[
+ J=\left\lceil\frac{1}{s}\max\left\{\frac{\log4}{\alpha},
+ \frac{\log[4\sin(\pi\alpha)/(\pi\alpha\varepsilon)]}{\alpha}\right\}\right\rceil,
+ \qquad s=0.4,\quad\varepsilon=10^{-8}.
+\]
+Thus the 195-mode count specifies the generating case, while candidate \(\alpha=0.7\) uses 137 modes with the same spectral rule. The machine-readable methods supplement supplies the rates and normalized weights. The finite triggering density remains \(h=-\Phi'\); its finite value at zero does not reproduce the exact fractional singularity.
+
+
+Marks are generated with excess density
+\[
+f_\beta(m)=\beta e^{-\beta m},\qquad m>0,
+\]
+with \(\beta=2.849401764894274\). The normalized productivity factor is
+\[
+(1-r)e^{\beta r m},\qquad r=0.7.
+\]
+This normalization gives unit mean productivity at the reference scale and makes the mark contribution positive. The exponential excess itself has finite moments. It is the exponential stress and productivity transforms that have finite first but infinite second moments at the declared parameters. That feature motivates bounded-indicator simulation checks rather than variance formulas or finite-information shortcuts based only on the raw marks.
+
+\section{Generating Histories and Evaluating Both Laws}
+
+The main generating experiment has duration \(T=24394\) days, begins with an empty prehistory, and produces random event counts. Counts are not conditioned on a target total; in particular, the design does not condition on a 913-event count. The generating nuisance parameters include
+\[
+a=-4.162108473051707,\qquad
+d=0.23211265877958467,\qquad
+n=0.5017751599706763,
+\]
+and the main diagnostic value is
+\[
+\eta=0.4885010300470942.
+\]
+The null experiment sets \(\eta=0\) while retaining the generating nuisance values in the null law. This is a comparison between a marked process with stress inhibition and a marked process without that inhibition, not a comparison against a law with triggering or marks removed.
+
+\paragraph{Simulation and event clock.}
+The simulator starts both modal states at zero. At each proposal it samples an exponential wait with envelope \(e^{a+|d|}+\sum_qw_qE_q\), where \(E_q\) is the current excitation state, advances and decays both modal states, and accepts with probability equal to the new predictable intensity divided by that envelope. Nonnegative inhibition bounds the background by \(e^{a+|d|}\), and excitation decays between events. Only after acceptance is a fresh exponential excess mark drawn; its productivity and stress increments then update future states. Proposals reaching the horizon add no event. The accepted clock retains the legacy compensated binary64 projection and the exact Decimal sum of sampled binary64 waits at precision 1600, together with residual coordinates and positive relative event gaps. Projected ties are retained without jitter or resampling; paired-clock likelihood evaluation uses those gaps. Unrepresentable waits, mark-transform overflow and resource caps remain explicit unresolved cases, with restart state retained.
+
+
+For observed event times \(t_i\) and marks \(m_i\), the marked point-process log likelihood is
+\begin{equation}
+\ell(\vartheta,\eta;\mathcal H_T)
+=
+\sum_{i:t_i\le T}\log\lambda_\eta(t_i-)
+-
+\int_0^T\lambda_\eta(t)\,dt
++
+\sum_{i:t_i\le T}\log f_\beta(m_i).
+\label{eq:marked-likelihood}
+\end{equation}
+Evaluation uses the full predictable intensity and the full integral, including quiet exposure before, between, and after events and the terminal interval up to \(T\). It is not a count-conditional likelihood on the event times alone. When the same mark density is held fixed for both laws, the mark terms in \eqref{eq:marked-likelihood} cancel in their difference. They are present in both likelihoods; their cancellation is an algebraic consequence of the common mark law, not an omission of marks from the model.
+
+Two comparison designs are distinguished. An oracle signed log-likelihood ratio compares two fully supplied laws. A fitted generalized statistic instead permits separate null and alternative optimizations over the nuisance parameters allowed by each procedure. The oracle therefore has additional information: it knows nuisance values that an estimation procedure must recover. This changes a simple-law comparison into a composite-law task. A contrast such as \(100\%\) detection for the known-law procedure versus roughly \(38\%\) for a fitted procedure is not, by itself, evidence of avoidable numerical inefficiency, nor does it establish the power of a hypothetical oracle for the composite problem. Estimating nuisance changes both the test statistic and its null distribution. Each procedure consequently requires its own reference calibration. In symbols, the oracle uses the signed contrast
+\begin{equation}
+ L_{10}=\ell(\vartheta_\star,\eta_\star;\mathcal H_T)
+        -\ell(\vartheta_\star,0;\mathcal H_T),
+ \label{eq:oracle-statistic}
+\end{equation}
+whereas a fitted procedure uses its selected maxima to form
+\begin{equation}
+ D=2\left\{\widehat\ell_1-\widehat\ell_0\right\}.
+ \label{eq:fitted-statistic}
+\end{equation}
+The hats denote the declared finite fitting recipe, rather than a proof that a global maximum has been found. The oracle contrast need not be nonnegative; a fitted statistic with an exact eligible null floor is nonnegative. Their numerical scales and critical values cannot be exchanged.
+
+\section{Reference Calibration and Inferential Scope}
+
+For a method, each null calibration uses \(999\) reference null history identifiers and a separate bank of \(1{,}000\) null query histories. The same reference identities are reused across methods, but each method fits and scores its own statistic on those histories. The \(150\) stronger alternative histories are also held in common across procedures. Reference histories are not scored as queries. For a query statistic \(D_q\), the reported rank probability is
+\begin{equation}
+p=\frac{1+\sum_{j=1}^{999}\mathbf 1\{D_j\ge D_q\}}{1000},
+\qquad
+\text{reject if }p\le 0.05.
+\label{eq:rank-p}
+\end{equation}
+All ties count through the indicator, with no random tie breaking or exclusion. The add-one term and the denominator of \(1{,}000\) make the query effectively one member of a rank set containing \(999\) calibration references.
+
+The reported summaries condition on the realized reference banks and generating law. For a procedure fixed in advance whose reference and query histories are exchangeable under the null, the rank rule has the usual finite-sample conservativeness of a Monte Carlo rank test. That ideal argument is not retrospective proof for a procedure selected and reused during the research process. Adaptive selection followed by scoring can alter both the statistic and the comparison being calibrated. The reported Clopper--Pearson intervals are nominal exact binomial summaries under fixed-bank, fixed-procedure and independent-query assumptions. They describe Monte Carlo uncertainty in query outcomes, rather than conditioning away those outcomes. They do not resample the reference bank, the generator, or the adaptive procedure-selection process. Similar realized null rejection rates therefore do not prove equal test size uniformly over a composite null.
+
+The null value \(\eta=0\) lies on the boundary of the permitted nonnegative parameter space. The usual interior-parameter Wilks argument does not apply directly. This study uses empirical matched-null calibration rather than asserting a chi-squared reference law. The inferential calculations are based on the separately calibrated procedures and their realized reference distributions. Because each rejection decision is a bounded indicator, conditional Monte Carlo standard errors remain meaningful even when individual marked histories are heavy tailed. This does not imply that a finite joint Fisher information exists for the fitted model.
+
+\section{Numerical Controls and Completed Evidence}
+
+The evaluation retains the full event clock, including extreme histories, rather than replacing generated histories with summaries. Required optimizer starts must resolve; an unresolved calculation stopped at a cap is recorded as unknown and is never converted into a non-rejection. Selected-point likelihood and intensity comparisons were checked across integration orders and backends, and direct likelihood contrasts were used where possible to reduce cancellation between nearly equal large integrals. Numerical envelopes serve as sensitivity controls for these calculations. They are not a universal quadrature bound and do not establish global maxima for an optimization.
+
+The completed oracle, supplied-nuisance, estimated-background and level-only evaluations each retain all \(2{,}149\) declared histories. No failed or extreme history is removed to obtain these denominators. Reporting policies, inclusion rules, and provenance for the numerical controls are recorded in the appendix. The completed-history evaluation and its reference-calibration conventions are documented in \sourcesupp{S09}; the matched synthetic construction and likelihood accounting are recorded in \sourcesupp{S11}, and the final reporting structure is recorded in \sourcesupp{S16}.
+
+\paragraph{Procedure-specific estimation.}
+The completed supplied-trigger studies hold \(n,r,\beta,\alpha_e,\tau_e\) and the stress kernel fixed. The eta-only procedure uses starts \(0\) and \(0.2\) over \(\eta\in[0,3]\). The level-and-trend procedure runs two null optimizations in \((a,d)\in[-12,0]\times[-2,2]\) and selects the better null fit. It then runs two alternative optimizations from that one fit, initialized at \(\eta=0\) and \(\eta=0.2\). Thus level-and-trend has four prescribed optimizations; the two procedures together have six. Both use L-BFGS-B with \(\mathrm{maxiter}=100\), \(\mathrm{maxls}=40\), \(\mathrm{ftol}=10^{-10}\) and \(\mathrm{gtol}=2\times10^{-6}\). Failure alone enables the same-start CPU retries (line-search limits 40 then 200), followed by bounded Powell; the supplied-trigger procedures never free \(n\). Every prescribed start must resolve, the exact matching null remains eligible, and selected order 16 values are checked independently at CPU order 32 to tolerance \(10^{-4}\).
+The distinct level-only procedure supplies \(d\) and profiles \(a\in[-12,0]\) for each \(\eta\). It checks 17 equally spaced \(\eta\)-values in \([0,3]\), the saved supplied-background alternative and zero, refines strict local mesh minima, and includes an 11-point profile. Its saved eligible floors and all mandatory solver returns are retained. Complete bounds, starts, stopping and recovery rules for this procedure, the historical fuller fit and the observed predictive fits are given separately in the methods supplement; none is a claim of global optimization.
+
+\paragraph{Numerical integration and stable evaluation.}
+The positive-gap history geometry retains initial and terminal quiet exposure. Within each event gap it inserts the offsets shorter than the gap from 23 geometric values spanning \(10^{-6}\) to \(10^5\) days and their 22 adjacent geometric means, then applies Gauss--Legendre order 16 on each subpanel. Selected controls use independent CPU order 32; the oracle refinement can require order 64. The triggering compensator uses the finite-mixture CDF, evaluated with \(-\operatorname{expm1}(-\rho_q u)\). Event log intensity uses a log-sum-exp evaluation, including an explicit zero-triggering branch. Each event reads the decayed pre-event state before adding its mark. The historical fuller search and observed search have separate parameter and recovery contracts in the companion specification.
+
+\paragraph{Companion procedure specification.}
+The portable methods supplement and machine-readable settings in \texttt{supplements/}
+% Exact companion paths: supplements/methods_supplement.md; supplements/methods_settings.json
+ distinguish the generating kernel, the historical fuller calibration, the supplied-trigger procedures, the level-only profile and the observed predictive search. They record estimated and supplied coordinates, bounds, starts, quadrature, recovery and unresolved availability limits at their respective accepted versions. The metadata arrays are deterministic evaluations of the documented mixture rule, not new event histories or refits.

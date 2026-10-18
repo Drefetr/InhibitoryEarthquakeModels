@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_new_observed_outcomes",
+  "created_utc": "2026-10-17T21:20:01.620659+00:00",
+  "objective": "Exploratory temporal model adequacy on previously seen observed GeoNet reconstruction; no physical mechanism or power inference.",
+  "T0": 24394.0,
+  "wall_cap_seconds": 1800,
+  "source_hashes": {
+    "iteration_12/code/clock_simulator.py": "b12d998dc03565812e2dbbafce020b23d0ebeb684b96c93ba26ee69064b72e69",
+    "iteration_12/code/paired_history.py": "3950696b888b1a0d7c55a4448f9283c9376ef246296ad9181d273a53e7380e5a",
+    "iteration_12/code/stable_history.py": "f2ed43402c17203c900642b584db591638fbd27474c9669bffa4a43379bdaa30",
+    "iteration_17/code/oracle_likelihood.py": "6e8fa9ce82cb5c2d100adaf8065138172830618da49047e9c5aa73ccfaa3bb46",
+    "iteration_18/code/cuda_oracle.py": "be7ff7938596c0f5c3bc40962986e2ae511a0a9c1b05bc1d8d7b99008fa86505",
+    "iteration_19/code/run_full_cuda.py": "93f59620d6f7e9a0eccbf1ae3575429634080459b1ea38601b070a89ee906dbb",
+    "iteration_20/code/restricted_fit.py": "29663cb80701a90332b0dfe0876f5b2a64a6d0841b6c9de66f80aade8beba418",
+    "iteration_20/code/restricted_history.py": "0d3e2b538a2757343424ab13cb891d605225451e5db728739d0723624b0691f5",
+    "iteration_21/code/analyse_full_staged.py": "fe352e5516e97dd2f64dd76e1c9b8e050dded3369c41a54752552b560cd318ef",
+    "iteration_21/code/analyse_staged.py": "6ca14b20809ca282bf94c2eec362ab04f8f75701a0d72c1c9f9c7b125975e0c8",
+    "iteration_21/code/benchmark_staged.py": "6887cc4df36b4bf1cfa6f9cd8918e8cc6f25d50df7f24d447522e14eec04d79f",
+    "iteration_21/code/run_staged_full.py": "aa04b8c04f4f418c0c68976b8557e89a94cfafd72d0f07c13c205fa4edef2abd",
+    "iteration_21/code/staged_fit.py": "338145457dd54d90ac929fda32224adcb7c02870e884724341f6222a4fce6f44",
+    "iteration_21/run_full_staged.ps1": "6e499c374c4827f4047cfa2c3e3989f9bb59b1647c6447db0c435140c791f081",
+    "iteration_24/code/profile_optimizer.py": "f0ab547015736eb9bfd6a3f3b8d08e60420516fda91a828149e5a5f087d9aff8",
+    "iteration_26/code/calibrate_level_only.py": "4fc458416d4d2698fccb9fac11aaba2defbd04ac5148cfd7d85007f280d9bf35",
+    "iteration_26/code/level_only_fit.py": "7d154a587fcc8b6f10d7d4814f0681109745dca525c4e6d0666231edddbe5d3f",
+    "iteration_26/code/review_benchmark.py": "0e6e855e6d610416256e91225665176261206e64125b81b351fb0cbaca460ce5",
+    "iteration_26/code/run_level_calibration.py": "bfc03c0024489fbfcf3b17f8c5957ab3d37ebb58fb991157ac263fe15e5b6e9e",
+    "iteration_26/run_level_calibration.ps1": "2ffa9fa213cb10122f17f39f834fb532c077f9eb4126c99fc4c573f58602b1c4",
+    "iteration_27/code/adequacy.py": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90",
+    "iteration_27/code/analyze_adequacy.py": "d7e10af001ffd21cac7ca27e9a4624d9a326e779a02b09258051f0bdfe97a1c8",
+    "iteration_27/code/bounded_run.py": "6c0284f1a751bddc3550a1d941f1855ff4e346a2d4086e6844ad745d56bdbda0",
+    "iteration_27/code/freeze_protocols.py": "c6ff39913962638341161f0ac8b1d7a8fcee536751c20e4b6578ac893aa37202",
+    "iteration_27/code/horizon_pilot.py": "4a8f120690a9a506d28ec2393baeff161e7edf8307463fca986d5fbaade7982b",
+    "iteration_27/code/run_adequacy.py": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36",
+    "iteration_27/configs/D_interface.json": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be",
+    "iteration_27/tests/test_adequacy.py": "b3dbad53a9f79bd14bf061afc10d3a55d210c79123b25de5adde42e5fe2dfaa8",
+    "iteration_27/tests/test_analysis.py": "66180a59a563938bb1db84a1e970ef7a8512c30799fbe6909c141a218ff8bb09",
+    "iteration_27/tests/test_horizon_pilot.py": "a230b9d560f240b03693794f8eb3b1350444976585d4016834f8662d70558e5b",
+    "iteration_5/code/empirical_process.py": "9d8bc923cc87eba586bd0dee721245be73f2bbf623c90e00e138a18198d45ea0",
+    "iteration_5/code/kernels.py": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae",
+    "iteration_6/code/checkpoint_io.py": "7c9fd78238af507c4aaf511917601f6ef6350065815c0204ea9a14ded2a89158"
+  },
+  "historical_authorities": {
+    "iteration_5/configs/empirical_protocol.json": "f4ddeaf24ab4943d0d3078752a1e74bbfc52f0a93387770845f4921fc9911748",
+    "iteration_5/reviews/C_reconstructed_prelaunch_protocol.json": "2e2bd781b4f8593dac1d7cb40b94049debc1093a3b44d53cef6b47a07d153258",
+    "iteration_5/reviews/C_protocol_chronology.json": "e38d8f94737a14ffd72b6a318105bbc16b0ab62380d0f5ca0bd2d79b28b3e2d6",
+    "iteration_5/results/B_primary_empirical.json": "b64cc0f3dea1cbab08542e064d57a13f8a7fcdd22a18330a694e55d2a4affc7d"
+  },
+  "data": {
+    "path": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+    "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+    "start": "1960-01-01",
+    "end_exclusive": "2026-10-15",
+    "n": 913
+  },
+  "folds": [
+    {
+      "id": "fold_50",
+      "train_fraction": 0.5,
+      "test_end_fraction": 0.65
+    },
+    {
+      "id": "fold_65",
+      "train_fraction": 0.65,
+      "test_end_fraction": 0.8
+    },
+    {
+      "id": "fold_80",
+      "train_fraction": 0.8,
+      "test_end_fraction": 1.0
+    }
+  ],
+  "search": {
+    "ratios": [
+      0.4,
+      0.7,
+      0.8
+    ],
+    "ml_alpha": [
+      0.5,
+      0.7
+    ],
+    "ml_tau": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "omori_p": [
+      1.1,
+      1.3,
+      1.7
+    ],
+    "omori_tau": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "continuous_omori": true,
+    "memory_limit_mb": 512.0,
+    "optimizer": {
+      "maxiter": 150,
+      "maxfun": 20000,
+      "ftol": 1e-10,
+      "gtol": 2e-06,
+      "maxls": 40
+    }
+  },
+  "interface": {
+    "schema_version": 1,
+    "status": "final_candidate_before_new_observed_protocol_freeze",
+    "api": {
+      "training": "fit_training(times, excess, train_end, T0, protocol_search, deadline, progress_callback=None)",
+      "scoring": "evaluate_window(times, excess, record, start, end, T0, beta, order=16)",
+      "controls": "selected_controls(times, excess, record, start, end, T0, beta, tolerance=1e-4)",
+      "pure_guard": "validate_fit(payload, search=None); defaults to frozen interface search, runner supplies actual protocol search"
+    },
+    "families": [
+      "poisson_constant",
+      "poisson_loglinear",
+      "etas_omori",
+      "ml_trigger",
+      "ml_shared"
+    ],
+    "search": {
+      "ratios": [
+        0.4,
+        0.7,
+        0.8
+      ],
+      "ml_alpha": [
+        0.5,
+        0.7
+      ],
+      "ml_tau": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "omori_p": [
+        1.1,
+        1.3,
+        1.7
+      ],
+      "omori_tau": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "continuous_omori": true,
+      "memory_limit_mb": 512.0,
+      "optimizer": {
+        "maxiter": 150,
+        "maxfun": 20000,
+        "ftol": 1e-10,
+        "gtol": 2e-06,
+        "maxls": 40
+      }
+    },
+    "bounds": {
+      "a": [
+        -12,
+        0
+      ],
+      "d": [
+        -2,
+        2
+      ],
+      "n": [
+        0,
+        0.98
+      ],
+      "eta": [
+        0,
+        3
+      ],
+      "omori_c": [
+        1e-05,
+        10
+      ],
+      "omori_p": [
+        1.01,
+        3
+      ]
+    },
+    "starts": {
+      "a_seed": "clip(log(0.6*N_train/train_end), -11.5, -0.1)",
+      "poisson_constant": "exact bounded a=clip(log(N_train/train_end),-12,0), d=0",
+      "poisson_loglinear": [
+        [
+          "a_seed",
+          0
+        ],
+        [
+          "a_seed-0.5",
+          0.1
+        ]
+      ],
+      "trigger": [
+        [
+          "a_seed",
+          0,
+          0.35
+        ],
+        [
+          "a_seed-0.5",
+          0.1,
+          0.7
+        ]
+      ],
+      "shared": "each matched ML/ratio's selected successful null(a,d,n) plus eta=0 then eta=0.2; exact matching-null floor retained",
+      "continuous_omori": "per ratio: that ratio's coarse winner(a,d,n,log(c),p), then(a_seed,0,.35,log(.01),1.1), then(a_seed-.5,.1,.7,log(1),2.5); retain coarse winner floor"
+    },
+    "expected_training_records": 159,
+    "expected_optimization_runs_per_training": 137,
+    "mandatory_success": "all 137 prescribed start slots must have a successful accepted solver lineage; failed raw returns remain ineligible and retained; unresolved/censored slot stops for review; no post-outcome grid fallback",
+    "uniform_failure_only_recovery": {
+      "basis": "prospective amendment from synthetic-only boundary line-search failure before new observed outcomes",
+      "tier0": "L-BFGS-B original prescribed start, optimizer options in search",
+      "tier1": "only if tier0 unaccepted: L-BFGS-B same original start and bounds, same options except maxls200",
+      "tier2": "only if tier1 unaccepted: bounded Powell same original start/bounds, maxiter2000,maxfev100000,xtol1e-6,ftol1e-10",
+      "acceptance": "solver.success AND finite feasible point AND fresh objective within1e-4 of solver value AND fresh control within1e-4 AND objective<=own original-start objective+1e-8; selected recovery point rechecked with fresh order32 geometry; continuousOmori independently checked through fixed-kernel route",
+      "provenance": "retain every raw attempt with method/options/start/return/status/acceptance/elapsed; only accepted return eligible, all prescribed slots must resolve"
+    },
+    "likelihood": "full predictable ground likelihood plus training-beta exponential mark density; beta frozen in test; normalized productivity (1-ratio)*exp(beta*ratio*excess)",
+    "geometry": "global z(t)=2*t/24394-1; empty initial history at0; full pre-window history retained; event intensity excludes itself; test events update history only after event",
+    "controls": {
+      "quadrature_orders": [
+        16,
+        32
+      ],
+      "selected_ground_loglik_tolerance": 0.0001,
+      "ml_refined_spectral_step": 0.2,
+      "ml_refined_tail_bound": 1e-10
+    },
+    "residual_scope": "first interval included; final no-event interval saved as censored compensator, excluded from Exp/Uniform event-gap samples; realized compensator mass is not origin-conditional expected count",
+    "scope": "all observed data previously seen; exploratory predictive adequacy; no mechanism, completeness, power, fitted-KS or naive Poisson-count claims",
+    "budget": "parent runner cooperative deadline, 1800s maximum through fits, selected controls and residual assembly; any hard wall containment belongs to an outer owned-process supervisor"
+  },
+  "training": "Strict prefix, beta from training marks alone and common across families, original absolute x=2t/T0-1; finite search and bounded local solvers, no global optimality claim.",
+  "scoring": "Full predictable conditional ground and common mark loglikelihood, all earlier history, random count, full compensator and terminal censored exposure.",
+  "primary_comparisons": [
+    "ml_shared minus ml_trigger",
+    "etas_omori minus ml_trigger",
+    "etas_omori minus ml_shared",
+    "ml_trigger minus poisson_loglinear"
+  ],
+  "descriptive_diagnostics": [
+    "Uniform KS statistic without p-value",
+    "centered ACF lags1 through10",
+    "mean complete compensator gap",
+    "count minus realized compensator",
+    "residual ECDF and compensator curve"
+  ],
+  "failure_policy": "Every prescribed slot must have accepted successful lineage; retain all failed raw attempts. Stop on first unresolved search/control/resource issue. No partial estimator or post-outcome grid reduction.",
+  "effect_scope": "Predictive preference is not physical identification; all histories/families previously inspected, exploratory only.",
+  "execution": {
+    "script": "iteration_27/code/run_adequacy.py",
+    "output": "iteration_27/results/observed.json",
+    "receipt": "iteration_27/logs/observed_execution.json",
+    "outer_seconds": 1800,
+    "native_threads": 1,
+    "closure_operational_allowance_seconds": 1,
+    "proved_bound": false
+  },
+  "postanalysis": {
+    "script": "iteration_27/code/analyze_adequacy.py",
+    "output": "iteration_27/results/observed_analysis",
+    "wall_cap_seconds": 60,
+    "separate_from_refit_cap": true
+  },
+  "historical_protocol_qualification": "Current iteration5 protocol differs from old execution hash. Separately preserved reconstructed version matches, but was not a contemporaneous immutable launch snapshot. This new protocol is independently frozen.",
+  "record_sha256": "0119b4fe40dee73a8985e2ddde54b69fb1f3a2c2152ea9a53fb50971c5b9187b"
+}

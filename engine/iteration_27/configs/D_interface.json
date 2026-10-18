@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "final_candidate_before_new_observed_protocol_freeze",
+  "api": {
+    "training": "fit_training(times, excess, train_end, T0, protocol_search, deadline, progress_callback=None)",
+    "scoring": "evaluate_window(times, excess, record, start, end, T0, beta, order=16)",
+    "controls": "selected_controls(times, excess, record, start, end, T0, beta, tolerance=1e-4)",
+    "pure_guard": "validate_fit(payload, search=None); defaults to frozen interface search, runner supplies actual protocol search"
+  },
+  "families": ["poisson_constant", "poisson_loglinear", "etas_omori", "ml_trigger", "ml_shared"],
+  "search": {
+    "ratios": [0.4, 0.7, 0.8],
+    "ml_alpha": [0.5, 0.7],
+    "ml_tau": [0.1, 1.0, 10.0],
+    "omori_p": [1.1, 1.3, 1.7],
+    "omori_tau": [0.1, 1.0, 10.0],
+    "continuous_omori": true,
+    "memory_limit_mb": 512.0,
+    "optimizer": {"maxiter": 150, "maxfun": 20000, "ftol": 1e-10, "gtol": 2e-6, "maxls": 40}
+  },
+  "bounds": {"a": [-12, 0], "d": [-2, 2], "n": [0, 0.98], "eta": [0, 3], "omori_c": [0.00001, 10], "omori_p": [1.01, 3]},
+  "starts": {
+    "a_seed": "clip(log(0.6*N_train/train_end), -11.5, -0.1)",
+    "poisson_constant": "exact bounded a=clip(log(N_train/train_end),-12,0), d=0",
+    "poisson_loglinear": [["a_seed", 0], ["a_seed-0.5", 0.1]],
+    "trigger": [["a_seed", 0, 0.35], ["a_seed-0.5", 0.1, 0.7]],
+    "shared": "each matched ML/ratio's selected successful null(a,d,n) plus eta=0 then eta=0.2; exact matching-null floor retained",
+    "continuous_omori": "per ratio: that ratio's coarse winner(a,d,n,log(c),p), then(a_seed,0,.35,log(.01),1.1), then(a_seed-.5,.1,.7,log(1),2.5); retain coarse winner floor"
+  },
+  "expected_training_records": 159,
+  "expected_optimization_runs_per_training": 137,
+  "mandatory_success": "all 137 prescribed start slots must have a successful accepted solver lineage; failed raw returns remain ineligible and retained; unresolved/censored slot stops for review; no post-outcome grid fallback",
+  "uniform_failure_only_recovery": {
+    "basis": "prospective amendment from synthetic-only boundary line-search failure before new observed outcomes",
+    "tier0": "L-BFGS-B original prescribed start, optimizer options in search",
+    "tier1": "only if tier0 unaccepted: L-BFGS-B same original start and bounds, same options except maxls200",
+    "tier2": "only if tier1 unaccepted: bounded Powell same original start/bounds, maxiter2000,maxfev100000,xtol1e-6,ftol1e-10",
+    "acceptance": "solver.success AND finite feasible point AND fresh objective within1e-4 of solver value AND fresh control within1e-4 AND objective<=own original-start objective+1e-8; selected recovery point rechecked with fresh order32 geometry; continuousOmori independently checked through fixed-kernel route",
+    "provenance": "retain every raw attempt with method/options/start/return/status/acceptance/elapsed; only accepted return eligible, all prescribed slots must resolve"
+  },
+  "likelihood": "full predictable ground likelihood plus training-beta exponential mark density; beta frozen in test; normalized productivity (1-ratio)*exp(beta*ratio*excess)",
+  "geometry": "global z(t)=2*t/24394-1; empty initial history at0; full pre-window history retained; event intensity excludes itself; test events update history only after event",
+  "controls": {"quadrature_orders": [16, 32], "selected_ground_loglik_tolerance": 0.0001, "ml_refined_spectral_step": 0.2, "ml_refined_tail_bound": 1e-10},
+  "residual_scope": "first interval included; final no-event interval saved as censored compensator, excluded from Exp/Uniform event-gap samples; realized compensator mass is not origin-conditional expected count",
+  "scope": "all observed data previously seen; exploratory predictive adequacy; no mechanism, completeness, power, fitted-KS or naive Poisson-count claims",
+  "budget": "parent runner cooperative deadline, 1800s maximum through fits, selected controls and residual assembly; any hard wall containment belongs to an outer owned-process supervisor"
+}

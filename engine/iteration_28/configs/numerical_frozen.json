@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_iteration28_diagnostics",
+  "created_utc": "2026-10-17T22:01:29.872067+00:00",
+  "input_hashes": {
+    "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+    "iteration_5/data/processed/geonet_FDSN_M5_shallow_1960_2026.csv": "6202ab5e53382193e74030d598a5576279c3e232fdca681c3f9900a0a85d1162",
+    "iteration_5/data/processed/catalogue_metadata.json": "a166602040591234639bdf1acc69a509603bbab53e54948619a1c011fc98492d",
+    "iteration_5/data/processed/fdsn_catalogue_metadata.json": "4772503a9ab0bf14091a7cd1a08757683a42e7c0b8b49c2c41c331fa2dc650b4",
+    "iteration_27/logs/completion_manifest.json": "30589e8a624e7e548a67aa8c7e13a5a29bd3fcdb7b249a8e8aa600dac9f14be7",
+    "iteration_5/data/raw/geonet_20261015T082936Z/raw_manifest.json": "d826f93e15f57e01be2916d5893dfdcd13da89f038aeb8cdae83c0edb7482d7d",
+    "iteration_5/data/raw/geonet_fdsn_sensitivity_20261015T083351Z/raw_manifest.json": "8d1a8033090411375cedb5081519166c0c8a9deea7d544ea14d841a5c1d3b9a3",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_1960.csv": "12497b19f93884b9e4800d28be325219e449c8c3abff5247bb83df4dedda7e8d",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_1970.csv": "c258ce43d5e5913bc6141f57b0f20ed99aae2e81c4839d5b417cf675af46652e",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_1980.csv": "14e551df41267d68423377dcbe29f1e8e02ec623aa06c3e7522232866bbe9000",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_1990.csv": "1c5d605e1df320d65b8e18a56a17898ad7f8fe421a23d5461b2627d36998f541",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_2000.csv": "85c1fa661963a51606824a2c23fae7ab404aac1ff0b63313e58394741b52ed30",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_2010.csv": "ae925e9af2cb6b35f73885223c11b4f12006a7aad6766086ff773d7487716f0e",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_2020.csv": "50145a4445c418318af20def709db41f77ec411e34c948f1dd49d51f2924ce75",
+    "iteration_5/data/raw/geonet_20261015T082936Z/wfs_1950.csv": "b8a4c5e185049cdfe2dc238fb8b879094b14285cd4fbc1d73098ae4c7cd93986",
+    "iteration_5/data/raw/geonet_fdsn_sensitivity_20261015T083351Z/fdsn_expanded_events.xml": "fa82467ba22560024dbbf7d81de2d6b515d6ffe4479ff7feda46b601418abcfc",
+    "iteration_5/data/processed/filter_ledger.jsonl": "1c50dc7790ae9b057bca6f0dabc802d6d247b6a49c6ef08c4dacc068663c1ddf",
+    "iteration_5/data/processed/fdsn_filter_ledger.jsonl": "54fd4f0fa97b8a222a2a969ca471ae1e5c4c01a01e1c0da2bc9cc2e3a26338a1",
+    "iteration_5/data/processed/fdsn_preferred_all_events.csv": "04b31f982a4edaa0aae10480c717ab582b83b93e414d88d533174efb68a06ab9",
+    "iteration_27/configs/observed_frozen.json": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222",
+    "iteration_27/results/observed.json": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+    "iteration_27/results/observed_analysis/summary.json": "da1ead8a2a439486b7f980d908770364451911f33e5008de5355b4b3219003a8",
+    "iteration_27/results/observed_analysis/fold_scores.csv": "204e556f54f98b9836ff6127e7f097289aaddd0efa7adcaf3db0d08d8f86c000",
+    "iteration_27/reports/research_report.md": "005ddd8f858d8f7abb1697964b765c5614807aa838ca854b76cc09bb11305def",
+    "iteration_27/reviews/C_completion_review.json": "f3f7fabf2245f4c4e6dce6dd19f7148af6493cadd976c4e98a8b18df2c6ff2bf",
+    "iteration_27/reviews/A_completion_review.json": "8726bbc99d907b61181430fd9bb1caa81e3613119ae1a066e39d792255acaff8",
+    "iteration_27/reviews/D_completion_review.json": "437428e64946884fabde7f8e2884204ff593a7c35bda0c23ae20bb94e97959dd",
+    "iteration_28/configs/C_proposal.json": "bd9111a95d7be821f17ea36f713a8d651cb7ff9475eacba43d84946a27a895db",
+    "iteration_28/reports/C_design.md": "4255e6205f46ebbd856dd60bdcc67c9dab9077fd18a938047d6bfa09242115ce",
+    "iteration_27/logs/completion_verification.json": "a0f174ff75efc0b0c9c3ae65e390d384ee3a3c25b1e2ac45016b5bdccf64782e"
+  },
+  "source_hashes": {
+    "iteration_12/code/clock_simulator.py": "b12d998dc03565812e2dbbafce020b23d0ebeb684b96c93ba26ee69064b72e69",
+    "iteration_12/code/paired_history.py": "3950696b888b1a0d7c55a4448f9283c9376ef246296ad9181d273a53e7380e5a",
+    "iteration_12/code/stable_history.py": "f2ed43402c17203c900642b584db591638fbd27474c9669bffa4a43379bdaa30",
+    "iteration_17/code/oracle_likelihood.py": "6e8fa9ce82cb5c2d100adaf8065138172830618da49047e9c5aa73ccfaa3bb46",
+    "iteration_18/code/cuda_oracle.py": "be7ff7938596c0f5c3bc40962986e2ae511a0a9c1b05bc1d8d7b99008fa86505",
+    "iteration_19/code/run_full_cuda.py": "93f59620d6f7e9a0eccbf1ae3575429634080459b1ea38601b070a89ee906dbb",
+    "iteration_20/code/restricted_fit.py": "29663cb80701a90332b0dfe0876f5b2a64a6d0841b6c9de66f80aade8beba418",
+    "iteration_20/code/restricted_history.py": "0d3e2b538a2757343424ab13cb891d605225451e5db728739d0723624b0691f5",
+    "iteration_21/code/analyse_full_staged.py": "fe352e5516e97dd2f64dd76e1c9b8e050dded3369c41a54752552b560cd318ef",
+    "iteration_21/code/analyse_staged.py": "6ca14b20809ca282bf94c2eec362ab04f8f75701a0d72c1c9f9c7b125975e0c8",
+    "iteration_21/code/benchmark_staged.py": "6887cc4df36b4bf1cfa6f9cd8918e8cc6f25d50df7f24d447522e14eec04d79f",
+    "iteration_21/code/run_staged_full.py": "aa04b8c04f4f418c0c68976b8557e89a94cfafd72d0f07c13c205fa4edef2abd",
+    "iteration_21/code/staged_fit.py": "338145457dd54d90ac929fda32224adcb7c02870e884724341f6222a4fce6f44",
+    "iteration_21/run_full_staged.ps1": "6e499c374c4827f4047cfa2c3e3989f9bb59b1647c6447db0c435140c791f081",
+    "iteration_24/code/profile_optimizer.py": "f0ab547015736eb9bfd6a3f3b8d08e60420516fda91a828149e5a5f087d9aff8",
+    "iteration_26/code/calibrate_level_only.py": "4fc458416d4d2698fccb9fac11aaba2defbd04ac5148cfd7d85007f280d9bf35",
+    "iteration_26/code/level_only_fit.py": "7d154a587fcc8b6f10d7d4814f0681109745dca525c4e6d0666231edddbe5d3f",
+    "iteration_26/code/review_benchmark.py": "0e6e855e6d610416256e91225665176261206e64125b81b351fb0cbaca460ce5",
+    "iteration_26/code/run_level_calibration.py": "bfc03c0024489fbfcf3b17f8c5957ab3d37ebb58fb991157ac263fe15e5b6e9e",
+    "iteration_26/run_level_calibration.ps1": "2ffa9fa213cb10122f17f39f834fb532c077f9eb4126c99fc4c573f58602b1c4",
+    "iteration_27/code/adequacy.py": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90",
+    "iteration_27/code/analyze_adequacy.py": "d7e10af001ffd21cac7ca27e9a4624d9a326e779a02b09258051f0bdfe97a1c8",
+    "iteration_27/code/bounded_run.py": "6c0284f1a751bddc3550a1d941f1855ff4e346a2d4086e6844ad745d56bdbda0",
+    "iteration_27/code/freeze_protocols.py": "c6ff39913962638341161f0ac8b1d7a8fcee536751c20e4b6578ac893aa37202",
+    "iteration_27/code/horizon_pilot.py": "4a8f120690a9a506d28ec2393baeff161e7edf8307463fca986d5fbaade7982b",
+    "iteration_27/code/run_adequacy.py": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36",
+    "iteration_27/configs/D_interface.json": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be",
+    "iteration_27/tests/test_adequacy.py": "b3dbad53a9f79bd14bf061afc10d3a55d210c79123b25de5adde42e5fe2dfaa8",
+    "iteration_27/tests/test_analysis.py": "66180a59a563938bb1db84a1e970ef7a8512c30799fbe6909c141a218ff8bb09",
+    "iteration_27/tests/test_horizon_pilot.py": "a230b9d560f240b03693794f8eb3b1350444976585d4016834f8662d70558e5b",
+    "iteration_5/code/empirical_process.py": "9d8bc923cc87eba586bd0dee721245be73f2bbf623c90e00e138a18198d45ea0",
+    "iteration_5/code/kernels.py": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae",
+    "iteration_6/code/checkpoint_io.py": "7c9fd78238af507c4aaf511917601f6ef6350065815c0204ea9a14ded2a89158",
+    "iteration_28/code/A_source_audit.py": "54408224bc5031efb90b16ac90932f362ff4046e6d18964d5d14f028e4a7fb42",
+    "iteration_28/code/heterogeneity.py": "23dceac085a1b4fe8668327de56cfbef8b12f16073bb0ee8b71d5f24d0f84b77",
+    "iteration_28/code/run_audit.py": "016d6508ce40de56550bffae96fad700a485cfad94ea8794d0918796fdcee253",
+    "iteration_28/code/freeze_protocols.py": "359770881c30aa8e4caea98bdfea0a362c76dae3a275218e5291177049bac47e",
+    "iteration_28/code/publish.py": "9cb32bb5c2cec8c9b1ff2a19658f15880f5d726814a30981c2d549bb1195575b",
+    "iteration_28/configs/D_interface.json": "fe1555ba7569d676604b091e0c7df35cd28b86e63b92c7fe3a76c1887cd327d0",
+    "iteration_28/tests/A_source_tests.py": "4e98f3fc055ee9a39bcc44d965fd2f0f617f36b20662fac5961f2d67e49f5e40",
+    "iteration_28/tests/test_heterogeneity.py": "5abbc0ddf3b1254dd0fae50a17bee357b959c5436e068984c09519c08c6f03b6",
+    "iteration_28/tests/C_design_checks.py": "46ca0b556427571a682f04173e4e80c32970a4f00a202ce883628ab4189ceef9"
+  },
+  "diagnostic_spec": {
+    "models": [
+      "ml_trigger",
+      "ml_shared",
+      "etas_omori"
+    ],
+    "comparisons": [
+      {
+        "id": "shared_minus_ml",
+        "model": "ml_shared",
+        "baseline": "ml_trigger",
+        "role": "primary"
+      },
+      {
+        "id": "omori_minus_ml",
+        "model": "etas_omori",
+        "baseline": "ml_trigger",
+        "role": "secondary"
+      }
+    ],
+    "orders": [
+      16,
+      32
+    ],
+    "temporal_bins_per_fold": 4,
+    "latitude_edges": [
+      -48.5,
+      -43.5,
+      -38.5,
+      -33.5
+    ],
+    "longitude_edges": [
+      165,
+      170,
+      175,
+      180
+    ],
+    "spatial_boundary": "Internal boundary belongs north/east cell; final outer edge included",
+    "magnitude_edges": [
+      5,
+      5.5,
+      6,
+      6.5
+    ],
+    "magnitude_boundary": "Lower edge included; final category magnitude>=6.5",
+    "depth_upper_edges": [
+      10,
+      20,
+      40
+    ],
+    "depth_boundary": "depth<=10,10<depth<=20,20<depth<=40; finite valid negatives included",
+    "native_labels": [
+      "M",
+      "ML",
+      "MLv",
+      "MS",
+      "Mw",
+      "Mw(mB)",
+      "mB"
+    ],
+    "sparse_count_below": 5,
+    "group_score_order": 32,
+    "numerical_tolerance": 0.0001,
+    "arithmetic_tolerance": 1e-08,
+    "allowed_extra_fdsn_ids": [
+      "2025p672513"
+    ],
+    "source_branch": "Exactly one archived interface magnitude-value sensitivity: all913 primary IDs use FDSN magnitudes/excess; primary times/location/depth/labels and saved training beta/parameters/kernels/ratios fixed; complete histories recomputed from0. Reject failed joins/finiteM>=5support, no fallback/clipping. Extra FDSN event never added.",
+    "composition": "Unsmoothed training/test category proportions and TV=.5sumabs(p_test-p_train), per dimension/fold; no pooled training comparator",
+    "decomposition": "Group tables contain event log-intensity ratios only. One separate GLOBAL contribution Lambda_baseline-Lambda_model per fold/comparison/order; no spatial/category compensator allocation or explained fraction.",
+    "scope": "Previously seen data, fixed saved recipes, descriptive heterogeneity and counterfactual mixed-interface history; no refitting, pvalues, causal shares, physical homogenization or catalogue replacement"
+  },
+  "expected_counts": {
+    "catalogue_events": 913,
+    "joined_test_events": 612,
+    "event_group_rows": 138,
+    "composition_rows": 69,
+    "total_variation_rows": 12,
+    "global_decomposition_rows": 12,
+    "temporal_score_rows": 72,
+    "temporal_comparison_rows": 48,
+    "source_score_rows": 18,
+    "source_comparison_rows": 12,
+    "fixed_parameter_evaluations": 90
+  },
+  "source_comparison": {
+    "version": 1,
+    "scope": "Archived snapshots only; no new download, replacement source, fit or likelihood evaluation.",
+    "primary_count": 913,
+    "fdsn_count": 914,
+    "common_count": 913,
+    "wfs_only_ids": [],
+    "fdsn_only_ids": [
+      "2025p672513"
+    ],
+    "matching": "Exact event_id; reject empty/duplicate identifiers. Keep all unmatched IDs.",
+    "sign": "FDSN minus primary WFS",
+    "numeric_fields": {
+      "time_utc": "UTC seconds",
+      "magnitude": "native magnitude units",
+      "depth": "km",
+      "latitude": "degrees north",
+      "longitude": "degrees east"
+    },
+    "arithmetic": "Decimal CSV literals; exact fractional UTC seconds, no leap-second model. All913 selected pairs must be finite.",
+    "quantiles": [
+      "0",
+      "0.25",
+      "0.5",
+      "0.75",
+      "0.9",
+      "0.95",
+      "0.99",
+      "1"
+    ],
+    "quantile_definition": "Sort all913 signed or absolute differences includingzeros; h=(N-1)*p, linear interpolation between adjacent order statistics.",
+    "representation": "Keep exact text equality, Decimal/time equality, nonzero numeric differences and every signed/absolute value separately.",
+    "rounding_compatibility": "For nonzero differences, ROUND_HALF_EVEN both values to the coarser displayed decimal quantum; equal rounded values mean lexical-rounding-compatible only, never equivalent measurements or a causal explanation.",
+    "filtering": "Original local filters: earthquake; magnitude>=5;165<=lon<=180;-48.5<=lat<=-33.5; finite depth<=40 except sentinel-9; other negative depths retained;1960-01-01<=UTC<2026-10-15.",
+    "filter_universe": "Recompute filter-reason lists for every common archived raw WFS/FDSN-preferred ID, and retain changed decisions/reasons plus unmatchedselectedID lineage. Quantiles remain selected913pairs only.",
+    "lineage": "Verify metadata/manifests/raw-response/filter-ledger/preferred-extraction hashes; selectedID ledger inclusion and archived raw source-row references. No independent re-extraction of QuakeML or replacement of primary values.",
+    "missingness": "Nonfinite or missing selected comparison values fail closed; raw filter invalid fields remain explicit exclusion reasons.",
+    "interpretation": "Representation/interface differences and filter-boundary checks do not identify catalogue completeness, measurement errors, mechanisms or a cause of the iteration27 score loss."
+  },
+  "input_paths": {
+    "catalogue": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+    "fdsn": "iteration_5/data/processed/geonet_FDSN_M5_shallow_1960_2026.csv",
+    "observed": "iteration_27/results/observed.json",
+    "observed_protocol": "iteration_27/configs/observed_frozen.json"
+  },
+  "scope": "Exploratory, selected because prior loss was observed. Fixed saved parameters; no new core fits, simulated draws, data downloads or calibration. All prior areas preserved.",
+  "source_magnitude_qualification": "Counterfactual mixed-interface magnitude values on unchanged primary timeline and fixed recipes. The preexisting maximum0.164143665 difference is an old metadata authority, not a new28discovery. No homogenization or isolated precision-cause claim.",
+  "group_qualification": "Only event log-intensity ratios by spatial/mark groups. One global compensator; no cell likelihood, local rate, causal fraction or spatial exposure/completeness assumption. Marginal tables overlap, cells unequal area.",
+  "failure_policy": "No post-outcome rebinning, tolerance relaxation, replacement cases, extra branches or automatic budget extension. Incomplete rows and branch errors remain explicit; raw CSVs require accepted final result plus outer receipt.",
+  "publication": {
+    "script": "iteration_28/code/publish.py",
+    "output": "iteration_28/results/publication",
+    "receipt": "iteration_28/logs/publication_execution.json",
+    "wall_cap_seconds": 60,
+    "child_timeout_seconds": 55,
+    "separate": true,
+    "new_scientific_evaluations": 0,
+    "closure_operational_allowance_seconds": 1
+  },
+  "numerical_tolerance": 0.0001,
+  "stage": "numerical_audit",
+  "wall_cap_seconds": 600,
+  "execution": {
+    "script": "iteration_28/code/run_audit.py",
+    "output": "iteration_28/results/numerical_audit",
+    "receipt": "iteration_28/logs/numerical_execution.json",
+    "outer_seconds": 600,
+    "supervisor": "iteration_27/code/bounded_run.py",
+    "native_threads": 1,
+    "closure_operational_allowance_seconds": 1,
+    "closure_allowance_is_proven_bound": false
+  },
+  "record_sha256": "5dc9f5356cf77612b29be9d1dd1ecb4ef2e6e0d6c404bc2cf5c044e672e111c1"
+}

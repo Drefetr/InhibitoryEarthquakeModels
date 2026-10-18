@@ -1,0 +1,261 @@
+{
+  "scope": "Saved-source joins and deterministic arithmetic only; not campaign reproduction",
+  "items": [
+    {
+      "key": "known_law.alternative.rejections",
+      "value": 150,
+      "source": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+      "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+      "locator": "methods.oracle.alternative_power.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "known_law.alternative.nominal_CP95",
+      "value": [
+        0.9757074028338915,
+        1.0
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 150,
+        "total": 150
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "known_law.null_query.rejections",
+      "value": 50,
+      "source": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+      "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+      "locator": "methods.oracle.heldout_null_size.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "known_law.null_query.nominal_CP95",
+      "value": [
+        0.0373353976046618,
+        0.06539048791549364
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 50,
+        "total": 1000
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "known_known.alternative.rejections",
+      "value": 150,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.known_known.alternative_frequency.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "known_known.alternative.nominal_CP95",
+      "value": [
+        0.9757074028338915,
+        1.0
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 150,
+        "total": 150
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "known_known.null_query.rejections",
+      "value": 49,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.known_known.heldout_null_size.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "known_known.null_query.nominal_CP95",
+      "value": [
+        0.036467059172047823,
+        0.06426605314016964
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 49,
+        "total": 1000
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "level_only.alternative.rejections",
+      "value": 123,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.level_only.alternative_frequency.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "level_only.alternative.nominal_CP95",
+      "value": [
+        0.7490221049939838,
+        0.8779003724223797
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 123,
+        "total": 150
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "level_only.null_query.rejections",
+      "value": 46,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.level_only.heldout_null_size.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "level_only.null_query.nominal_CP95",
+      "value": [
+        0.0338714985476779,
+        0.06088355271374263
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 46,
+        "total": 1000
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "background_estimated.alternative.rejections",
+      "value": 68,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.background_estimated.alternative_frequency.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "background_estimated.alternative.nominal_CP95",
+      "value": [
+        0.3719742109510012,
+        0.5365724144187041
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 68,
+        "total": 150
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "background_estimated.null_query.rejections",
+      "value": 44,
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "methods.background_estimated.heldout_null_size.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "background_estimated.null_query.nominal_CP95",
+      "value": [
+        0.032149497010871414,
+        0.058620419206330925
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 44,
+        "total": 1000
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "historical_fuller.alternative.rejections",
+      "value": 57,
+      "source": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+      "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+      "locator": "methods.fitted.alternative_power.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "historical_fuller.alternative.nominal_CP95",
+      "value": [
+        0.30207718425429364,
+        0.4627631120547151
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 57,
+        "total": 150
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "historical_fuller.null_query.rejections",
+      "value": 50,
+      "source": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+      "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+      "locator": "methods.fitted.heldout_null_size.rejections",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": "integer"
+    },
+    {
+      "key": "historical_fuller.null_query.nominal_CP95",
+      "value": [
+        0.0373353976046618,
+        0.06539048791549364
+      ],
+      "evidence_type": "new_arithmetic",
+      "method": "scipy.stats.beta.ppf exact binomial two-sided95%",
+      "inputs": {
+        "rejections": 50,
+        "total": 1000
+      },
+      "display_rounding": "percent to2 decimals"
+    },
+    {
+      "key": "paired.level_minus_trend.table",
+      "value": {
+        "neither": 21,
+        "first_only": 61,
+        "second_only": 6,
+        "both": 62,
+        "unknown": 0
+      },
+      "source": "iteration_26/completion/results/summary.json",
+      "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+      "locator": "paired.level_only_minus_background_estimated.alternative_frequency.table",
+      "evidence_type": "accepted_result_record",
+      "display_rounding": null
+    },
+    {
+      "key": "paired.level_minus_trend.MCSE_recomputed",
+      "value": 0.0457760980846319,
+      "evidence_type": "new_arithmetic",
+      "formula": "sqrt((discordances-N*delta^2)/(N*(N-1)))",
+      "inputs": {
+        "N": 150,
+        "delta": 0.36666666666666664,
+        "discordances": 67
+      }
+    }
+  ]
+}

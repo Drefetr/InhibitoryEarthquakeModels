@@ -1,0 +1,3 @@
+# Optional CUDA operations: install an appropriate PyTorch build separately.
+# https://pytorch.org/get-started/locally/
+# CPU checks and paper generation do not require torch.

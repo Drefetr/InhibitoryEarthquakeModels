@@ -1,0 +1,2 @@
+Required inputs missing or changed:
+external catalogue: see docs/data.md

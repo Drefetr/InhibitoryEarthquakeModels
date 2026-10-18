@@ -1,0 +1,125 @@
+{
+  "ticket": "T18",
+  "date": "2026-10-18",
+  "reviewer": "native math_author; separate final verifier",
+  "disposition": "supported",
+  "checks": {
+    "manuscript_source.zip": {
+      "pin": {
+        "bytes": 2718657,
+        "sha256": "6919d7b4147cb7a2cc6e2d6feb17754e59443ca306514f34552f8ef8fd1f5b37"
+      },
+      "members": 239,
+      "files": 239,
+      "crc": "passed",
+      "path_safety": "passed",
+      "fresh_extract": "work\\final_verify\\inner_run2"
+    },
+    "revised_manuscript_bundle.zip": {
+      "pin": {
+        "bytes": 20254759,
+        "sha256": "8eaab129f056210ca4e7c614bca93a82256b3c6f7745be29c68f18566e8c7b51"
+      },
+      "members": 124,
+      "files": 124,
+      "crc": "passed",
+      "path_safety": "passed",
+      "fresh_extract": "work\\final_verify\\outer_run2"
+    },
+    "manifest_coverage": {
+      "inner": 238,
+      "outer": 123
+    },
+    "supplement_mirrors": [
+      "bibliographic_source_notes.json",
+      "build_and_validation_report.md",
+      "contribution_table.md",
+      "explanatory_supplement.pdf",
+      "explanatory_supplement.tex",
+      "methods_settings.json",
+      "methods_supplement.md",
+      "new_material_index.json",
+      "predictive_parameters.csv",
+      "predictive_parameters.json",
+      "predictive_parameters_notes.md",
+      "protected_results.json",
+      "response_to_referee.md",
+      "response_to_review.md",
+      "source_availability.json",
+      "source_index.json",
+      "swarm_report.md",
+      "ticket_dispositions.json",
+      "unresolved_items.md",
+      "v3_file_change_log.md",
+      "validation_summary.md"
+    ],
+    "pdfs": {
+      "manuscript": {
+        "bytes": 485538,
+        "sha256": "2db34976bc937613674bf848e91fad8c838285ee2eba5ff29b967e49931cdafb",
+        "pages": 64
+      },
+      "explanatory": {
+        "bytes": 49114,
+        "sha256": "81a747e6b4a0b4c861c02556936e27914db1ed5580ebf882ebe5bb8e9575c6f8",
+        "pages": 2
+      }
+    },
+    "availability": {
+      "included": 54,
+      "archive-only": 12
+    },
+    "source_index_pins": 53,
+    "preservation": {
+      "baseline_entries": 190,
+      "byte_identical": 179,
+      "allowed_changed": [
+        "MANUSCRIPT_MANIFEST.json",
+        "README.md",
+        "source/abstract.tex",
+        "source/appendices.tex",
+        "source/chapters/03_stability.tex",
+        "source/chapters/05_inference.tex",
+        "source/chapters/07_synthetic.tex",
+        "source/chapters/08_observed.tex",
+        "supplements/response_to_review.md",
+        "supplements/source_index.json",
+        "supplements/unresolved_items.md"
+      ],
+      "historical_response_copy": "byte exact",
+      "manifest_accounting_note": "T14 preservation review was pre-seal. Final count: 179 unchanged baseline files, ten authorized document/source metadata changes and one MANUSCRIPT_MANIFEST.json rebuilt at T17. The earlier 180/ten count includes its then-unchanged manifest; final sealing changes this expected release metadata only.",
+      "historical_manifest_copy": "byte exact against authenticated v3 manifest; selected shallow current manifest for coverage"
+    },
+    "visual_record_binding": {
+      "pdf_hashes_match": true,
+      "64_manuscript_pages_and_2_supplement_pages": true,
+      "scope": "Record binding independently checked; no new claim of visual inspection by this verifier."
+    },
+    "detached_digest_record": {
+      "manuscript_source.zip": {
+        "bytes": 2718657,
+        "sha256": "6919d7b4147cb7a2cc6e2d6feb17754e59443ca306514f34552f8ef8fd1f5b37"
+      },
+      "revised_manuscript_bundle.zip": {
+        "bytes": 20254759,
+        "sha256": "8eaab129f056210ca4e7c614bca93a82256b3c6f7745be29c68f18566e8c7b51"
+      }
+    },
+    "archival_authority_pins": 44,
+    "documentation": {
+      "ticket_dispositions": 20,
+      "distinct_native_subagents": 3,
+      "external_calls_recorded": 0,
+      "current_response_and_limitations": "inspected; consistent scope and current authorship awaiting confirmation",
+      "postseal_gates": "T18 and T19 marked completed in sealed disposition table with explicit post-seal gate qualification. Actual T18 result is this detached report; T19 delivery remains root responsibility.",
+      "historical_reports": "Inherited build_and_validation_report.md and swarm_report.md are preserved historical reports; current acceptance is validation_summary.md and dated new review records."
+    },
+    "optional_cancelled_check": "Detached run summary records optional visual body-similarity process cancelled with no acceptance output used; actual visual inspection record has matching final PDF hashes."
+  },
+  "errors": [],
+  "limitations": [
+    "No scientific simulations, fits, rescoring or catalogue acquisition ran.",
+    "Byte identity and manifest membership establish preservation and packaging, not scientific correctness.",
+    "Final visual review was independently performed by editor_author; this verifier checks its exact final PDF hash and page bindings."
+  ]
+}

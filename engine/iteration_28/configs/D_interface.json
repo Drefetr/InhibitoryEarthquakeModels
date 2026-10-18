@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "final_candidate_before_new_diagnostic_protocol_freeze",
+  "api": {
+    "inputs": "load_bound_inputs(paths, expected_sha256) -> {frame, observed, observed_protocol, fdsn_frame, bindings}",
+    "events": "join_saved_events(frame, observed, bindings) -> event rows; pure, no rescoring",
+    "groups": "group_event_contributions(frame, events, observed, spec=None) -> {event_groups, composition, total_variation, global_decomposition}",
+    "temporal": "temporal_decomposition(frame, observed, bindings, spec, deadline, progress_callback=None)",
+    "source_branch": "magnitude_value_sensitivity(frame, fdsn_frame, observed, bindings, spec, deadline, progress_callback=None)",
+    "pure_guard": "validate_result(payload, spec=None)"
+  },
+  "audit": {
+    "models": ["ml_trigger", "ml_shared", "etas_omori"],
+    "comparisons": [
+      {"id": "shared_minus_ml", "model": "ml_shared", "baseline": "ml_trigger", "role": "primary"},
+      {"id": "omori_minus_ml", "model": "etas_omori", "baseline": "ml_trigger", "role": "secondary"}
+    ],
+    "orders": [16, 32],
+    "temporal_bins_per_fold": 4,
+    "latitude_edges": [-48.5, -43.5, -38.5, -33.5],
+    "longitude_edges": [165, 170, 175, 180],
+    "spatial_boundary": "Internal boundary belongs north/east cell; final outer edge included",
+    "magnitude_edges": [5, 5.5, 6, 6.5],
+    "magnitude_boundary": "Lower edge included; final category magnitude>=6.5",
+    "depth_upper_edges": [10, 20, 40],
+    "depth_boundary": "depth<=10,10<depth<=20,20<depth<=40; finite valid negatives included",
+    "native_labels": ["M", "ML", "MLv", "MS", "Mw", "Mw(mB)", "mB"],
+    "sparse_count_below": 5,
+    "group_score_order": 32,
+    "numerical_tolerance": 0.0001,
+    "arithmetic_tolerance": 1e-8,
+    "allowed_extra_fdsn_ids": ["2025p672513"],
+    "source_branch": "Exactly one archived interface magnitude-value sensitivity: all913 primary IDs use FDSN magnitudes/excess; primary times/location/depth/labels and saved training beta/parameters/kernels/ratios fixed; complete histories recomputed from0. Reject failed joins/finiteM>=5support, no fallback/clipping. Extra FDSN event never added.",
+    "composition": "Unsmoothed training/test category proportions and TV=.5sumabs(p_test-p_train), per dimension/fold; no pooled training comparator",
+    "decomposition": "Group tables contain event log-intensity ratios only. One separate GLOBAL contribution Lambda_baseline-Lambda_model per fold/comparison/order; no spatial/category compensator allocation or explained fraction.",
+    "scope": "Previously seen data, fixed saved recipes, descriptive heterogeneity and counterfactual mixed-interface history; no refitting, pvalues, causal shares, physical homogenization or catalogue replacement"
+  },
+  "expected_real_counts": {"catalogue_events": 913, "joined_test_events": 612, "event_group_rows": 138, "composition_rows": 69, "total_variation_rows": 12, "global_decomposition_rows": 12, "temporal_score_rows": 72, "temporal_comparison_rows": 48, "source_score_rows": 18, "source_comparison_rows": 12, "fixed_parameter_evaluations": 90},
+  "progress": "45 completed model/window order pairs only: 36 temporal_pair then9 magnitude_value_pair, each {scores:[order16row,order32row],order_control}; no periodic timer checkpoints",
+  "resource": {"wall_cap_seconds": 600, "native_threads": 1, "gpu": false, "outer_supervisor": "root-owned, whole invocation; library checks cooperative deadline between fixed-parameter evaluations"}
+}

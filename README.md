@@ -1,0 +1,53 @@
+# Inhibitory earthquake models
+
+Research manuscript and numerical implementation for **Stability and identification in inhibitory earthquake models: Restricted mathematics, nuisance sensitivity and predictive evidence**.
+
+The work studies restricted stability and identification results, nuisance sensitivity, and predictive evidence for earthquake point-process models with inhibition and triggering. Predictive preference does not establish a physical inhibition mechanism. This is a research release for independent review.
+
+**A human--AI collaboration.** Human collaborators: [Drefetr](https://github.com/Drefetr) and [magna-nz](https://github.com/magna-nz). AI collaborators: Claude, Astra, Sol, DeepSeek agents and Argon. Neither human is designated the main author.
+
+**AI assistance:** the bulk of the work was performed by AI agents. Claude and Astra developed the initial outline and specification; Sol coordinated Sol and DeepSeek subagents; Astra and Argon provided review. AI review is distinct from independent external peer review. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
+- [Paper](paper/manuscript.pdf) and [explanatory supplement](paper/supplements/explanatory_supplement.pdf).
+- [Reproduction instructions](docs/reproducibility.md), [methods](paper/supplements/methods_supplement.md), [data sources and terms](docs/data.md), [limitations](docs/limitations.md).
+- [Contribution guidelines](CONTRIBUTING.md) and [citation metadata](CITATION.cff).
+
+## Quick checks
+
+Python 3.13 was used for the local preparation checks. From the repository root:
+
+```sh
+python -m venv .venv
+# Activate the environment using your shell's usual command.
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python scripts/check_mathematics.py --output build/mathematics.json
+python scripts/verify_repository.py
+```
+
+These checks use deterministic inputs; they do not run fitting or simulations. Dependency pins describe the tested public preparation environment, not the recovered historical scientific environment.
+
+## Build and figures
+
+Install Tectonic 0.17.0 from its [official releases](https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0), then:
+
+```sh
+python scripts/build_paper.py --output build/paper
+python scripts/make_figures.py --output build/figures
+```
+
+Use `--engine /path/to/tectonic` if needed. Output directories must be new. The paper build uses shipped figure PDFs. Figure regeneration uses compact project-derived results, including aggregate catalogue bins; it writes separately and never downloads a catalogue. Different TeX resources may change pagination.
+
+## Contents and reproduction scope
+
+`paper/` contains LaTeX, original figures, aggregate plotting inputs and selected fit/settings summaries. `engine/` contains preserved numerical implementations and the accepted observed protocol's small source dependency set. Historical relative paths remain because source hashes bind the implementations. [The code guide](docs/code.md) documents the import facade and supported entry points.
+
+Third-party event records and the earlier third-party manuscript PDF are excluded. Obtain external inputs independently under their terms. Exact historical observed replay needs the original matching snapshot; a fresh provider download can differ. A complete rerun of every historical synthetic campaign also needs unshipped history banks and execution states. The reproduction matrix makes these limits explicit.
+
+## Licences
+
+Project-owned software: **MIT**. Current paper, original figures, prose documentation and project-derived result summaries: **CC BY 4.0**. These are separate scopes, not a blanket licence over third-party material. See [licence scope](LICENSES/README.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Sealed v4 remains unchanged. This public edition adds confirmed attribution and disclosure and documents the smaller distribution. See [provenance](docs/provenance.md) and [validation](validation/README.md).
+
+Publication privacy checks are recorded in [validation/privacy_audit.json](validation/privacy_audit.json). The only engine adaptations are portable interpreter discovery in two optional launchers and the associated public protocol binding; original scientific pins remain separately recorded.

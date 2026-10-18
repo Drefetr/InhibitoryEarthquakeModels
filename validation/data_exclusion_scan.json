@@ -1,0 +1,4 @@
+{
+  "findings": [],
+  "scope": "JSON event-object and source-data filename scan; included project aggregates and schema field names permitted."
+}

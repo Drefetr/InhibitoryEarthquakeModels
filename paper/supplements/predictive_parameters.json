@@ -1,0 +1,4726 @@
+{
+  "schema_version": 1,
+  "task_ids": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "status": "all15 source-bound selected records and3foldverifications accepted; integrated; no refits",
+  "authorities": [
+    {
+      "source": "iteration_27/results/observed.json",
+      "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "iteration28_expected_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8"
+    },
+    {
+      "source": "iteration_27/configs/observed_frozen.json",
+      "sha256": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222",
+      "iteration28_expected_sha256": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222"
+    },
+    {
+      "source": "iteration_27/results/observed_analysis/fold_scores.csv",
+      "sha256": "204e556f54f98b9836ff6127e7f097289aaddd0efa7adcaf3db0d08d8f86c000",
+      "iteration28_expected_sha256": "204e556f54f98b9836ff6127e7f097289aaddd0efa7adcaf3db0d08d8f86c000"
+    },
+    {
+      "source": "iteration_27/results/observed_analysis/summary.json",
+      "sha256": "da1ead8a2a439486b7f980d908770364451911f33e5008de5355b4b3219003a8",
+      "iteration28_expected_sha256": "da1ead8a2a439486b7f980d908770364451911f33e5008de5355b4b3219003a8"
+    },
+    {
+      "source": "iteration_27/code/adequacy.py",
+      "sha256": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90",
+      "iteration28_expected_sha256": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90"
+    },
+    {
+      "source": "iteration_27/code/run_adequacy.py",
+      "sha256": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36",
+      "iteration28_expected_sha256": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36"
+    },
+    {
+      "source": "iteration_27/configs/D_interface.json",
+      "sha256": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be",
+      "iteration28_expected_sha256": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be"
+    },
+    {
+      "source": "iteration_5/code/kernels.py",
+      "sha256": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae",
+      "iteration28_expected_sha256": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae"
+    },
+    {
+      "source": "iteration_5/code/prepare_catalogue.py",
+      "sha256": "60431d02fd433412fa76130f82452f8ca2ed804bef846f27b7c20eabde08a610",
+      "iteration28_expected_sha256": null
+    },
+    {
+      "source": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+      "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+      "iteration28_expected_sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e"
+    },
+    {
+      "source": "iteration_27/reviews/A_completion_review.json",
+      "sha256": "8726bbc99d907b61181430fd9bb1caa81e3613119ae1a066e39d792255acaff8",
+      "iteration28_expected_sha256": "8726bbc99d907b61181430fd9bb1caa81e3613119ae1a066e39d792255acaff8"
+    },
+    {
+      "source": "iteration_27/reviews/C_completion_review.json",
+      "sha256": "f3f7fabf2245f4c4e6dce6dd19f7148af6493cadd976c4e98a8b18df2c6ff2bf",
+      "iteration28_expected_sha256": "f3f7fabf2245f4c4e6dce6dd19f7148af6493cadd976c4e98a8b18df2c6ff2bf"
+    },
+    {
+      "source": "iteration_27/logs/completion_manifest.json",
+      "sha256": "30589e8a624e7e548a67aa8c7e13a5a29bd3fcdb7b249a8e8aa600dac9f14be7",
+      "iteration28_expected_sha256": "30589e8a624e7e548a67aa8c7e13a5a29bd3fcdb7b249a8e8aa600dac9f14be7"
+    },
+    {
+      "source": "iteration_27/logs/completion_verification.json",
+      "sha256": "a0f174ff75efc0b0c9c3ae65e390d384ee3a3c25b1e2ac45016b5bdccf64782e",
+      "iteration28_expected_sha256": "a0f174ff75efc0b0c9c3ae65e390d384ee3a3c25b1e2ac45016b5bdccf64782e"
+    },
+    {
+      "source": "iteration_28/configs/numerical_frozen.json",
+      "sha256": "2636262990a11edb1f4b0ae6122370b26d7c0d49b590094af83644b7cbe5a6fd",
+      "iteration28_expected_sha256": null
+    }
+  ],
+  "selection_scope": "Accepted iteration27 exploratory rolling-origin study; iteration28 pins these authorities and does not provide replacement fits.",
+  "input_binding": {
+    "synthetic_only": false,
+    "path": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+    "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+    "n_events": 913,
+    "all_data_previously_seen": true
+  },
+  "array_binding": {
+    "times_f64le": "4ff517e6e8f37e5d6bda0f04845c516b11eed494df5e7e0421f8971f318ca34c",
+    "excess_f64le": "69dc0ce9719b9e66485767c0478987bac06c33f26b9a7a7ec3d3ce7481ced122"
+  },
+  "frozen_search": {
+    "ratios": [
+      0.4,
+      0.7,
+      0.8
+    ],
+    "ml_alpha": [
+      0.5,
+      0.7
+    ],
+    "ml_tau": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "omori_p": [
+      1.1,
+      1.3,
+      1.7
+    ],
+    "omori_tau": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "continuous_omori": true,
+    "memory_limit_mb": 512.0,
+    "optimizer": {
+      "maxiter": 150,
+      "maxfun": 20000,
+      "ftol": 1e-10,
+      "gtol": 2e-06,
+      "maxls": 40
+    }
+  },
+  "table_dictionary": {
+    "formula": "lambda(t)=exp(a+d*z(t)-eta*g(t))+n*h(t); z(t)=2*t/24394-1; eta=0 and/or n=0 for absent components",
+    "time": "86400 SI seconds per UTC day since 1960-01-01T00:00:00Z, Python datetime without leap seconds; window [0,24394), end-exclusive 2026-10-15; no per-fold rescaling",
+    "mark": "excess=magnitude-5; native GeoNet preferred magnitude with original magnitude_type, no homogenisation; iteration_5/code/prepare_catalogue.py:103-104,363-365",
+    "a": "log background rate when z=0 and g=0, using one day as time unit; exp(a) has units day^-1",
+    "d": "dimensionless coefficient of z(t); physical slope 2*d/24394 day^-1 would be newly derived and is not substituted",
+    "n": "dimensionless mean productivity multiplier of unit-mean mark productivity under fitted exponential mark law",
+    "eta": "dimensionless coefficient of g=sum exp(gamma*(excess-1))*Phi(lag); fixed gamma=.75*log(10)",
+    "beta_train": "exponential rate per magnitude unit; N_train/sum(training excess), fitted only on strict training prefix, frozen across test and common to families",
+    "ratio": "dimensionless r; mark productivity=(1-r)*exp(beta_train*r*excess); grid selected, distinct from beta and n",
+    "alpha": "dimensionless Mittag-Leffler kernel shape grid winner; not trigger productivity exponent",
+    "tau": "Mittag-Leffler scale in days; Omori raw trigger.tau is reporting c in days",
+    "p": "dimensionless Omori decay exponent, continuous winner; ML trigger.p is inactive serialization default",
+    "log_c": "natural logarithm of Omori c measured in days, saved optimizer coordinate",
+    "training_ground_nll": "negative event-time/ground-rate log likelihood evaluated with observed marked history; excludes common mark-density term",
+    "kernel_code_locators": {
+      "formula": "iteration_27/code/adequacy.py:200-216",
+      "beta": "iteration_27/code/adequacy.py:321-328",
+      "stress": "iteration_27/code/adequacy.py:160-176",
+      "productivity": "iteration_27/code/adequacy.py:179-198",
+      "continuous_omori": "iteration_27/code/adequacy.py:247-276",
+      "kernel": "iteration_5/code/kernels.py:14-35,83-106"
+    }
+  },
+  "rows": [
+    {
+      "fold": "fold_50",
+      "family": "poisson_constant",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_50/fit/best/poisson_constant",
+      "record_pointer": "/folds/fold_50/fit/records/0",
+      "selected_id": 0,
+      "train_end_days": 12197.0,
+      "test_end_days": 15856.1,
+      "n_train": 301,
+      "n_test": 203,
+      "beta_train": 3.1016219112585786,
+      "parameters": {
+        "a": -3.7018350340943624,
+        "d": 0.0
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 0,
+        "model": "poisson_constant",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": null,
+        "origin": "analytic",
+        "pars": [
+          -3.7018350340943624,
+          0.0
+        ],
+        "nll": 1415.2523452624032,
+        "success": true,
+        "message": "bounded exact constant-rate MLE",
+        "status": 0,
+        "nit": 0,
+        "nfev": 1,
+        "elapsed_seconds": 0.0
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_constant/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_constant/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_constant/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_constant/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_constant/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_constant/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_constant/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_constant/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": 0.0,
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -841.7725119211558,
+        "common_mark_loglik": 34.44066191476142,
+        "full_marked_loglik": -807.3318500063943
+      },
+      "training_ground_nll": 1415.2523452624032,
+      "training_control_pointer": "/folds/fold_50/training_controls/poisson_constant/order16",
+      "test_control_pointer": "/folds/fold_50/test_controls/poisson_constant/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_50",
+      "family": "poisson_loglinear",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_50/fit/best/poisson_loglinear",
+      "record_pointer": "/folds/fold_50/fit/records/1",
+      "selected_id": 1,
+      "train_end_days": 12197.0,
+      "test_end_days": 15856.1,
+      "n_train": 301,
+      "n_test": 203,
+      "beta_train": 3.1016219112585786,
+      "parameters": {
+        "a": -3.564130564945833,
+        "d": 0.2820333490459926
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 1,
+        "model": "poisson_loglinear",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": [
+          -4.212660657860353,
+          0.0
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.212660657860353,
+              0.0
+            ],
+            "pars": [
+              -3.564130564945833,
+              0.2820333490459926
+            ],
+            "reported_nll": 1414.2567236916966,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 7,
+            "nfev": 10,
+            "finite_feasible": true,
+            "fresh_nll": 1414.2567236916966,
+            "control_nll": 1414.2567236916966,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1448.6108580159662,
+            "accepted": true,
+            "elapsed_seconds": 0.055659100180491805
+          }
+        ],
+        "initial_nll": 1448.6108580159662,
+        "accepted_tier": 0,
+        "pars": [
+          -3.564130564945833,
+          0.2820333490459926
+        ],
+        "nll": 1414.2567236916966,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 7,
+        "nfev": 10,
+        "elapsed_seconds": 0.055683800019323826
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_loglinear/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_loglinear/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_loglinear/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/poisson_loglinear/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_loglinear/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_loglinear/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_loglinear/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/poisson_loglinear/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -826.4730618543147,
+        "common_mark_loglik": 34.44066191476142,
+        "full_marked_loglik": -792.0323999395532
+      },
+      "training_ground_nll": 1414.2567236916966,
+      "training_control_pointer": "/folds/fold_50/training_controls/poisson_loglinear/order16",
+      "test_control_pointer": "/folds/fold_50/test_controls/poisson_loglinear/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_50",
+      "family": "etas_omori",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_50/fit/best/etas_omori",
+      "record_pointer": "/folds/fold_50/fit/records/95",
+      "selected_id": 95,
+      "train_end_days": 12197.0,
+      "test_end_days": 15856.1,
+      "n_train": 301,
+      "n_test": 203,
+      "beta_train": 3.1016219112585786,
+      "parameters": {
+        "a": -4.712517002931821,
+        "d": -0.45707138870939457,
+        "n": 0.6856398804889162
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.4,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "c": {
+          "value": 0.012995029439916296,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[3]=log(c)"
+        },
+        "p": {
+          "value": 1.1133682547359482,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[4]"
+        }
+      },
+      "raw_selected_record": {
+        "id": 95,
+        "model": "etas_omori",
+        "trigger": {
+          "kind": "omori",
+          "tau": 0.012995029439916296,
+          "alpha": 0.5,
+          "p": 1.1133682547359482,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.4,
+        "start": [
+          -4.212660657860353,
+          0.0,
+          0.35,
+          -4.605170185988091,
+          1.1
+        ],
+        "origin": "continuous_omori_optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.212660657860353,
+              0.0,
+              0.35,
+              -4.605170185988091,
+              1.1
+            ],
+            "pars": [
+              -4.712517002931821,
+              -0.45707138870939457,
+              0.6856398804889162,
+              -4.343188345410965,
+              1.1133682547359482
+            ],
+            "reported_nll": 1065.0148710539897,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 33,
+            "nfev": 39,
+            "finite_feasible": true,
+            "fresh_nll": 1065.0148710539897,
+            "control_nll": 1065.0148710539897,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1088.881258257242,
+            "accepted": true,
+            "elapsed_seconds": 0.18942960002459586
+          }
+        ],
+        "initial_nll": 1088.881258257242,
+        "accepted_tier": 0,
+        "pars": [
+          -4.712517002931821,
+          -0.45707138870939457,
+          0.6856398804889162
+        ],
+        "optimizer_pars": [
+          -4.712517002931821,
+          -0.45707138870939457,
+          0.6856398804889162,
+          -4.343188345410965,
+          1.1133682547359482
+        ],
+        "nll": 1065.0148710539897,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 33,
+        "nfev": 39,
+        "elapsed_seconds": 0.1895266999490559
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_p": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/trigger/p",
+          "status": "extracted"
+        },
+        "log_c": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/etas_omori/optimizer_pars/3",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/etas_omori/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/etas_omori/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/etas_omori/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/etas_omori/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.alpha=0.5",
+          "trigger.spectral_step=0.4",
+          "trigger.spectral_tail_bound=1e-8"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "log_c": {
+            "lower": false,
+            "upper": false
+          },
+          "p": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -336.7017197411867,
+        "common_mark_loglik": 34.44066191476142,
+        "full_marked_loglik": -302.26105782642526
+      },
+      "training_ground_nll": 1065.0148710539897,
+      "training_control_pointer": "/folds/fold_50/training_controls/etas_omori/order16",
+      "test_control_pointer": "/folds/fold_50/test_controls/etas_omori/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "log_c": [
+          -11.512925464970229,
+          2.302585092994046
+        ],
+        "p": [
+          1.01,
+          3.0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_50",
+      "family": "ml_trigger",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_50/fit/best/ml_trigger",
+      "record_pointer": "/folds/fold_50/fit/records/64",
+      "selected_id": 64,
+      "train_end_days": 12197.0,
+      "test_end_days": 15856.1,
+      "n_train": 301,
+      "n_test": 203,
+      "beta_train": 3.1016219112585786,
+      "parameters": {
+        "a": -4.458571951320322,
+        "d": -0.25215013380309004,
+        "n": 0.455824101217398
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.4,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 64,
+        "model": "ml_trigger",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.4,
+        "start": [
+          -4.712660657860353,
+          0.1,
+          0.7
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.712660657860353,
+              0.1,
+              0.7
+            ],
+            "pars": [
+              -4.458571951320322,
+              -0.25215013380309004,
+              0.455824101217398
+            ],
+            "reported_nll": 1066.8461631573955,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 12,
+            "nfev": 16,
+            "finite_feasible": true,
+            "fresh_nll": 1066.8461631573955,
+            "control_nll": 1066.8461631573955,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1086.2372912835758,
+            "accepted": true,
+            "elapsed_seconds": 0.13518139999359846
+          }
+        ],
+        "initial_nll": 1086.2372912835758,
+        "accepted_tier": 0,
+        "pars": [
+          -4.458571951320322,
+          -0.25215013380309004,
+          0.455824101217398
+        ],
+        "nll": 1066.8461631573955,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 12,
+        "nfev": 16,
+        "elapsed_seconds": 0.13522280007600784
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_trigger/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_trigger/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_trigger/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_trigger/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_trigger/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -339.8083428497182,
+        "common_mark_loglik": 34.44066191476142,
+        "full_marked_loglik": -305.36768093495675
+      },
+      "training_ground_nll": 1066.8461631573955,
+      "training_control_pointer": "/folds/fold_50/training_controls/ml_trigger/order16",
+      "test_control_pointer": "/folds/fold_50/test_controls/ml_trigger/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_50",
+      "family": "ml_shared",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_50/fit/best/ml_shared",
+      "record_pointer": "/folds/fold_50/fit/records/115",
+      "selected_id": 115,
+      "train_end_days": 12197.0,
+      "test_end_days": 15856.1,
+      "n_train": 301,
+      "n_test": 203,
+      "beta_train": 3.1016219112585786,
+      "parameters": {
+        "a": -2.196742787842031,
+        "d": 1.7897570998452585,
+        "n": 0.4816995533123644,
+        "eta": 1.6467140527373723
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.4,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 115,
+        "model": "ml_shared",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "ratio": 0.4,
+        "start": [
+          -4.458571951320322,
+          -0.25215013380309004,
+          0.455824101217398,
+          0.0
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.458571951320322,
+              -0.25215013380309004,
+              0.455824101217398,
+              0.0
+            ],
+            "pars": [
+              -2.196742787842031,
+              1.7897570998452585,
+              0.4816995533123644,
+              1.6467140527373723
+            ],
+            "reported_nll": 1064.115153658792,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 17,
+            "nfev": 19,
+            "finite_feasible": true,
+            "fresh_nll": 1064.115153658792,
+            "control_nll": 1064.115153658792,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1066.8461631573955,
+            "accepted": true,
+            "elapsed_seconds": 1.5922940999735147
+          }
+        ],
+        "initial_nll": 1066.8461631573955,
+        "accepted_tier": 0,
+        "pars": [
+          -2.196742787842031,
+          1.7897570998452585,
+          0.4816995533123644,
+          1.6467140527373723
+        ],
+        "nll": 1064.115153658792,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 17,
+        "nfev": 19,
+        "elapsed_seconds": 1.5923228999599814
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/pars/2",
+          "status": "extracted"
+        },
+        "eta": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/pars/3",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/best/ml_shared/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_shared/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_shared/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_shared/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_50/test_controls/ml_shared/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": "estimated",
+        "stress_gamma": "0.75*log(10), fixed",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3",
+          "stress.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "eta": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -356.3259003025286,
+        "common_mark_loglik": 34.44066191476142,
+        "full_marked_loglik": -321.88523838776723
+      },
+      "training_ground_nll": 1064.115153658792,
+      "training_control_pointer": "/folds/fold_50/training_controls/ml_shared/order16",
+      "test_control_pointer": "/folds/fold_50/test_controls/ml_shared/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_65",
+      "family": "poisson_constant",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_65/fit/best/poisson_constant",
+      "record_pointer": "/folds/fold_65/fit/records/0",
+      "selected_id": 0,
+      "train_end_days": 15856.1,
+      "test_end_days": 19515.2,
+      "n_train": 504,
+      "n_test": 155,
+      "beta_train": 3.1494882081661726,
+      "parameters": {
+        "a": -3.448733295239361,
+        "d": 0.0
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 0,
+        "model": "poisson_constant",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": null,
+        "origin": "analytic",
+        "pars": [
+          -3.448733295239361,
+          0.0
+        ],
+        "nll": 2242.161580800638,
+        "success": true,
+        "message": "bounded exact constant-rate MLE",
+        "status": 0,
+        "nit": 0,
+        "nfev": 1,
+        "elapsed_seconds": 0.0
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_constant/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_constant/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_constant/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_constant/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_constant/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_constant/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_constant/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_constant/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": 0.0,
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -650.8613530697933,
+        "common_mark_loglik": -4.999903992874863,
+        "full_marked_loglik": -655.8612570626681
+      },
+      "training_ground_nll": 2242.161580800638,
+      "training_control_pointer": "/folds/fold_65/training_controls/poisson_constant/order16",
+      "test_control_pointer": "/folds/fold_65/test_controls/poisson_constant/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_65",
+      "family": "poisson_loglinear",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_65/fit/best/poisson_loglinear",
+      "record_pointer": "/folds/fold_65/fit/records/2",
+      "selected_id": 2,
+      "train_end_days": 15856.1,
+      "test_end_days": 19515.2,
+      "n_train": 504,
+      "n_test": 155,
+      "beta_train": 3.1494882081661726,
+      "parameters": {
+        "a": -3.229368001199258,
+        "d": 0.7344793574445421
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 2,
+        "model": "poisson_loglinear",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": [
+          -4.459558919005351,
+          0.1
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.459558919005351,
+              0.1
+            ],
+            "pars": [
+              -3.229368001199258,
+              0.7344793574445421
+            ],
+            "reported_nll": 2223.442235158958,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 10,
+            "nfev": 12,
+            "finite_feasible": true,
+            "fresh_nll": 2223.442235158958,
+            "control_nll": 2223.442235158958,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 2437.353027042266,
+            "accepted": true,
+            "elapsed_seconds": 0.11292740004137158
+          }
+        ],
+        "initial_nll": 2437.353027042266,
+        "accepted_tier": 0,
+        "pars": [
+          -3.229368001199258,
+          0.7344793574445421
+        ],
+        "nll": 2223.442235158958,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 10,
+        "nfev": 12,
+        "elapsed_seconds": 0.11294949986040592
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_loglinear/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_loglinear/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_loglinear/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/poisson_loglinear/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_loglinear/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_loglinear/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_loglinear/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/poisson_loglinear/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -650.3602377487214,
+        "common_mark_loglik": -4.999903992874863,
+        "full_marked_loglik": -655.3601417415962
+      },
+      "training_ground_nll": 2223.442235158958,
+      "training_control_pointer": "/folds/fold_65/training_controls/poisson_loglinear/order16",
+      "test_control_pointer": "/folds/fold_65/test_controls/poisson_loglinear/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_65",
+      "family": "etas_omori",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_65/fit/best/etas_omori",
+      "record_pointer": "/folds/fold_65/fit/records/100",
+      "selected_id": 100,
+      "train_end_days": 15856.1,
+      "test_end_days": 19515.2,
+      "n_train": 504,
+      "n_test": 155,
+      "beta_train": 3.1494882081661726,
+      "parameters": {
+        "a": -4.2915540240376036,
+        "d": 0.048036472992320466,
+        "n": 0.5700764963630996
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "c": {
+          "value": 0.020798449663947113,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[3]=log(c)"
+        },
+        "p": {
+          "value": 1.1986043439080187,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[4]"
+        }
+      },
+      "raw_selected_record": {
+        "id": 100,
+        "model": "etas_omori",
+        "trigger": {
+          "kind": "omori",
+          "tau": 0.020798449663947113,
+          "alpha": 0.5,
+          "p": 1.1986043439080187,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.7,
+        "start": [
+          -4.459558919005351,
+          0.1,
+          0.7,
+          0.0,
+          2.5
+        ],
+        "origin": "continuous_omori_optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.459558919005351,
+              0.1,
+              0.7,
+              0.0,
+              2.5
+            ],
+            "pars": [
+              -4.2915540240376036,
+              0.048036472992320466,
+              0.5700764963630996,
+              -3.872876830439923,
+              1.1986043439080187
+            ],
+            "reported_nll": 1392.0688531097778,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 21,
+            "nfev": 31,
+            "finite_feasible": true,
+            "fresh_nll": 1392.0688531097778,
+            "control_nll": 1392.068853109778,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1478.5519907007397,
+            "accepted": true,
+            "elapsed_seconds": 0.6129412001464516
+          }
+        ],
+        "initial_nll": 1478.5519907007397,
+        "accepted_tier": 0,
+        "pars": [
+          -4.2915540240376036,
+          0.048036472992320466,
+          0.5700764963630996
+        ],
+        "optimizer_pars": [
+          -4.2915540240376036,
+          0.048036472992320466,
+          0.5700764963630996,
+          -3.872876830439923,
+          1.1986043439080187
+        ],
+        "nll": 1392.0688531097778,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 21,
+        "nfev": 31,
+        "elapsed_seconds": 0.6130269002169371
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_p": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/trigger/p",
+          "status": "extracted"
+        },
+        "log_c": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/etas_omori/optimizer_pars/3",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/etas_omori/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/etas_omori/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/etas_omori/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/etas_omori/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.alpha=0.5",
+          "trigger.spectral_step=0.4",
+          "trigger.spectral_tail_bound=1e-8"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "log_c": {
+            "lower": false,
+            "upper": false
+          },
+          "p": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -163.9550812692734,
+        "common_mark_loglik": -4.999903992874863,
+        "full_marked_loglik": -168.95498526214826
+      },
+      "training_ground_nll": 1392.0688531097778,
+      "training_control_pointer": "/folds/fold_65/training_controls/etas_omori/order16",
+      "test_control_pointer": "/folds/fold_65/test_controls/etas_omori/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "log_c": [
+          -11.512925464970229,
+          2.302585092994046
+        ],
+        "p": [
+          1.01,
+          3.0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_65",
+      "family": "ml_trigger",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_65/fit/best/ml_trigger",
+      "record_pointer": "/folds/fold_65/fit/records/66",
+      "selected_id": 66,
+      "train_end_days": 15856.1,
+      "test_end_days": 19515.2,
+      "n_train": 504,
+      "n_test": 155,
+      "beta_train": 3.1494882081661726,
+      "parameters": {
+        "a": -4.1888102043214275,
+        "d": 0.1474405439920644,
+        "n": 0.4979963554364784
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 66,
+        "model": "ml_trigger",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.7,
+        "start": [
+          -4.459558919005351,
+          0.1,
+          0.7
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.459558919005351,
+              0.1,
+              0.7
+            ],
+            "pars": [
+              -4.1888102043214275,
+              0.1474405439920644,
+              0.4979963554364784
+            ],
+            "reported_nll": 1395.5336428234734,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 12,
+            "nfev": 16,
+            "finite_feasible": true,
+            "fresh_nll": 1395.5336428234734,
+            "control_nll": 1395.5336428234734,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1413.6900081627364,
+            "accepted": true,
+            "elapsed_seconds": 0.17556140013039112
+          }
+        ],
+        "initial_nll": 1413.6900081627364,
+        "accepted_tier": 0,
+        "pars": [
+          -4.1888102043214275,
+          0.1474405439920644,
+          0.4979963554364784
+        ],
+        "nll": 1395.5336428234734,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 12,
+        "nfev": 16,
+        "elapsed_seconds": 0.175588000100106
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_trigger/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_trigger/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_trigger/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_trigger/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_trigger/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -166.79278899040523,
+        "common_mark_loglik": -4.999903992874863,
+        "full_marked_loglik": -171.7926929832801
+      },
+      "training_ground_nll": 1395.5336428234734,
+      "training_control_pointer": "/folds/fold_65/training_controls/ml_trigger/order16",
+      "test_control_pointer": "/folds/fold_65/test_controls/ml_trigger/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_65",
+      "family": "ml_shared",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_65/fit/best/ml_shared",
+      "record_pointer": "/folds/fold_65/fit/records/118",
+      "selected_id": 118,
+      "train_end_days": 15856.1,
+      "test_end_days": 19515.2,
+      "n_train": 504,
+      "n_test": 155,
+      "beta_train": 3.1494882081661726,
+      "parameters": {
+        "a": -3.8418443124454664,
+        "d": 0.49268181111813747,
+        "n": 0.5034897627143268,
+        "eta": 0.21170986140638662
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 118,
+        "model": "ml_shared",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "ratio": 0.7,
+        "start": [
+          -4.1888102043214275,
+          0.1474405439920644,
+          0.4979963554364784,
+          0.0
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.1888102043214275,
+              0.1474405439920644,
+              0.4979963554364784,
+              0.0
+            ],
+            "pars": [
+              -3.8418443124454664,
+              0.49268181111813747,
+              0.5034897627143268,
+              0.21170986140638662
+            ],
+            "reported_nll": 1395.2311565026062,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 12,
+            "nfev": 15,
+            "finite_feasible": true,
+            "fresh_nll": 1395.2311565026062,
+            "control_nll": 1395.2311565026062,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1395.5336428234734,
+            "accepted": true,
+            "elapsed_seconds": 0.19823059998452663
+          }
+        ],
+        "initial_nll": 1395.5336428234734,
+        "accepted_tier": 0,
+        "pars": [
+          -3.8418443124454664,
+          0.49268181111813747,
+          0.5034897627143268,
+          0.21170986140638662
+        ],
+        "nll": 1395.2311565026062,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 12,
+        "nfev": 15,
+        "elapsed_seconds": 0.1982565000653267
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/pars/2",
+          "status": "extracted"
+        },
+        "eta": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/pars/3",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/best/ml_shared/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_shared/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_shared/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_shared/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_65/test_controls/ml_shared/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": "estimated",
+        "stress_gamma": "0.75*log(10), fixed",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3",
+          "stress.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "eta": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -166.86806628095655,
+        "common_mark_loglik": -4.999903992874863,
+        "full_marked_loglik": -171.86797027383142
+      },
+      "training_ground_nll": 1395.2311565026062,
+      "training_control_pointer": "/folds/fold_65/training_controls/ml_shared/order16",
+      "test_control_pointer": "/folds/fold_65/test_controls/ml_shared/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_80",
+      "family": "poisson_constant",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_80/fit/best/poisson_constant",
+      "record_pointer": "/folds/fold_80/fit/records/0",
+      "selected_id": 0,
+      "train_end_days": 19515.2,
+      "test_end_days": 24394.0,
+      "n_train": 659,
+      "n_test": 254,
+      "beta_train": 3.021907322176272,
+      "parameters": {
+        "a": -3.388225393586467,
+        "d": 0.0
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 0,
+        "model": "poisson_constant",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": null,
+        "origin": "analytic",
+        "pars": [
+          -3.388225393586467,
+          0.0
+        ],
+        "nll": 2891.8405343734817,
+        "success": true,
+        "message": "bounded exact constant-rate MLE",
+        "status": 0,
+        "nit": 0,
+        "nfev": 1,
+        "elapsed_seconds": 0.0
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_constant/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_constant/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_constant/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_constant/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_constant/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_constant/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_constant/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_constant/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": 0.0,
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -1025.3592499709625,
+        "common_mark_loglik": -28.378307279477838,
+        "full_marked_loglik": -1053.7375572504404
+      },
+      "training_ground_nll": 2891.8405343734817,
+      "training_control_pointer": "/folds/fold_80/training_controls/poisson_constant/order16",
+      "test_control_pointer": "/folds/fold_80/test_controls/poisson_constant/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_80",
+      "family": "poisson_loglinear",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_80/fit/best/poisson_loglinear",
+      "record_pointer": "/folds/fold_80/fit/records/2",
+      "selected_id": 2,
+      "train_end_days": 19515.2,
+      "test_end_days": 24394.0,
+      "n_train": 659,
+      "n_test": 254,
+      "beta_train": 3.021907322176272,
+      "parameters": {
+        "a": -3.3094014897857806,
+        "d": 0.5606532425288168
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.0,
+          "selection": "fixed_inactive"
+        }
+      },
+      "raw_selected_record": {
+        "id": 2,
+        "model": "poisson_loglinear",
+        "trigger": null,
+        "stress": null,
+        "ratio": 0.0,
+        "start": [
+          -4.399051017352457,
+          0.1
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.399051017352457,
+              0.1
+            ],
+            "pars": [
+              -3.3094014897857806,
+              0.5606532425288168
+            ],
+            "reported_nll": 2870.180319368484,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "solver_status": 0,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "status": 0,
+            "nit": 9,
+            "nfev": 11,
+            "finite_feasible": true,
+            "fresh_nll": 2870.180319368484,
+            "control_nll": 2870.180319368484,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 3139.7005578817357,
+            "accepted": true,
+            "elapsed_seconds": 0.11425260012038052
+          }
+        ],
+        "initial_nll": 3139.7005578817357,
+        "accepted_tier": 0,
+        "pars": [
+          -3.3094014897857806,
+          0.5606532425288168
+        ],
+        "nll": 2870.180319368484,
+        "success": true,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "status": 0,
+        "nit": 9,
+        "nfev": 11,
+        "elapsed_seconds": 0.11428069998510182
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_loglinear/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_loglinear/pars/1",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_loglinear/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/poisson_loglinear/nll",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_loglinear/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_loglinear/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_loglinear/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/poisson_loglinear/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": 0.0,
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": []
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -1011.8922490104859,
+        "common_mark_loglik": -28.378307279477838,
+        "full_marked_loglik": -1040.2705562899637
+      },
+      "training_ground_nll": 2870.180319368484,
+      "training_control_pointer": "/folds/fold_80/training_controls/poisson_loglinear/order16",
+      "test_control_pointer": "/folds/fold_80/test_controls/poisson_loglinear/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_80",
+      "family": "etas_omori",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_80/fit/best/etas_omori",
+      "record_pointer": "/folds/fold_80/fit/records/98",
+      "selected_id": 98,
+      "train_end_days": 19515.2,
+      "test_end_days": 24394.0,
+      "n_train": 659,
+      "n_test": 254,
+      "beta_train": 3.021907322176272,
+      "parameters": {
+        "a": -4.394251553507748,
+        "d": -0.1961622359602631,
+        "n": 0.5612158341771694
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "c": {
+          "value": 0.006971962749168766,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[3]=log(c)"
+        },
+        "p": {
+          "value": 1.1558445628164442,
+          "selection": "continuous_optimization",
+          "raw_parameter": "optimizer_pars[4]"
+        }
+      },
+      "raw_selected_record": {
+        "id": 98,
+        "model": "etas_omori",
+        "trigger": {
+          "kind": "omori",
+          "tau": 0.006971962749168766,
+          "alpha": 0.5,
+          "p": 1.1558445628164442,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.7,
+        "start": [
+          -4.099421195412468,
+          0.06540139851389727,
+          0.4095961564181348,
+          -2.3025850929940455,
+          1.7
+        ],
+        "origin": "continuous_omori_optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.099421195412468,
+              0.06540139851389727,
+              0.4095961564181348,
+              -2.3025850929940455,
+              1.7
+            ],
+            "pars": [
+              -4.394251553507748,
+              -0.1961622359602631,
+              0.5612158341771694,
+              -4.965858494257631,
+              1.1558445628164442
+            ],
+            "reported_nll": 1532.328742711725,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 20,
+            "nfev": 29,
+            "finite_feasible": true,
+            "fresh_nll": 1532.328742711725,
+            "control_nll": 1532.328742711725,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1576.430296218176,
+            "accepted": true,
+            "elapsed_seconds": 1.3148015001788735
+          }
+        ],
+        "initial_nll": 1576.430296218176,
+        "accepted_tier": 0,
+        "pars": [
+          -4.394251553507748,
+          -0.1961622359602631,
+          0.5612158341771694
+        ],
+        "optimizer_pars": [
+          -4.394251553507748,
+          -0.1961622359602631,
+          0.5612158341771694,
+          -4.965858494257631,
+          1.1558445628164442
+        ],
+        "nll": 1532.328742711725,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 20,
+        "nfev": 29,
+        "elapsed_seconds": 1.3148896000348032
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_p": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/trigger/p",
+          "status": "extracted"
+        },
+        "log_c": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/etas_omori/optimizer_pars/3",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/etas_omori/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/etas_omori/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/etas_omori/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/etas_omori/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.alpha=0.5",
+          "trigger.spectral_step=0.4",
+          "trigger.spectral_tail_bound=1e-8"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "log_c": {
+            "lower": false,
+            "upper": false
+          },
+          "p": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -490.5757130449359,
+        "common_mark_loglik": -28.378307279477838,
+        "full_marked_loglik": -518.9540203244137
+      },
+      "training_ground_nll": 1532.328742711725,
+      "training_control_pointer": "/folds/fold_80/training_controls/etas_omori/order16",
+      "test_control_pointer": "/folds/fold_80/test_controls/etas_omori/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "log_c": [
+          -11.512925464970229,
+          2.302585092994046
+        ],
+        "p": [
+          1.01,
+          3.0
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_80",
+      "family": "ml_trigger",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_80/fit/best/ml_trigger",
+      "record_pointer": "/folds/fold_80/fit/records/66",
+      "selected_id": 66,
+      "train_end_days": 19515.2,
+      "test_end_days": 24394.0,
+      "n_train": 659,
+      "n_test": 254,
+      "beta_train": 3.021907322176272,
+      "parameters": {
+        "a": -4.282574635956841,
+        "d": -0.05665136748686944,
+        "n": 0.47029155234115955
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 66,
+        "model": "ml_trigger",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": null,
+        "ratio": 0.7,
+        "start": [
+          -4.399051017352457,
+          0.1,
+          0.7
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.399051017352457,
+              0.1,
+              0.7
+            ],
+            "pars": [
+              -4.282574635956841,
+              -0.05665136748686944,
+              0.47029155234115955
+            ],
+            "reported_nll": 1549.0183969258246,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 12,
+            "nfev": 16,
+            "finite_feasible": true,
+            "fresh_nll": 1549.0183969258246,
+            "control_nll": 1549.0183969258246,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1580.8977983801701,
+            "accepted": true,
+            "elapsed_seconds": 0.49553559999912977
+          }
+        ],
+        "initial_nll": 1580.8977983801701,
+        "accepted_tier": 0,
+        "pars": [
+          -4.282574635956841,
+          -0.05665136748686944,
+          0.47029155234115955
+        ],
+        "nll": 1549.0183969258246,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 12,
+        "nfev": 16,
+        "elapsed_seconds": 0.4955720000434667
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/pars/2",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_trigger/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_trigger/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_trigger/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_trigger/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_trigger/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": 0.0,
+        "stress_gamma": "inactive",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -497.0895031009195,
+        "common_mark_loglik": -28.378307279477838,
+        "full_marked_loglik": -525.4678103803974
+      },
+      "training_ground_nll": 1549.0183969258246,
+      "training_control_pointer": "/folds/fold_80/training_controls/ml_trigger/order16",
+      "test_control_pointer": "/folds/fold_80/test_controls/ml_trigger/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    },
+    {
+      "fold": "fold_80",
+      "family": "ml_shared",
+      "source": "iteration_27/results/observed.json",
+      "source_sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+      "json_pointer": "/folds/fold_80/fit/best/ml_shared",
+      "record_pointer": "/folds/fold_80/fit/records/118",
+      "selected_id": 118,
+      "train_end_days": 19515.2,
+      "test_end_days": 24394.0,
+      "n_train": 659,
+      "n_test": 254,
+      "beta_train": 3.021907322176272,
+      "parameters": {
+        "a": -4.10340765703705,
+        "d": 0.12763775725362148,
+        "n": 0.47307072478029155,
+        "eta": 0.10525433854950549
+      },
+      "grid_or_kernel_choices": {
+        "ratio": {
+          "value": 0.7,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        },
+        "alpha": {
+          "value": 0.5,
+          "selection": "finite_grid",
+          "at_grid_endpoint": true
+        },
+        "tau": {
+          "value": 1.0,
+          "selection": "finite_grid",
+          "at_grid_endpoint": false
+        }
+      },
+      "raw_selected_record": {
+        "id": 118,
+        "model": "ml_shared",
+        "trigger": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "stress": {
+          "kind": "ml",
+          "tau": 1.0,
+          "alpha": 0.5,
+          "p": 1.3,
+          "spectral_step": 0.4,
+          "spectral_tail_bound": 1e-08
+        },
+        "ratio": 0.7,
+        "start": [
+          -4.282574635956841,
+          -0.05665136748686944,
+          0.47029155234115955,
+          0.0
+        ],
+        "origin": "optimizer",
+        "solver_attempts": [
+          {
+            "tier": 0,
+            "method": "L-BFGS-B",
+            "options": {
+              "maxiter": 150,
+              "maxfun": 20000,
+              "ftol": 1e-10,
+              "gtol": 2e-06,
+              "maxls": 40
+            },
+            "start": [
+              -4.282574635956841,
+              -0.05665136748686944,
+              0.47029155234115955,
+              0.0
+            ],
+            "pars": [
+              -4.10340765703705,
+              0.12763775725362148,
+              0.47307072478029155,
+              0.10525433854950549
+            ],
+            "reported_nll": 1548.8745311482992,
+            "success": true,
+            "solver_return_success": true,
+            "solver_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "solver_status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "status": 0,
+            "nit": 12,
+            "nfev": 15,
+            "finite_feasible": true,
+            "fresh_nll": 1548.8745311482992,
+            "control_nll": 1548.8745311482992,
+            "control_scope": "fresh order32 geometry for recovery; separate fixed-kernel route for continuous Omori",
+            "initial_nll": 1549.0183969258246,
+            "accepted": true,
+            "elapsed_seconds": 0.3455967998597771
+          }
+        ],
+        "initial_nll": 1549.0183969258246,
+        "accepted_tier": 0,
+        "pars": [
+          -4.10340765703705,
+          0.12763775725362148,
+          0.47307072478029155,
+          0.10525433854950549
+        ],
+        "nll": 1548.8745311482992,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "status": 0,
+        "nit": 12,
+        "nfev": 15,
+        "elapsed_seconds": 0.34561620000749826
+      },
+      "field_sources": {
+        "a": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/pars/0",
+          "status": "extracted"
+        },
+        "d": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/pars/1",
+          "status": "extracted"
+        },
+        "n": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/pars/2",
+          "status": "extracted"
+        },
+        "eta": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/pars/3",
+          "status": "extracted"
+        },
+        "beta_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/beta_train",
+          "status": "extracted"
+        },
+        "ratio": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/ratio",
+          "status": "extracted"
+        },
+        "training_ground_nll": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/nll",
+          "status": "extracted"
+        },
+        "kernel_tau": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/trigger/tau",
+          "status": "extracted"
+        },
+        "kernel_alpha": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/best/ml_shared/trigger/alpha",
+          "status": "extracted"
+        },
+        "n_train": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/fit/n_train",
+          "status": "extracted"
+        },
+        "n_test": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_shared/order16/n_events",
+          "status": "extracted"
+        },
+        "train_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/train_end",
+          "status": "extracted"
+        },
+        "test_end_days": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_end",
+          "status": "extracted"
+        },
+        "scores.ground_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_shared/order16/ground_loglik",
+          "status": "extracted"
+        },
+        "scores.common_mark_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_shared/order16/common_mark_loglik",
+          "status": "extracted"
+        },
+        "scores.full_marked_loglik": {
+          "source": "iteration_27/results/observed.json",
+          "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+          "json_pointer": "/folds/fold_80/test_controls/ml_shared/order16/full_marked_loglik",
+          "status": "extracted"
+        }
+      },
+      "fixed_or_absent_coordinates": {
+        "d": "estimated",
+        "n": "estimated",
+        "eta": "estimated",
+        "stress_gamma": "0.75*log(10), fixed",
+        "kernel_inactive_default_fields": [
+          "trigger.p=1.3",
+          "stress.p=1.3"
+        ]
+      },
+      "bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "boundary": {
+        "historical_indicator": null,
+        "historical_indicator_status": "unavailable: no boundary flag field in selected record",
+        "new_arithmetic_exact_equality_to_bounds": {
+          "a": {
+            "lower": false,
+            "upper": false
+          },
+          "d": {
+            "lower": false,
+            "upper": false
+          },
+          "n": {
+            "lower": false,
+            "upper": false
+          },
+          "eta": {
+            "lower": false,
+            "upper": false
+          }
+        },
+        "new_arithmetic_any_exact_continuous_boundary": false,
+        "scope": "Exact comparison only; no tolerance-based near-boundary classification or uncertainty inferred. Grid endpoints are distinct."
+      },
+      "scores": {
+        "ground_loglik": -498.1195277223526,
+        "common_mark_loglik": -28.378307279477838,
+        "full_marked_loglik": -526.4978350018305
+      },
+      "training_ground_nll": 1548.8745311482992,
+      "training_control_pointer": "/folds/fold_80/training_controls/ml_shared/order16",
+      "test_control_pointer": "/folds/fold_80/test_controls/ml_shared/order16",
+      "unavailable": {
+        "standard_errors": "not recorded; no inference performed",
+        "confidence_intervals": "not recorded; no inference performed",
+        "historical_boundary_indicator": "not recorded"
+      },
+      "score_window": "test [train_end_days,test_end_days); saved full/ground/mark scores, not training objective",
+      "training_objective_scope": "training [0,train_end_days), negative event-time/ground-rate log likelihood using observed marked history; excludes common mark density",
+      "optimizer_bounds": {
+        "a": [
+          -12,
+          0
+        ],
+        "d": [
+          -2,
+          2
+        ],
+        "n": [
+          0,
+          0.98
+        ],
+        "eta": [
+          0,
+          3
+        ]
+      },
+      "optimizer_bounds_sources": {
+        "source": "iteration_27/configs/observed_frozen.json",
+        "json_pointer": "/interface/bounds",
+        "code": "iteration_27/code/adequacy.py:345,418",
+        "log_c_status": "new arithmetic log of saved omori_c bounds [1e-5,10], if applicable",
+        "p_status": "extracted saved omori_p bounds [1.01,3], if applicable"
+      }
+    }
+  ],
+  "comparisons": {
+    "ml_shared minus ml_trigger": {
+      "evidence_type": "new_arithmetic_from_saved_scores",
+      "by_fold": {
+        "fold_50": -16.51755745281048,
+        "fold_65": -0.07527729055132681,
+        "fold_80": -1.0300246214330855
+      },
+      "total": -17.62285936479489,
+      "saved_total": -17.622859364794834
+    },
+    "etas_omori minus ml_trigger": {
+      "evidence_type": "new_arithmetic_from_saved_scores",
+      "by_fold": {
+        "fold_50": 3.106623108531494,
+        "fold_65": 2.837707721131835,
+        "fold_80": 6.513790055983691
+      },
+      "total": 12.45812088564702,
+      "saved_total": 12.458120885646906
+    },
+    "etas_omori minus ml_shared": {
+      "evidence_type": "new_arithmetic_from_saved_scores",
+      "by_fold": {
+        "fold_50": 19.624180561341973,
+        "fold_65": 2.912985011683162,
+        "fold_80": 7.543814677416776
+      },
+      "total": 30.08098025044191,
+      "saved_total": 30.08098025044174
+    },
+    "ml_trigger minus poisson_loglinear": {
+      "evidence_type": "new_arithmetic_from_saved_scores",
+      "by_fold": {
+        "fold_50": 486.66471900459646,
+        "fold_65": 483.5674487583161,
+        "fold_80": 514.8027459095663
+      },
+      "total": 1485.034913672479,
+      "saved_total": 1485.034913672479
+    }
+  },
+  "missing_inputs": [
+    "No selected parameter records missing. Historical boundary indicator fields and uncertainty estimates unavailable."
+  ],
+  "checks": [
+    {
+      "name": "complete observed record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "raw-protocol binding",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "selected catalogue binding",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/results/observed.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/configs/observed_frozen.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/results/observed_analysis/fold_scores.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/results/observed_analysis/summary.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/code/adequacy.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/code/run_adequacy.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/configs/D_interface.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_5/code/kernels.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/reviews/A_completion_review.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/reviews/C_completion_review.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/logs/completion_manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "iteration28 authority pin: iteration_27/logs/completion_verification.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50 complete 159 records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50 catalogue prefix count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50 training-only beta arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50 catalogue test count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_constant selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_constant family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_constant CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_constant saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_constant ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_loglinear selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_loglinear family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_loglinear CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_loglinear saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/poisson_loglinear ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/etas_omori selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/etas_omori family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/etas_omori CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/etas_omori saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/etas_omori ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_trigger selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_trigger family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_trigger CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_trigger saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_trigger ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_shared selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_shared family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_shared CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_shared saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50/ml_shared ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_50 common mark component",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65 complete 159 records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65 catalogue prefix count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65 training-only beta arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65 catalogue test count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_constant selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_constant family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_constant CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_constant saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_constant ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_loglinear selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_loglinear family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_loglinear CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_loglinear saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/poisson_loglinear ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/etas_omori selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/etas_omori family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/etas_omori CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/etas_omori saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/etas_omori ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_trigger selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_trigger family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_trigger CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_trigger saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_trigger ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_shared selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_shared family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_shared CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_shared saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65/ml_shared ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_65 common mark component",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80 complete 159 records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80 catalogue prefix count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80 training-only beta arithmetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80 catalogue test count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_constant selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_constant family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_constant CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_constant saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_constant ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_loglinear selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_loglinear family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_loglinear CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_loglinear saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/poisson_loglinear ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/etas_omori selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/etas_omori family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/etas_omori CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/etas_omori saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/etas_omori ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_trigger selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_trigger family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_trigger CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_trigger saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_trigger ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_shared selected lineage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_shared family minimum",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_shared CSV join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_shared saved score join",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80/ml_shared ground training objective",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fold_80 common mark component",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "comparison ml_shared minus ml_trigger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "comparison etas_omori minus ml_trigger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "comparison etas_omori minus ml_shared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "comparison ml_trigger minus poisson_loglinear",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "non_actions": [
+    "No refit",
+    "No simulation",
+    "No likelihood reevaluation",
+    "No catalogue download",
+    "No canonical source edits"
+  ],
+  "review_corrections": [
+    {
+      "worker": "D02.fold_50.ml_shared.extract",
+      "correction": "Added equally inactive stress.p=1.3 serialization default for all shared ML records; raw records and numerical values unchanged."
+    },
+    {
+      "worker": "D02.fold_65.poisson_loglinear.extract",
+      "correction": "Narrowed formula and productivity line ranges to exact function bodies; content and numerical values unchanged."
+    },
+    {
+      "worker": "D02.fold_65.etas_omori.extract",
+      "correction": "Narrowed continuous Omori and kernel function locators to actual definitions."
+    },
+    {
+      "worker": "D02.fold_80.etas_omori.extract",
+      "correction": "Added explicit optimizer_bounds including log_c and p and clarified training objective versus test score windows. Original numeric fields unchanged. All bounds already source-available; no missing source input."
+    },
+    {
+      "worker": "D02.fold_80.ml_shared.extract",
+      "correction": "Added explicit field_sources for counts, bounds of time windows and all test scores, pointing to observed.json saved controls. Existing test_control_pointer was correct; all values unchanged."
+    }
+  ],
+  "independent_review": {
+    "family_record_returns": 15,
+    "fold_verifier_returns": 3,
+    "startup_route": "deepseek / deepseek-flash confirmed in each stderr.log",
+    "numeric_disagreements": 0,
+    "review_artifact": "fit_pod_manager_review.json",
+    "raw_json_format_defects": 2,
+    "raw_returns_preserved": true
+  },
+  "revision_review": {
+    "root_check": "audit/root_source_checks.json",
+    "cross_domain_check": "audit/methods_parameters_independent_checks.json",
+    "independent_worker_checks": "audit/fit_pod_leaf_validation.json"
+  }
+}

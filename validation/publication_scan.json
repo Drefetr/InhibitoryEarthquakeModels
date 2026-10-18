@@ -1,0 +1,6 @@
+{
+  "secret_pattern_files": [],
+  "event_catalogue_csvs_distributed": false,
+  "earlier_third_party_pdf_distributed": false,
+  "scope": "Conventional token/private-key patterns, not a guarantee of absence of all sensitive information; source metadata reviewed separately."
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "figure": "model_architecture.pdf",
+    "label": "fig:model_architecture",
+    "meaning": "Conceptual distinction between physical loading and independent-background diagnostic intensity; arrows are model definitions, not evidence.",
+    "sources": [],
+    "derived_data": "../data/model_architecture.json"
+  },
+  {
+    "figure": "theory_scope.pdf",
+    "label": "fig:theory_scope",
+    "meaning": "Scope map separating finite-mode stability, ideal infinite-memory questions, conditional inference and observed predictive evidence.",
+    "sources": [],
+    "derived_data": "../data/theory_scope.json"
+  },
+  {
+    "figure": "detection.pdf",
+    "label": "fig:detection",
+    "meaning": "Nominal conditional Clopper-Pearson intervals for five finite procedures, each with its own 999-reference bank on the same query identities. Intervals exclude bank and selection uncertainty.",
+    "sources": [
+      {
+        "path": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+        "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      },
+      {
+        "path": "iteration_21/results/analysis/2026-10-17T004327174461_0000/summary.json",
+        "sha256": "56da11135e920e0ced7ee5173d0bfe064a3802ecaf566d6ba7b6d11b75123823",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      },
+      {
+        "path": "iteration_26/results/analysis/2026-10-17T125009077299_0000/summary.json",
+        "sha256": "0c46b5756ef92965263112738baea86914da2e95d4aa00609c5931a750540aca",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      }
+    ],
+    "derived_data": "../data/detection.json"
+  },
+  {
+    "figure": "paired.pdf",
+    "label": "fig:paired",
+    "meaning": "Paired level-only versus background-level-and-trend decisions. Both 62, level-only 61, level-and-trend-only 6, neither 21. No pathwise dominance.",
+    "sources": [
+      {
+        "path": "iteration_26/results/analysis/2026-10-17T125009077299_0000/summary.json",
+        "sha256": "0c46b5756ef92965263112738baea86914da2e95d4aa00609c5931a750540aca",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      }
+    ],
+    "derived_data": "../data/paired.json"
+  },
+  {
+    "figure": "prediction.pdf",
+    "label": "fig:prediction",
+    "meaning": "Retrospective observed test-score differences in three disjoint periods. No independent-fold uncertainty or causal interpretation is supplied.",
+    "sources": [
+      {
+        "path": "iteration_28/results/numerical_audit/global_decomposition.csv",
+        "sha256": "882dad47a23be9b11fb72b4c2d0e36cf119410b1b63a6e0f7dae7bb5272fa570",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      }
+    ],
+    "derived_data": "../data/prediction.json"
+  },
+  {
+    "figure": "temporal.pdf",
+    "label": "fig:temporal",
+    "meaning": "Saved full-score decomposition by four equal-duration bins per period, using updating full history and retained terminal exposure.",
+    "sources": [
+      {
+        "path": "iteration_28/results/numerical_audit/temporal_comparisons.csv",
+        "sha256": "ff9d404e127b4642b50331abf7de02cb6d5e5b0f9f8adf078bf17cffa6f43b19",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      }
+    ],
+    "derived_data": "../data/temporal.json"
+  },
+  {
+    "figure": "catalogue.pdf",
+    "label": "fig:catalogue",
+    "meaning": "Descriptive archive coverage and native mark composition of 913 selected M>=5 shallow events. The final calendar year is partial; no completeness claim follows.",
+    "sources": [
+      {
+        "path": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+        "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+        "verification": "Inherited from shipped manifest; archival bytes not reread in portable mode."
+      }
+    ],
+    "derived_data": "../data/catalogue.json"
+  },
+  {
+    "figure": "pooling.pdf",
+    "label": "fig:pooling",
+    "meaning": "Exact algebraic illustration with equal positive local backgrounds and eta=1: equal pooled states yield distinct local sums. Triggering is omitted; this is not simulated evidence.",
+    "sources": [],
+    "derived_data": "../data/pooling.json"
+  },
+  {
+    "figure": "finite_memory.pdf",
+    "label": "fig:finite_memory",
+    "meaning": "Exact illustrative three-mode curves with declared positive weights/rates. A toy algebraic mixture, not fitted parameters, a simulated catalogue, or the exact Mittag-Leffler kernel.",
+    "sources": [],
+    "derived_data": "../data/finite_memory.json"
+  }
+]

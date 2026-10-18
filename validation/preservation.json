@@ -1,0 +1,41 @@
+{
+  "errors": [],
+  "scientific_chapters_byte_identical": true,
+  "shipped_figures_byte_identical": true,
+  "selected_results_settings_byte_identical": true,
+  "sealed_v4_archive_hashes_unchanged": {
+    "manuscript_source.zip": true,
+    "revised_manuscript_bundle.zip": true
+  },
+  "public_documentary_edits": [
+    "title authorship",
+    "appendix disclosure/availability wording",
+    "licensing/documents",
+    "aggregate-only catalogue figure inputs"
+  ],
+  "scope": "Exact copy checks, no historical scientific regeneration",
+  "engine_numerical_python_byte_identical": true,
+  "operational_public_variants": [
+    {
+      "path": "engine/iteration_21/run_full_staged.ps1",
+      "original_sha256": "6e499c374c4827f4047cfa2c3e3989f9bb59b1647c6447db0c435140c791f081",
+      "public_sha256": "b89cd45ba4c2f8a68e870f8c25f0397d40e6788bfc4ef0e344fc0428e06a4409",
+      "kind": "operational-launcher-portability",
+      "reason": "Use interpreter selected on PATH; omit user-specific interpreter location or machine-specific discovery."
+    },
+    {
+      "path": "engine/iteration_26/run_level_calibration.ps1",
+      "original_sha256": "2ffa9fa213cb10122f17f39f834fb532c077f9eb4126c99fc4c573f58602b1c4",
+      "public_sha256": "9a1be1a55ae5b58160dfdebcc0a0b59a0b3d7df02705936935448aade6635dd4",
+      "kind": "operational-launcher-portability",
+      "reason": "Use interpreter selected on PATH; omit user-specific interpreter location or machine-specific discovery."
+    },
+    {
+      "path": "engine/iteration_27/configs/observed_frozen.json",
+      "original_sha256": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222",
+      "public_sha256": "f08ebeddf0a7c210dba42748f5e578d2d8d189476cb8c69e1da4e41dff5eb63c",
+      "kind": "public-protocol-binding",
+      "reason": "Bind portable launcher bytes; preserve original scientific design and retain exact historical protocol separately."
+    }
+  ]
+}

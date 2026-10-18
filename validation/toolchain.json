@@ -1,0 +1,27 @@
+{
+  "engine_version": "Tectonic 0.17.0",
+  "engine_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+  "historical_cache": "unsnapshotted; no historical exact replay claim",
+  "pdfs": {
+    "manuscript.pdf": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
+    "explanatory_supplement.pdf": "9d6fc288a57f5090cda6f869509cfee0319ede579a68230183954da5b3bdf6f9"
+  },
+  "python": "3.13.4",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "numexpr": "2.14.1",
+    "matplotlib": "3.11.2",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0",
+    "PyMuPDF": "1.28.2",
+    "Pillow": "12.0.0",
+    "PyYAML": "6.0.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "route": "scripts/build_paper.py; latest attribution rebuild and raw logs retained outside publication tree",
+  "warnings": "Fontconfig default configuration warning retained in raw logs; no missing glyph/undefined/overfull warnings.",
+  "platform_family": "Windows",
+  "privacy_note": "Detailed host OS build omitted; engine and scientific dependency versions retained for reproducibility."
+}

@@ -1,0 +1,96 @@
+\chapter{Questions and contribution}
+\label{ch:introduction}
+
+An earthquake changes the conditions under which later earthquakes occur. A statistical model may represent some of that change as triggering, which raises the subsequent event rate, and some as depletion, which lowers a stress-controlled contribution to that rate. Relaxation allows the influence of a past event to persist and then decay. These ingredients make a coherent modelling hypothesis, but the observed sequence of event times and magnitudes does not label which mechanism produced each event. A fitted inhibitory term can also compete with a flexible background, an alternative triggering kernel, or an imperfect observation model.
+
+The central question of this manuscript is therefore not simply whether an inhibitory model can be fitted. It is when its event-dependent contribution can be learned, what mathematical assumptions make its dynamics legitimate, and what the available predictive comparisons actually support. The distinction matters in both directions. A weak fitted detector need not mean that two specified generating laws are intrinsically indistinguishable. Conversely, a strong detector supplied with the generating parameters need not show that an unknown-parameter procedure can achieve the same performance. Both questions must be kept separate from identifying a physical mechanism in a real catalogue.
+
+The evidence assembled here supports a restricted, positive mathematical contribution and a qualified negative empirical conclusion. Finite-mode stability, particular identification statements, and finite-history likelihood identities remain useful results under explicit hypotheses. Controlled experiments show substantial changes in calibrated detection when background nuisance structure is estimated. The tested inhibited recipes, however, have not demonstrated improved predictive score on the reconstructed observed catalogue. Neither physical inhibition nor its physical absence follows from that comparison.
+
+\section{From a material hypothesis to an observation law}
+\label{sec:intro_material_observation}
+
+A viscoelastic motivation suggests that one relaxation function might describe several responses to an event: the persistence of its stress drop, the accumulated effect of loading, and a triggering density related to the derivative of relaxation. This is a strong modelling restriction. Demonstrating that its components are mathematically compatible is different from showing that the restriction can be distinguished from other explanations using event observations.
+
+The analysis consequently uses two models for different purposes. The physical loading construction retains a latent stress state, a loading history and fresh event marks. Its finite-mode representation permits a Markov description and a scoped stability analysis. The diagnostic model instead specifies a deterministic background independently and asks how identifiable inhibition changes a finite observation law. In abbreviated notation it has intensity
+\begin{equation}
+ \lambda_\eta(t)=B(t)\exp\{-\eta G_s(t)\}+nH_e(t),
+ \qquad \eta\geq 0.
+ \label{eq:intro_diagnostic}
+\end{equation}
+Here $G_s$ is a marked depletion history, $H_e$ is normalized marked triggering, and both use events strictly before $t$. The background $B$ can vary with calendar time. The parameter $\eta$ is a diagnostic inhibition coefficient; it is not automatically the physical stress coefficient of the loading model. The distinction is developed before any theorem or experiment in \cref{ch:models}.
+
+This separation makes the scope of a conclusion visible. An invariant-law theorem for an autonomous finite-mode process does not apply merely because a nonstationary diagnostic uses a similar kernel. A test of inhibition against no inhibition does not by itself test equality of two physical memory functions. A finite-window numerical approximation does not establish a stationary infinite-memory limit. These are different mathematical and observational questions rather than competing descriptions of the same result.
+
+\section{Four questions answered at different levels}
+\label{sec:intro_questions}
+
+\begin{enumerate}
+ \item \textbf{When is the proposed process well defined and stable?} The finite-mode analysis gives conditions for construction, non-explosion, an invariant law, first moments and convergence in a specified weighted cost. Heavy-tailed marks require attention to the particular moments used. Explicit no-feedback counterexamples show why finite-mode results do not justify an unrestricted exact-memory theorem.
+ \item \textbf{What can the observation law identify?} A stress-memory parameter disappears at zero feedback under the stated finite-nuisance or diagnostic conditions. Positive-feedback identification is possible in a restricted full-law experiment with known transforms, empty history and sufficiently rich mark support. Such a statement does not guarantee stable estimation from a finite catalogue.
+ \item \textbf{How does estimating nuisance structure change detection?} Controlled comparisons use the same histories, procedure-specific null reference scores and separate null queries. They distinguish strong separation of a fully specified pair from weaker performance when an uninhibited explanation may change its nuisance parameters. The comparison does not identify a unique physical cause or an avoidable fraction of algorithmic loss.
+ \item \textbf{Does the additional inhibited structure improve observed prediction?} A chronological comparison evaluates declared recipes using complete predictive scores. The shared-inhibition recipe loses to its noninhibited Mittag--Leffler triggering comparator in each of three test periods, while an Omori comparator scores better than both recipes. Reused periods and different kernel flexibility limit the interpretation to those exploratory recipes.
+\end{enumerate}
+
+The first two questions concern dynamics and equality of probability laws. The third concerns a specified testing procedure under a declared generator. The fourth concerns the predictive performance of fitted recipes on an observed catalogue. Evidence at one level can guide another, but cannot replace it.
+
+\section{Relation to existing work}
+\label{sec:related_work}
+
+\subsection{Triggering and fractional relaxation}
+
+Self-exciting point processes provide a natural representation of event clustering. Classical work by \citet{Hawkes1971} develops their second-order structure and also illustrates that second-order properties need not uniquely distinguish different process constructions. That observation is relevant to physical interpretation: a recognizable correlation pattern is not, on its own, a unique mechanism assignment.
+
+Mittag--Leffler earthquake triggering is already developed by \citet{DavisBaeumerWang2024}. Their construction uses a fractional relaxation function and a corresponding triggering density, with magnitude-dependent productivity. The triggering component studied here is inherited from that line of work after parameter relabelling; introducing it is not a contribution of this manuscript. The additional target is a restriction linking event-dependent background depletion and triggering memory, together with the mathematical and inferential conditions required to investigate it. The multivariate fractional model of \citet{DavisBaeumerWang2026} further makes mark-category probabilities history dependent. The fresh independent mark assumption used in the present restricted analysis should therefore be read as a modelling boundary, not an advance over history-dependent marks.
+
+\subsection{Excitation correction and spatial structure}
+
+Combining excitation with stress-related correction also predates this work. \citet{PetrilloZhuangLippiello2023} compare statistical mechanisms with catalogues generated by a physical spring-block model and study the interaction of clustering and stress discharge. The relevant distinction lies in the equations: an additive correcting contribution and a positive background multiplied by a relaxing depletion factor need not have the same law or positivity properties. A claim about a shared relaxation restriction must identify that difference explicitly, rather than claim the first combination of excitation and correction.
+
+Spatially heterogeneous backgrounds and different space--time cluster structures are established parts of earthquake point-process modelling \citep{Ogata1998}. The proposed spatial extension in this manuscript is therefore a targeted model-adequacy question. It asks whether localizing depletion adds predictive information beyond matched spatial background and triggering structures. The algebra in \cref{prop:regional_nonclosure} explains why a collection of locally inhibited processes generally cannot be represented by applying a single exponential of pooled depletion to the national background. It does not establish that spatial pooling caused the observed predictive loss.
+
+\subsection{Stability identification and nonregular testing}
+
+General nonlinear Hawkes stability theory \citep{BremaudMassoulie1996} and coupling methods such as those of \citet{HairerMattinglyScheutzow2011} provide an important context for the finite-mode argument. Their hypotheses remain part of the work: a generator drift inequality alone is not a construction, an existence theorem, or a complete contraction proof. The manuscript therefore states the state domain, mark assumptions, coupling cost and finite-mode restrictions alongside the result. It distinguishes a proof within the stated model from a priority claim over all earlier stability theory.
+
+Likewise, the representation and identification results of \citet{DavisKresinBaeumerWang2026} apply under their own linear-model and observation hypotheses. They do not directly settle a nonlinear stress-memory parameter that vanishes from the law at zero feedback. The present restricted identification argument addresses that singularity explicitly, while retaining its dependence on known mark transforms and unbounded mark support.
+
+Testing at such a boundary is not justified by invoking an ordinary likelihood-ratio reference distribution. Work by \citet{Davies1977,Davies1987} identifies the difficulty of a nuisance parameter present only under the alternative. Boundary asymptotics also require regularity conditions of the kind examined by \citet{SelfLiang1987}. These references motivate care; they are not a ready-made calibration theorem for the heavy-tailed inhibited model. For fitted residual diagnostics, \citet{KlingVetter2024} similarly motivates accounting for estimation rather than treating an estimated compensator as known.
+
+\subsection{What remains unresolved about novelty}
+
+The random-excitation spectrum in \citet{BremaudMassoulie2002} is directly relevant to any random-productivity spectral claim. An equation-by-equation comparison of that full result with the earlier manuscript's spectrum has not been completed in the archived audit. This manuscript does not claim a new general Hawkes spectrum on the basis of a missing comparison. Finite-variance formulas also cannot be transferred to a fitted heavy-tail regime without the required moments.
+
+The mathematical contribution is a restricted analysis: a model-specific application of weak Harris theory, fixed-horizon coupling bounds, and self-contained calculations for stationary moments, exact-memory response, observation-law identification and finite-history inference. The approximation discussion corrects the earlier inference from local to half-line Lipschitz continuity. The triggering component is inherited, and the shared depletion/triggering relation is the particular model restriction studied. Appendix~\ref{app:literature_status} classifies the individual results and their primary-source comparisons. No priority claim is made where a full equivalence comparison remains unresolved.
+
+\section{Evidence and interpretation}
+\label{sec:intro_evidence}
+
+The observed analysis uses an independently reconstructed GeoNet catalogue. It contains 913 selected events over a 24,394-day window starting in 1960 and ending before 15 October 2026. Although its count matches a count reported in an earlier manuscript, the unavailable historical event list and fitting records have not been recovered. The reconstruction is a new archived snapshot with its own selection rules, not historical reproduction. GeoNet describes its catalogue interfaces as access routes to earthquake parameters \citep{GeoNet2026}; a common provider or matching event count does not make interface snapshots independent catalogues.
+
+The controlled studies have a different role. They compare declared laws and procedures, using saved simulated histories and retained failure/recovery policies. When generating nuisance parameters are supplied, the known-law test detects all 150 saved alternatives and rejects 50 of 1,000 separate null queries. Estimating inhibition alone with those nuisance values supplied also detects all 150 alternatives. Estimating background level with trend supplied detects 123, whereas estimating level and trend detects 68. The earlier fuller fitted procedure detects 57 after its own recalibration. These contrasts are substantive evidence about these procedures, with conditional uncertainty and adaptive-reuse qualifications. They are not five independent replications, an additive causal decomposition, or a proof that fixing unknown background values is appropriate for the observed analysis.
+
+The predictive comparison contributes a further kind of evidence. The shared-inhibition recipe fails to improve score in each declared test period, with approximately 93.7\% of its total disadvantage in the first. This supports a negative statement about the predictive return from the tested additional structure. It does not supply three independent confirmations against inhibition or identify a geological cause. Event-only spatial group sums and a narrow archived-magnitude substitution help examine particular explanations but do not constitute fitted spatial likelihoods or a complete observation-error analysis.
+
+\begin{table}[tbp]
+\centering
+\small
+\caption{Levels of evidence used in this manuscript. The conclusion in the middle column is intentionally narrower than the excluded inference.}
+\label{tab:evidence_levels}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Evidence & Supported conclusion & Inference not supplied \\
+\midrule
+Restricted analysis & Results under stated state, kernel and observation assumptions & General nonlinear exact-memory stability or unrestricted physical identification \\
+Controlled histories & Calibrated procedure contrasts at the declared generating law & Universal power, avoidable-loss decomposition or real-data nuisance knowledge \\
+Chronological scores & Performance ordering of the declared exploratory recipes & Physical exclusion, equal-complexity family ranking or untouched confirmation \\
+Source and numerical checks & Specific arithmetic, approximation sensitivity and evidence bindings & Global optimization, catalogue completeness or full historical reproduction \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{How to read the manuscript}
+
+The exposition follows questions rather than the chronology of research iterations. Chapter~\ref{ch:models} defines the models and their observation conventions. Chapters~\ref{ch:stability} and~\ref{ch:identifiability} develop the mathematical domain and identification boundaries. Chapter~\ref{ch:inference} derives the finite-history likelihood tools and explains what is held fixed in response and testing statements. The remaining main chapters describe the controlled design, report the synthetic and observed evidence, and explain the resulting research decision. A reader primarily interested in the empirical conclusion can read the model definitions, the design and results chapters, and the discussion before returning to the proofs.
+
+The appendices provide an archival source map, numerical/reproducibility boundaries, notation and a focused record of unresolved literature comparisons. Operational recovery histories and file hashes are kept there or in the companion evidence. The main contribution is the connected account of mathematical validity, identification and procedure performance. A bounded locality comparison remains a possible extension of that account.

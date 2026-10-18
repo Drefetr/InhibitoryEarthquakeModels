@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the work collectively as the Inhibitory Earthquake Models collaboration; see CONTRIBUTORS.md for human and AI roles."
+type: software
+title: "Stability and identification in inhibitory earthquake models: research code and manuscript"
+version: "0.1.0-review"
+repository-code: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+authors:
+  - name: "Inhibitory Earthquake Models collaboration"
+    website: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+license: MIT
+preferred-citation:
+  type: unpublished
+  title: "Stability and identification in inhibitory earthquake models: Restricted mathematics, nuisance sensitivity and predictive evidence"
+  authors:
+    - name: "Inhibitory Earthquake Models collaboration"
+      website: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+  license: CC-BY-4.0
+  notes: "Human collaborators: Drefetr and magna-nz. AI collaborators: Claude, Astra, Sol, DeepSeek agents and Argon. Neither human is designated the main author. See CONTRIBUTORS.md for roles and review limitations."

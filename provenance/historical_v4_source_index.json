@@ -1,0 +1,720 @@
+[
+  {
+    "id": "S01",
+    "archive_path": "iteration_12/results/aggregate/2026-10-16T061247128773_0000/summary.json",
+    "exists": true,
+    "sha256": "05738575873e38fcce3f855f0942e8660d0813771f2bb67cd3cec66400d7fb6a",
+    "bytes": 2935,
+    "included_path": "supplements/source_evidence/S01_summary.json",
+    "descriptions": [
+      "completed 3,998-case fitted-law calibration"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S02",
+    "archive_path": "iteration_13/reports/reference_score_geometry.md",
+    "exists": true,
+    "sha256": "c187cfe09306276d7a0c14d40fd24daba4639a8c023e6f4df95067300cc224ce",
+    "bytes": 6659,
+    "included_path": "supplements/source_evidence/S02_reference_score_geometry.md",
+    "descriptions": [
+      "Derivation and finite-reference-path results",
+      "fixed-history score projections"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S03",
+    "archive_path": "iteration_13/reports/restricted_score_bound.md",
+    "exists": true,
+    "sha256": "d7e1dca33bcebf5e196db773b7a1b38978265c48ca61822f1edd3dbc78dc5998",
+    "bytes": 7576,
+    "included_path": "supplements/source_evidence/S03_restricted_score_bound.md",
+    "descriptions": [
+      "Assumptions and pathwise inequality",
+      "Assumptions, pathwise inequality, and exact-mark threshold"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S04",
+    "archive_path": "iteration_13/reports/stable_process_irregular_score.md",
+    "exists": true,
+    "sha256": "f5a547887544d7419482febf0f944c88d6da8c27e0ef2e972199932e08e3425d",
+    "bytes": 3736,
+    "included_path": "supplements/source_evidence/S04_stable_process_irregular_score.md",
+    "descriptions": [
+      "Null boundary example"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S05",
+    "archive_path": "iteration_15/reports/positive_eta_response.md",
+    "exists": true,
+    "sha256": "bf2f3491e1fd1487d9fac6452160d0aca47bc35c38f6d2a09a619dd9dbd5dbee",
+    "bytes": 8778,
+    "included_path": "supplements/source_evidence/S05_positive_eta_response.md",
+    "descriptions": [
+      "Sections 1--2"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S06",
+    "archive_path": "iteration_15/reports/power_response_corollary.md",
+    "exists": true,
+    "sha256": "e43160034faceb2132ac06bb3bd42766db9c264aafbde8daa61f5ec23b528a73",
+    "bytes": 2826,
+    "included_path": "supplements/source_evidence/S06_power_response_corollary.md",
+    "descriptions": [
+      "Main corollary and proof"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S07",
+    "archive_path": "iteration_16/code/power_engine.py",
+    "exists": true,
+    "sha256": "ef30070265e638be5d0441ac362e48dc88c3da9d534775bc2bf4850120b8e757",
+    "bytes": 21600,
+    "included_path": "supplements/source_evidence/S07_power_engine.py",
+    "descriptions": [
+      "fixed-history event-time suppression"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S08",
+    "archive_path": "iteration_16/reports/research_report.md",
+    "exists": true,
+    "sha256": "a83bd516aaa824aa3b1023dde9b1ce6ebe14806a02841e4500584a3df3080297",
+    "bytes": 8712,
+    "included_path": "supplements/source_evidence/S08_research_report.md",
+    "descriptions": [
+      "completed 150-pair comparison"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S09",
+    "archive_path": "iteration_19/reports/completed_evaluation.md",
+    "exists": true,
+    "sha256": "bdf00666695436c36d7eddb5b1009cbf2df4019cf48ec6fc78f2ec958626e77a",
+    "bytes": 8593,
+    "included_path": "supplements/source_evidence/S09_completed_evaluation.md",
+    "descriptions": [
+      "completed-history evaluation and rank calibration",
+      "completed-history evaluation and recalibration"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S10",
+    "archive_path": "iteration_20/code/restricted_history.py",
+    "exists": true,
+    "sha256": "0d3e2b538a2757343424ab13cb891d605225451e5db728739d0723624b0691f5",
+    "bytes": 12995,
+    "included_path": "supplements/source_evidence/S10_restricted_history.py",
+    "descriptions": [
+      "fixed stress-feature construction"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S11",
+    "archive_path": "iteration_22/reports/research_report.md",
+    "exists": true,
+    "sha256": "4c63eb8468001bfa641d391a63429f23532cc66e7dd24f0e44c0c82665e81464",
+    "bytes": 10109,
+    "included_path": "supplements/source_evidence/S11_research_report.md",
+    "descriptions": [
+      "background likelihood accounting",
+      "synthetic law construction and likelihood comparisons"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S12",
+    "archive_path": "iteration_23/reports/A_amplitude_proposition.md",
+    "exists": true,
+    "sha256": "4e9247a25359fe30c09ac7620f663c5c8513d45d30de81db64961b19b2a567ea",
+    "bytes": 6089,
+    "included_path": "supplements/source_evidence/S12_A_amplitude_proposition.md",
+    "descriptions": [
+      "Amplitude proposition and numerical representation",
+      "Opening definition and ground objective"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S13",
+    "archive_path": "iteration_23/reports/background_balance_corollary.md",
+    "exists": true,
+    "sha256": "6aa1f5239fea315372ee64d18108684f75177505765a57d1161206cf8e32ab9a",
+    "bytes": 3904,
+    "included_path": "supplements/source_evidence/S13_background_balance_corollary.md",
+    "descriptions": [
+      "Background balance and profile derivatives"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S14",
+    "archive_path": "iteration_24/completion/reports/research_report.md",
+    "exists": true,
+    "sha256": "ed47a11081df7f66bdf7eec8ba50e4157db0b552e2051172927644ff01619dd5",
+    "bytes": 10075,
+    "included_path": "supplements/source_evidence/S14_research_report.md",
+    "descriptions": [
+      "selected-history optimizer audit"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S15",
+    "archive_path": "iteration_25/completion/reports/research_report.md",
+    "exists": true,
+    "sha256": "73a06f07f6a670846fc1a97b9c8981b12a6250e08957052ba3abc564d7ada673",
+    "bytes": 9722,
+    "included_path": "supplements/source_evidence/S15_research_report.md",
+    "descriptions": [
+      "raw-statistic ablation"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S16",
+    "archive_path": "iteration_26/completion/reports/research_report.md",
+    "exists": true,
+    "sha256": "ee7fb0a68e7c2d10fd87314e1aefe9b078c526aa07d3790d5911f9c63ef5e606",
+    "bytes": 10109,
+    "included_path": "supplements/source_evidence/S16_research_report.md",
+    "descriptions": [
+      "completed level-only calibration",
+      "final evaluation tables and inferential scope",
+      "final matched-law results"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S17",
+    "archive_path": "iteration_27/code/adequacy.py",
+    "exists": true,
+    "sha256": "9662c90f9ff7e120fe26c1dfc0bd969071f16774feec686b9e97731337e0ff90",
+    "bytes": 33190,
+    "included_path": "supplements/source_evidence/S17_adequacy.py",
+    "descriptions": [
+      "stress and normalized triggering features"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S18",
+    "archive_path": "iteration_27/configs/observed_frozen.json",
+    "exists": true,
+    "sha256": "f9c99037a162cd7ac1f57cea15de0ecbf5bdaeb2fe0fdf568d53b62c56cfa222",
+    "bytes": 12394,
+    "included_path": "supplements/source_evidence/S18_observed_frozen.json",
+    "descriptions": [
+      "candidate families and frozen protocol"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S19",
+    "archive_path": "iteration_27/reports/research_report.md",
+    "exists": true,
+    "sha256": "005ddd8f858d8f7abb1697964b765c5614807aa838ca854b76cc09bb11305def",
+    "bytes": 13148,
+    "included_path": "supplements/source_evidence/S19_research_report.md",
+    "descriptions": [
+      "frozen candidates and chronological held-out scores"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S20",
+    "archive_path": "iteration_28/reports/research_report.md",
+    "exists": true,
+    "sha256": "ac8c90ab66635503db555859923802e4c78d12b006783d787c200a8624af150d",
+    "bytes": 14235,
+    "included_path": "supplements/source_evidence/S20_research_report.md",
+    "descriptions": [
+      "first-block score decomposition and archive sensitivity"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S21",
+    "archive_path": "iteration_4/manuscript_revisions/A_theorems.tex",
+    "exists": true,
+    "sha256": "1ce605fab245ad1e7617716866b3bd95a913afe5b7dbc8467a62835463db1f57",
+    "bytes": 9863,
+    "included_path": "supplements/source_evidence/S21_A_theorems.tex",
+    "descriptions": [
+      "finite-mode Lyapunov, coupling, invariant-law and moment proof",
+      "finite-mode dynamics, marks, intensity and stability assumptions",
+      "heavy-tailed stationary second moments",
+      "local-Lipschitz truncation argument",
+      "quantitative fixed-horizon kernel coupling"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S22",
+    "archive_path": "iteration_4/manuscript_revisions/B_propositions.tex",
+    "exists": true,
+    "sha256": "716dfcf13ffaf46c4c8ea9f735ea8a3a8b809dab92512987da3dd96b4ec102c7",
+    "bytes": 7889,
+    "included_path": "supplements/source_evidence/S22_B_propositions.tex",
+    "descriptions": [
+      "Exact identity for the marked point process",
+      "excitation-inclusive resolvent and tail proof",
+      "marked-process compensators, left limits and kernel conventions",
+      "no-feedback obstruction and proof",
+      "restricted nonlinear statement and explicit limitation",
+      "weak-feedback crossover"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S23",
+    "archive_path": "iteration_4/reports/C_identifiability.md",
+    "exists": true,
+    "sha256": "d95c276aa2eab3c50a36aebda9f4fcf5f4dff13459ed95f717464c3ac8599185",
+    "bytes": 26047,
+    "included_path": "supplements/source_evidence/S23_C_identifiability.md",
+    "descriptions": [
+      "Proposition C.1",
+      "Proposition C.3 and surrounding discussion",
+      "Section 1",
+      "Section 2",
+      "Section 3",
+      "Sections 1--2"
+    ],
+    "verified_locators": {
+      "structural_identification": "Proposition C.3, lines154-170",
+      "finite_horizon_visibility": "Proposition C.1, lines119-134",
+      "joint_scope": "Section5, PropositionsC.1 andC.3; manuscript prose now cites stableS23"
+    },
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S24",
+    "archive_path": "iteration_5/data/processed/catalogue_metadata.json",
+    "exists": true,
+    "sha256": "a166602040591234639bdf1acc69a509603bbab53e54948619a1c011fc98492d",
+    "bytes": 23906,
+    "included_path": "supplements/source_evidence/S24_catalogue_metadata.json",
+    "descriptions": [
+      "stored event count, horizon, and filter metadata"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S25",
+    "archive_path": "iteration_5/reports/research_report.md",
+    "exists": true,
+    "sha256": "ec2dfa1277ced128249215522795903910ee92713f0a6e9e9592733d80bf28c0",
+    "bytes": 10880,
+    "included_path": "supplements/source_evidence/S25_research_report.md",
+    "descriptions": [
+      "Mathematical connection and normalization correction",
+      "catalogue reconstruction and selection"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S26",
+    "archive_path": "review_handoff/2026-10-18/deepseek_cli_review_20261018-115244/SUPERVISOR_REVIEW_ADDENDUM.txt",
+    "exists": true,
+    "sha256": "97931a43bacfd440f2fd7460171d3338c02e19a1bd9be68e384f66a17b833b4c",
+    "bytes": 9256,
+    "included_path": "supplements/source_evidence/S26_SUPERVISOR_REVIEW_ADDENDUM.txt",
+    "descriptions": [
+      "Supplied nuisance information changes the testing question",
+      "regional aggregation argument"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "S27",
+    "archive_path": "review_handoff/2026-10-18/output/research_handoff.md",
+    "exists": true,
+    "sha256": "81abbc78516fd8ac37fbac2f7d0c4aa2a21ab92b9057217d208d09c7709beb3b",
+    "bytes": 31214,
+    "included_path": "supplements/source_evidence/S27_research_handoff.md",
+    "descriptions": [
+      "initial reconstruction and calibration",
+      "reconstruction limits and provenance comparison"
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M01",
+    "archive_path": "iteration_12/code/clock_simulator.py",
+    "exists": true,
+    "sha256": "b12d998dc03565812e2dbbafce020b23d0ebeb684b96c93ba26ee69064b72e69",
+    "bytes": 13599,
+    "included_path": "supplements/source_evidence/M01_clock_simulator.py",
+    "descriptions": [
+      "Precise accepted-event clock simulator retaining the thinning/RNG law and paired timestamps without jittering display ties."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M02",
+    "archive_path": "iteration_12/code/paired_history.py",
+    "exists": true,
+    "sha256": "3950696b888b1a0d7c55a4448f9283c9376ef246296ad9181d273a53e7380e5a",
+    "bytes": 8948,
+    "included_path": "supplements/source_evidence/M02_paired_history.py",
+    "descriptions": [
+      "Finite-mixture likelihood history representation using paired absolute timestamps and event gaps for empty-history full-window scoring."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M03",
+    "archive_path": "iteration_12/code/stable_history.py",
+    "exists": true,
+    "sha256": "f2ed43402c17203c900642b584db591638fbd27474c9669bffa4a43379bdaa30",
+    "bytes": 16351,
+    "included_path": "supplements/source_evidence/M03_stable_history.py",
+    "descriptions": [
+      "Value-likelihood and failure-only recovery implementation, including bounded Powell searches and the exact zero-triggering face."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M04",
+    "archive_path": "iteration_17/code/oracle_likelihood.py",
+    "exists": true,
+    "sha256": "6e8fa9ce82cb5c2d100adaf8065138172830618da49047e9c5aa73ccfaa3bb46",
+    "bytes": 11576,
+    "included_path": "supplements/source_evidence/M04_oracle_likelihood.py",
+    "descriptions": [
+      "Streaming fixed-nuisance finite-mixture log-likelihood-ratio evaluator with explicit projected and paired clock conventions."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M05",
+    "archive_path": "iteration_19/results/analysis/2026-10-16T144344808758_0000/summary.json",
+    "exists": true,
+    "sha256": "bb2961dc569f954157524d19d7692390494a08fee781c3b1f9538d75aee7721f",
+    "bytes": 668072,
+    "included_path": "supplements/source_evidence/M05_summary.json",
+    "descriptions": [
+      "Completed known-law versus fitted comparison summary with calibrated decisions, paired outcomes and accounting for saved histories."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M06",
+    "archive_path": "iteration_20/code/restricted_fit.py",
+    "exists": true,
+    "sha256": "29663cb80701a90332b0dfe0876f5b2a64a6d0841b6c9de66f80aade8beba418",
+    "bytes": 19307,
+    "included_path": "supplements/source_evidence/M06_restricted_fit.py",
+    "descriptions": [
+      "Restricted nuisance-ablation estimator implementing the prospective start contract and preserving primary, retry and witness records."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M07",
+    "archive_path": "iteration_21/configs/staged_full_frozen.json",
+    "exists": true,
+    "sha256": "91d98445f0b722bf960fa0ea331f10a592547f23ae35a74723ad57cbd7a77d65",
+    "bytes": 107939,
+    "included_path": "supplements/source_evidence/M07_staged_full_frozen.json",
+    "descriptions": [
+      "Frozen pre-execution specification for the bounded full saved-history evaluation of two staged procedures; preparation authority, not completion evidence."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M08",
+    "archive_path": "iteration_24/code/profile_optimizer.py",
+    "exists": true,
+    "sha256": "f0ab547015736eb9bfd6a3f3b8d08e60420516fda91a828149e5a5f087d9aff8",
+    "bytes": 35022,
+    "included_path": "supplements/source_evidence/M08_profile_optimizer.py",
+    "descriptions": [
+      "Independent value-only amplitude-profile search implementation with frozen-history features and pointwise numerical controls."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M09",
+    "archive_path": "iteration_26/completion/results/summary.json",
+    "exists": true,
+    "sha256": "dc316038bf9b7b2ff9586e21654e1955106e62779ae2dd933948d73440bf8a81",
+    "bytes": 6726,
+    "included_path": "supplements/source_evidence/M09_summary.json",
+    "descriptions": [
+      "Completed level-only matched-null calibration summary and comparisons with supplied-background and estimated-background procedures."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M10",
+    "archive_path": "iteration_26/configs/D_search_spec.json",
+    "exists": true,
+    "sha256": "be15022224d2930881706c4b7f0545729e06efb6fb17c2ded18687803a6f24dd",
+    "bytes": 1465,
+    "included_path": "supplements/source_evidence/M10_D_search_spec.json",
+    "descriptions": [
+      "Level-only amplitude/profile search specification, solver eligibility rules and numerical-envelope controls."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M11",
+    "archive_path": "iteration_26/configs/full_protocol_frozen.json",
+    "exists": true,
+    "sha256": "4212d4c08fcd20382e3217f59ab3cdb2a0a28cf5ef641d5a2a69d75a2c8fd1da",
+    "bytes": 195630,
+    "included_path": "supplements/source_evidence/M11_full_protocol_frozen.json",
+    "descriptions": [
+      "Frozen full level-only calibration protocol defining saved case IDs, generating law, search, calibration and failure policy."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M12",
+    "archive_path": "iteration_27/code/run_adequacy.py",
+    "exists": true,
+    "sha256": "e3813f59385843c8dec0bdf48ce2070e7c8bc2f0a650fab629d8a22985892a36",
+    "bytes": 8884,
+    "included_path": "supplements/source_evidence/M12_run_adequacy.py",
+    "descriptions": [
+      "Bounded observed rolling-diagnostics runner with hash-bound protocol validation, append-only checkpoints and selected numerical controls."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M13",
+    "archive_path": "iteration_27/configs/D_interface.json",
+    "exists": true,
+    "sha256": "63599f361eac23e1115c5747e44579b17d3ccf25bc406a4fb9b4185499c5d3be",
+    "bytes": 4047,
+    "included_path": "supplements/source_evidence/M13_D_interface.json",
+    "descriptions": [
+      "Observed five-family fitting interface specifying search, bounds, starts, likelihood geometry and control requirements before protocol freeze."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M14",
+    "archive_path": "iteration_27/logs/completion_manifest.json",
+    "exists": true,
+    "sha256": "30589e8a624e7e548a67aa8c7e13a5a29bd3fcdb7b249a8e8aa600dac9f14be7",
+    "bytes": 21834,
+    "included_path": "supplements/source_evidence/M14_completion_manifest.json",
+    "descriptions": [
+      "Closed iteration-27 completion manifest binding retained artifacts and checks while preserving the incomplete horizon-pilot scope."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M15",
+    "archive_path": "iteration_27/logs/completion_verification.json",
+    "exists": true,
+    "sha256": "a0f174ff75efc0b0c9c3ae65e390d384ee3a3c25b1e2ac45016b5bdccf64782e",
+    "bytes": 601,
+    "included_path": "supplements/source_evidence/M15_completion_verification.json",
+    "descriptions": [
+      "Completion verification record checking authority identities, observed completion and explicitly incomplete horizon-pilot accounting."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M16",
+    "archive_path": "iteration_27/results/observed.json",
+    "exists": true,
+    "sha256": "e7fbc4fa4fae3da4f8880695064798a8ebfc9342ab09303073f7afd7334439d8",
+    "bytes": 3570617,
+    "included_path": "supplements/source_evidence/M16_observed.json",
+    "descriptions": [
+      "Original full selected-fit and alternative-candidate authority, included byte for byte. The extracted predictive records may now be independently checked against their upstream JSON pointers. Inclusion is documentary, not a rerun of optimization or certification of every candidate."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M17",
+    "archive_path": "iteration_27/results/observed_analysis/fold_scores.csv",
+    "exists": true,
+    "sha256": "204e556f54f98b9836ff6127e7f097289aaddd0efa7adcaf3db0d08d8f86c000",
+    "bytes": 5100,
+    "included_path": "supplements/source_evidence/M17_fold_scores.csv",
+    "descriptions": [
+      "Accepted observed fold-score table for five families at three origins, including selected parameters, predictive scores and residual summaries."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M18",
+    "archive_path": "iteration_27/results/observed_analysis/summary.json",
+    "exists": true,
+    "sha256": "da1ead8a2a439486b7f980d908770364451911f33e5008de5355b4b3219003a8",
+    "bytes": 28300,
+    "included_path": "supplements/source_evidence/M18_summary.json",
+    "descriptions": [
+      "Completed exploratory observed-analysis summary aggregating five-family scores, contrasts, residuals and selected numerical controls."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M19",
+    "archive_path": "iteration_27/reviews/A_completion_review.json",
+    "exists": true,
+    "sha256": "8726bbc99d907b61181430fd9bb1caa81e3613119ae1a066e39d792255acaff8",
+    "bytes": 40732,
+    "included_path": "supplements/source_evidence/M19_A_completion_review.json",
+    "descriptions": [
+      "A-role completion review of observed comparison provenance and arithmetic, retaining the unaccepted whole horizon pilot and unresolved cases."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M20",
+    "archive_path": "iteration_27/reviews/C_completion_review.json",
+    "exists": true,
+    "sha256": "f3f7fabf2245f4c4e6dce6dd19f7148af6493cadd976c4e98a8b18df2c6ff2bf",
+    "bytes": 41033,
+    "included_path": "supplements/source_evidence/M20_C_completion_review.json",
+    "descriptions": [
+      "C-role completion review of the closed observed record, independent arithmetic and the scientifically incomplete 27-of-30 horizon pilot."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M21",
+    "archive_path": "iteration_28/configs/numerical_frozen.json",
+    "exists": true,
+    "sha256": "2636262990a11edb1f4b0ae6122370b26d7c0d49b590094af83644b7cbe5a6fd",
+    "bytes": 16032,
+    "included_path": "supplements/source_evidence/M21_numerical_frozen.json",
+    "descriptions": [
+      "Frozen iteration-28 fixed-parameter diagnostic specification with input bindings, expected counts and source-sensitivity qualifications."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M22",
+    "archive_path": "iteration_5/code/empirical_process.py",
+    "exists": true,
+    "sha256": "9d8bc923cc87eba586bd0dee721245be73f2bbf623c90e00e138a18198d45ea0",
+    "bytes": 13080,
+    "included_path": "supplements/source_evidence/M22_empirical_process.py",
+    "descriptions": [
+      "Predictable diagnostic likelihood, bounded candidate-grid estimator and null-simulation implementation for the independent reconstruction."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M23",
+    "archive_path": "iteration_5/code/kernels.py",
+    "exists": true,
+    "sha256": "3561ef3471adf349caebebc6c2ca12881f2a3d9c7c7415d15453b5be20b978ae",
+    "bytes": 5359,
+    "included_path": "supplements/source_evidence/M23_kernels.py",
+    "descriptions": [
+      "Normalized exponential, Omori and positive finite-mixture Mittag--Leffler kernel implementation with explicit approximation limits."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M24",
+    "archive_path": "iteration_5/code/prepare_catalogue.py",
+    "exists": true,
+    "sha256": "60431d02fd433412fa76130f82452f8ca2ed804bef846f27b7c20eabde08a610",
+    "bytes": 27002,
+    "included_path": "supplements/source_evidence/M24_prepare_catalogue.py",
+    "descriptions": [
+      "Frozen-response catalogue preparation code verifying raw hashes, applying selection rules and recording exclusions without remote fetching."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M25",
+    "archive_path": "iteration_5/data/processed/geonet_M5_shallow_1960_2026.csv",
+    "exists": true,
+    "sha256": "feacccb7581d1c4c33f88874cd6b198c41639da6930a7fc35e46f910a594fb3e",
+    "bytes": 109747,
+    "included_path": "supplements/source_evidence/M25_geonet_M5_shallow_1960_2026.csv",
+    "descriptions": [
+      "Prepared GeoNet shallow magnitude-five catalogue CSV containing event IDs, UTC/day clocks, marks, locations and recorded event types."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  },
+  {
+    "id": "M26",
+    "archive_path": "iteration_9/code/numerical_fit.py",
+    "exists": true,
+    "sha256": "ab9f517ab6065f952a22e5ad02e72dd8111f1ad18c405527f3a461f556ea6bc1",
+    "bytes": 10378,
+    "included_path": "supplements/source_evidence/M26_numerical_fit.py",
+    "descriptions": [
+      "Failure-only CPU numerical recovery wrapper preserving successful primary starts and recording retry lineage separately from canonical fits."
+    ],
+    "availability_status": "included",
+    "availability_register": "supplements/source_availability.json"
+  }
+]

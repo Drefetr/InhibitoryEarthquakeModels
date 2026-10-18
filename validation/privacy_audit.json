@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-18",
+  "status": "passed under recorded scope",
+  "scope": [
+    "All tracked working files and staged index blobs",
+    "Credential prefixes/private keys/credential assignments/URLs and high-entropy Python literals",
+    "Personal absolute paths, email candidates and host-environment references",
+    "Eleven PDFs: metadata, XMP, visible text, links, decoded objects/streams and attachments",
+    "Git local config key names, refs, reachable commits and old staged object exclusion",
+    "Remote ref inventory before publication"
+  ],
+  "findings": {
+    "credential_or_api_key_findings": 0,
+    "personal_email_findings": 0,
+    "remaining_user_specific_absolute_paths": 0,
+    "pdf_embedded_files": 0,
+    "pdf_local_file_links": 0,
+    "unresolved_findings": 0
+  },
+  "remediation": [
+    "Removed a user-specific interpreter path from an optional PowerShell launcher.",
+    "Made a second optional launcher use portable interpreter discovery.",
+    "Retained original observed protocol separately; public bindings record only the two launcher adaptations. Scientific Python files and scientific settings are unchanged.",
+    "Moved ignored build logs, bytecode and preaudit Git objects outside public repository.",
+    "Recreated clean local Git index, with no commits or personal commit email metadata.",
+    "Moved superseded public ZIP and detached report outside publication paths; rebuilt artifacts after audit.",
+    "Removed detailed host OS build from public toolchain summary."
+  ],
+  "reviewed_false_positives": {
+    "email_patterns": "Matrix multiplication in Python, not email strings.",
+    "UNC_patterns": "LaTeX syntax/regex and incidental compressed PDF bytes.",
+    "PDF_byte_patterns": "No corresponding matches in interpreted PDF content or metadata."
+  },
+  "allowed_public_identifiers": [
+    "Drefetr",
+    "magna-nz",
+    "collaborator-supplied AI model names",
+    "public scholarly bibliography names"
+  ],
+  "provenance_paths": "Project-relative iteration/code/result names retained for scientific source identity; no personal machine directory prefixes.",
+  "regression_checks": [
+    {
+      "command": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected": 0
+    },
+    {
+      "command": [
+        "-B",
+        "scripts/run_observed.py",
+        "--check-inputs-only"
+      ],
+      "exit_code": 1,
+      "expected": 1
+    }
+  ],
+  "scientific_protocol_fields_changed": [],
+  "protocol_pin_changes": [
+    "iteration_21/run_full_staged.ps1",
+    "iteration_26/run_level_calibration.ps1"
+  ],
+  "pdf_count": 11,
+  "pdfs": [
+    {
+      "file": "paper/figures/catalogue.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/detection.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/finite_memory.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/model_architecture.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/paired.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/pooling.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/prediction.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/temporal.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/figures/theory_scope.pdf",
+      "pages": 1,
+      "embedded_files": 0,
+      "link_schemes": []
+    },
+    {
+      "file": "paper/manuscript.pdf",
+      "pages": 64,
+      "embedded_files": 0,
+      "link_schemes": [
+        "https"
+      ]
+    },
+    {
+      "file": "paper/supplements/explanatory_supplement.pdf",
+      "pages": 2,
+      "embedded_files": 0,
+      "link_schemes": []
+    }
+  ],
+  "git": {
+    "remote": "https://github.com/Drefetr/InhibitoryEarthquakeModels.git",
+    "remote_refs": 0,
+    "local_commits": 0,
+    "old_personal_path_blob_present": false,
+    "pushed": false,
+    "visibility": "User states private; visibility settings not independently queried by Git ref inspection."
+  },
+  "limitations": [
+    "Pattern matching and manual disposition are not a guarantee against every possible sensitive value.",
+    "Live remote visibility/settings are outside Git ref inspection.",
+    "Public GitHub handles and scholarly citation names are intentionally retained."
+  ],
+  "tracked_files_scanned": 141,
+  "final_scan_review": "All remaining candidates match individually reviewed false-positive signatures; no new or unresolved candidates.",
+  "superseded_artifacts": "Earlier preaudit public ZIP, report, local Git index and raw builds quarantined outside publication tree. Use the replacement archive.",
+  "collective_attribution_revision": {
+    "tracked_files_rescanned": 142,
+    "new_or_unresolved_findings": 0,
+    "pdf_pages": 64,
+    "scope": "New paper/citation/disclosure and staged files rescanned after attribution update; remaining candidates match reviewed mathematical/LaTeX/compressed-byte false positives."
+  },
+  "record_phase": "Prepublication audit snapshot. Zero-commit/no-push/ref counts describe that audit phase, not the ongoing live repository state."
+}

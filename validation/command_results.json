@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "log": "unit_tests.txt",
+    "scope": "actual deterministic preparation run"
+  },
+  {
+    "command": [
+      "scripts/check_mathematics.py",
+      "--output",
+      "build/mathematics_final.json"
+    ],
+    "exit_code": 0,
+    "expected": 0,
+    "log": "mathematics_console.txt",
+    "scope": "actual deterministic preparation run"
+  },
+  {
+    "command": [
+      "scripts/run_observed.py",
+      "--check-inputs-only"
+    ],
+    "exit_code": 1,
+    "expected": 1,
+    "log": "external_input_preflight.txt",
+    "scope": "preflight intentionally fails only for omitted external catalogue"
+  }
+]

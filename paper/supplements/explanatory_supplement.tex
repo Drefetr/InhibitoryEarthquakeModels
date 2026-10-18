@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,hyperref}
+\setlength{\emergencystretch}{2em}
+\title{Release-v4 explanatory supplement (E04)}
+\author{}
+\date{18 October 2026}
+\begin{document}\maketitle
+\section{Compensated response and likelihood-product explanations}
+\label{sec:vfour_math_explanations}
+These finite-horizon explanations expand the retained manuscript identities;
+they do not replace the scientific procedures or establish a stationary
+nonlinear exact-memory theorem.
+
+\subsection{Compensator cancellation}
+With physical productivity $\mathbb E\kappa=n$, scalar initialization
+$X_0\Phi$, zero initial excitation and no additional prehistory, set
+$f=X_0\Phi+\rho(1*\Phi)$ and write $X$ for post-event stress in ordinary
+time convolutions. Then $X=f-\Phi*\mathrm dN_g$ and
+$\lambda=\Psi(X_-)+h*\mathrm dN_\kappa$.
+The deterministic resolvent identities are
+\[
+Q_\gamma+nR_\gamma*h=R_\gamma,\qquad
+Q_\gamma+\gamma R_\gamma*\Phi=\Phi.
+\]
+Substituting $\mathrm dM_g=\mathrm dN_g-m_1\lambda\,\mathrm dt$
+and $\mathrm dM_\kappa=\mathrm dN_\kappa-n\lambda\,\mathrm dt$
+into the right-hand side $S$ of the manuscript's compensated identity gives
+\[
+\begin{aligned}
+S={}&X_0Q_\gamma+\rho(1*Q_\gamma)+\gamma R_\gamma*X
+-m_1R_\gamma*\Psi-Q_\gamma*\mathrm dN_g\\
+&+m_1Q_\gamma*\lambda-m_1R_\gamma*h*\mathrm dN_\kappa
++m_1nR_\gamma*h*\lambda\\
+={}&X_0Q_\gamma+\rho(1*Q_\gamma)-Q_\gamma*\mathrm dN_g
++\gamma R_\gamma*X.
+\end{aligned}
+\]
+Here the first kernel relation combines the compensators, after which
+$\lambda-\Psi=h*\mathrm dN_\kappa$ cancels the remaining terms.
+The second relation makes the first three final terms
+$X-\gamma R_\gamma*X$, so $S=X$. This reasoning does not require
+independence of the two mark martingales. Predictable intensities still
+use the left limit; changes on the countable jump set do not affect
+ordinary time convolutions. The algebra is causal on finite horizons,
+without a transform assumption for the nonlinear sample path.
+
+\subsection{An event-free deterministic check}
+For $n=0$, $m_1=\ell=\gamma=\tau=X_0=\rho=1$ and
+$\alpha=1/2$, take $\Psi(X)=X$ on the positive range of the path. Then
+\[
+\Phi(t)=e^t\operatorname{erfc}(\sqrt t),\qquad
+X(t)=\Phi(t)+\int_0^t\Phi(u)\,\mathrm du,\qquad
+\widehat Q(s)=\widehat R(s)=\frac1{s+\sqrt s+1}.
+\]
+Although no raw event occurs, $\mathrm dM_g=-X\,\mathrm dt$ and
+$-R*\mathrm dM_g=R*X$. The nonlinear residual is zero, giving
+\[
+X=Q+1*Q+R*X.
+\]
+At $t=1$, deterministic evaluation gives $X(1)=0.983546319407127$,
+$Q(1)+(1*Q)(1)=0.623004105263315$, and
+$(R*X)(1)=0.360542214143811$, up to displayed rounding.
+The compensator accounts for the apparent discrepancy. Replacing only
+the initial/loading kernels $Q$ by $\Phi$ instead adds $\gamma R*f$.
+The linear link is used only on this positive stress range, and a positive
+extension outside it can be supplied; no globally negative intensity is
+needed. These are fixed-parameter evaluations, not simulated catalogues.
+
+\subsection{The likelihood-product envelope}
+At fixed generating nuisances, let
+\[
+\mathcal B=\int_0^TB(t)\,\mathrm dt,\quad
+J_\eta=\int_0^TB(t)(1-e^{-\eta G_s(t)})\,\mathrm dt,\quad
+q_i=\frac{B_i e^{-\eta G_i}+c_i}{B_i+c_i},\quad c_i=nH_i.
+\]
+At actual reference events $B_i+c_i>0$ almost surely. On
+$\eta\in[\eta_-,\eta_+]\subset(0,\infty)$, the bound
+$\sup_{z\ge0}ze^{-\eta_-z}=1/(e\eta_-)$ gives
+$|q_i'|\le1/(e\eta_-)$ and
+$|J_\eta'|\le\mathcal B/(e\eta_-)$.
+As $0\le q_i\le1$ and $0\le J_\eta\le\mathcal B$,
+\[
+\begin{aligned}
+|\partial_\eta L_\eta|
+&\le e^{J_\eta}\left(|J_\eta'|\prod_iq_i+
+\sum_i|q_i'|\prod_{j\ne i}q_j\right)\\
+&\le\frac{e^{\mathcal B}(\mathcal B+N(T))}{e\eta_-}.
+\end{aligned}
+\]
+No event factor is divided out. Since
+$\mathbb E_0N(T)\le\mathcal B/(1-n)$, this is an integrable envelope
+for differentiating the expectation of $L_\eta I$ with the fixed bounded
+rejection indicator $I$. It is a derivative bound for $L_\eta$, not
+$\log L_\eta$. It requires neither integrability of $\sum_iG_i$ nor
+an added stress-mark moment assumption. The existing null-set convention,
+fixed-rule conditions, positive-$\eta$ restriction and non-Wilks limitations
+remain in force.
+
+\subsection{Why the small-set clock is shared}
+For one common Poisson measure with intensity
+$\mathrm ds\,\mathrm du\,F(\mathrm dm)$, the no-proposal event in
+$[0,t]\times[0,\Lambda_R]\times\mathsf M$ has probability
+$e^{-\Lambda_Rt}$ because $F(\mathsf M)=1$. Both event-free flows from the
+specified sublevel set have rates at most $\Lambda_R$. The first accepted
+jump would therefore contradict this event. This justifies the retained
+common-clock lower bound without asserting a rate bound after arbitrary
+jumps.
+
+\subsection{Paired MCSE convention}
+For paired binary decisions let $D_i\in\{-1,0,1\}$ be first minus second,
+with $b$ positive and $c$ negative discordances among $N_{\rm pair}$ pairs.
+Since $\sum D_i=b-c$ and $\sum D_i^2=b+c$,
+\[
+\overline D=\frac{b-c}{N_{\rm pair}},\qquad
+\widehat{\operatorname{MCSE}}=
+\sqrt{\frac{b+c-N_{\rm pair}\overline D^2}{N_{\rm pair}(N_{\rm pair}-1)}}.
+\]
+This is sample standard deviation divided by $\sqrt{N_{\rm pair}}$.
+At 150 pairs, 29/21 yields 4.709613821 percentage points and 61/6 yields
+4.577609808. The empirical-variance divisor $N_{\rm pair}$ instead of
+$N_{\rm pair}-1$ yields 4.693888856 and 4.562325593 from the same outcomes.
+These are conditional descriptive summaries under fixed-bank and adaptive
+reuse qualifications, without a new test or confidence interval.
+
+\end{document}

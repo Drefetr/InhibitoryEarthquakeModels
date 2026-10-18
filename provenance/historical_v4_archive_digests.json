@@ -1,0 +1,10 @@
+{
+  "manuscript_source.zip": {
+    "bytes": 2718657,
+    "sha256": "6919d7b4147cb7a2cc6e2d6feb17754e59443ca306514f34552f8ef8fd1f5b37"
+  },
+  "revised_manuscript_bundle.zip": {
+    "bytes": 20254759,
+    "sha256": "8eaab129f056210ca4e7c614bca93a82256b3c6f7745be29c68f18566e8c7b51"
+  }
+}
