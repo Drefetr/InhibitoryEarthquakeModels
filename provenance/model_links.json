@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-10-18",
+  "scope": "Requested collaborator display names and fetched official vendor pages. Display formatting follows the collaborator request; vendor titles are retained for clarity. Links identify models, not retrospective proof of every served model or historical call.",
+  "models": [
+    {
+      "name": "Claude Opus 5.5",
+      "alias": "Claude",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "vendor_title": "Claude Opus 5.5"
+    },
+    {
+      "name": "DeepSeek 4.1 Flash",
+      "alias": "DeepSeek",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "vendor_title": "DeepSeek-V4.1-Flash"
+    },
+    {
+      "name": "Gemini 4.0 Argon",
+      "alias": "Argon",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "vendor_title": "Gemini 4 Argon"
+    },
+    {
+      "name": "GPT 6.0 Astra",
+      "alias": "Astra",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "vendor_title": "GPT-6 Astra"
+    },
+    {
+      "name": "GPT 6.1 Sol",
+      "alias": "Sol",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "vendor_title": "GPT-6.1 Sol"
+    }
+  ]
+}

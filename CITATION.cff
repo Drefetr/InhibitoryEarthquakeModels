@@ -11,11 +11,16 @@ authors:
   website: https://github.com/Drefetr
 - name: magna-nz
   website: https://github.com/magna-nz
-- name: Argon
-- name: Astra
-- name: Claude
-- name: DeepSeek
-- name: Sol
+- name: Claude Opus 5.5
+  website: https://www.anthropic.com/claude-opus-5-5
+- name: DeepSeek 4.1 Flash
+  website: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+- name: Gemini 4.0 Argon
+  website: https://ai.google.dev/gemini-api/docs/models/gemini-4-argon
+- name: GPT 6.0 Astra
+  website: https://developers.openai.com/api/docs/models/gpt-6-astra
+- name: GPT 6.1 Sol
+  website: https://developers.openai.com/api/docs/models/gpt-6.1-sol
 license: MIT
 preferred-citation:
   type: unpublished
@@ -26,12 +31,17 @@ preferred-citation:
     website: https://github.com/Drefetr
   - name: magna-nz
     website: https://github.com/magna-nz
-  - name: Argon
-  - name: Astra
-  - name: Claude
-  - name: DeepSeek
-  - name: Sol
+  - name: Claude Opus 5.5
+    website: https://www.anthropic.com/claude-opus-5-5
+  - name: DeepSeek 4.1 Flash
+    website: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+  - name: Gemini 4.0 Argon
+    website: https://ai.google.dev/gemini-api/docs/models/gemini-4-argon
+  - name: GPT 6.0 Astra
+    website: https://developers.openai.com/api/docs/models/gpt-6-astra
+  - name: GPT 6.1 Sol
+    website: https://developers.openai.com/api/docs/models/gpt-6.1-sol
   license: CC-BY-4.0
-  notes: 'Collaborators: Drefetr, magna-nz; Argon, Astra, Claude, DeepSeek, Sol. Agent
-    names are alphabetical; see CONTRIBUTORS.md for the AI-workflow disclosure and
-    review limitations.'
+  notes: 'Collaborators: Drefetr, magna-nz; Claude Opus 5.5, DeepSeek 4.1 Flash, Gemini
+    4.0 Argon, GPT 6.0 Astra, GPT 6.1 Sol. Model names are alphabetical. See CONTRIBUTORS.md
+    for roles; vendor links identify models, not proof of historical execution routes.'

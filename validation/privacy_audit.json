@@ -165,5 +165,12 @@
     "all_tracked_files_and_PDF_surfaces_rescanned": true,
     "new_or_unresolved_findings": 0,
     "links": "Requested GitHub profile URLs only"
+  },
+  "model_credit_links": {
+    "all_tracked_files_and_PDF_surfaces_rescanned": true,
+    "tracked_files": 143,
+    "new_or_unresolved_findings": 0,
+    "high_entropy_literal_candidates": 0,
+    "links": "Two GitHub profiles and five verified official vendor model pages"
   }
 }

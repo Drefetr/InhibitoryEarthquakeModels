@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1",
+  "pdf_sha256": "d05a7145c5071478f5fc4680a6719d0cf1320520d8c5453ab88baee215a93184",
   "pages": 64,
   "reviewer": "Codex root; no external independent review claimed",
   "all_pages_rendered": true,
@@ -88,7 +88,7 @@
     ]
   },
   "supplement": {
-    "sha256": "e7bc9dfdb2b37c1fe442cfd1445cc66d4d705db2d538feb51df07f240d4e5f03",
+    "sha256": "6fbc79d97079f24d3480c7a01b9585710a946d61ff6002c0fb909e49d7073400",
     "pages_rendered_and_readably_inspected": [
       1,
       2
@@ -191,5 +191,15 @@
     "unchanged_pages": 62,
     "findings": [],
     "github_links": "Both title-page handles point to their requested GitHub profiles"
+  },
+  "model_credit_links": {
+    "all_pages_rendered": true,
+    "changed_pages_readably_inspected": [
+      1,
+      60
+    ],
+    "unchanged_pages": 62,
+    "title_page_https_links_verified": 7,
+    "findings": []
   }
 }

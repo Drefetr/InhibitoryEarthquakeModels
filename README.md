@@ -4,9 +4,9 @@ Research manuscript and numerical implementation for **Stability and identificat
 
 The work studies restricted stability and identification results, nuisance sensitivity, and predictive evidence for earthquake point-process models with inhibition and triggering. Predictive preference does not establish a physical inhibition mechanism. This is a research release for independent review.
 
-**Collaborators:** [Drefetr](https://github.com/Drefetr), [magna-nz](https://github.com/magna-nz); Argon, Astra, Claude, DeepSeek, Sol.
+**Collaborators:** [Drefetr](https://github.com/Drefetr), [magna-nz](https://github.com/magna-nz); [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5), [DeepSeek 4.1 Flash](https://www.deepseek.com/en/news/deepseek-v4-1-flash/), [Gemini 4.0 Argon](https://ai.google.dev/gemini-api/docs/models/gemini-4-argon), [GPT 6.0 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra), [GPT 6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol).
 
-**AI assistance:** the bulk of the work was performed by AI agents. Claude and Astra developed the initial outline and specification; Sol coordinated Sol and DeepSeek subagents; Astra and Argon provided review. AI review is distinct from independent external peer review. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+**AI assistance:** the bulk of the work was performed by AI agents. Claude Opus 5.5 and GPT 6.0 Astra developed the initial outline and specification; GPT 6.1 Sol coordinated GPT 6.1 Sol and DeepSeek 4.1 Flash subagents; GPT 6.0 Astra and Gemini 4.0 Argon provided review. AI review is distinct from independent external peer review. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 - [Paper](paper/manuscript.pdf) and [explanatory supplement](paper/supplements/explanatory_supplement.pdf).
 - [Reproduction instructions](docs/reproducibility.md), [methods](paper/supplements/methods_supplement.md), [data sources and terms](docs/data.md), [limitations](docs/limitations.md).
