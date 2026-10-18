@@ -1,18 +1,37 @@
 cff-version: 1.2.0
-message: "Please cite the work collectively as the Inhibitory Earthquake Models collaboration; see CONTRIBUTORS.md for human and AI roles."
+message: Please cite the listed collaborators; see CONTRIBUTORS.md for roles and review
+  limitations.
 type: software
-title: "Stability and identification in inhibitory earthquake models: research code and manuscript"
-version: "0.1.0-review"
-repository-code: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+title: 'Stability and identification in inhibitory earthquake models: research code
+  and manuscript'
+version: 0.1.0-review
+repository-code: https://github.com/Drefetr/InhibitoryEarthquakeModels
 authors:
-  - name: "Inhibitory Earthquake Models collaboration"
-    website: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+- name: Drefetr
+  website: https://github.com/Drefetr
+- name: magna-nz
+  website: https://github.com/magna-nz
+- name: Argon
+- name: Astra
+- name: Claude
+- name: DeepSeek
+- name: Sol
 license: MIT
 preferred-citation:
   type: unpublished
-  title: "Stability and identification in inhibitory earthquake models: Restricted mathematics, nuisance sensitivity and predictive evidence"
+  title: 'Stability and identification in inhibitory earthquake models: Restricted
+    mathematics, nuisance sensitivity and predictive evidence'
   authors:
-    - name: "Inhibitory Earthquake Models collaboration"
-      website: "https://github.com/Drefetr/InhibitoryEarthquakeModels"
+  - name: Drefetr
+    website: https://github.com/Drefetr
+  - name: magna-nz
+    website: https://github.com/magna-nz
+  - name: Argon
+  - name: Astra
+  - name: Claude
+  - name: DeepSeek
+  - name: Sol
   license: CC-BY-4.0
-  notes: "Human collaborators: Drefetr and magna-nz. AI collaborators: Claude, Astra, Sol, DeepSeek agents and Argon. Neither human is designated the main author. See CONTRIBUTORS.md for roles and review limitations."
+  notes: 'Collaborators: Drefetr, magna-nz; Argon, Astra, Claude, DeepSeek, Sol. Agent
+    names are alphabetical; see CONTRIBUTORS.md for the AI-workflow disclosure and
+    review limitations.'

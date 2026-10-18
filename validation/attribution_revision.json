@@ -1,30 +1,27 @@
 {
-  "scope": "Collaborator-requested attribution update only; no new scientific work",
-  "collective_name": "Inhibitory Earthquake Models collaboration",
-  "human_collaborators": [
-    "Drefetr",
-    "magna-nz"
-  ],
-  "ai_collaborators": [
-    "Claude",
-    "Astra",
-    "Sol",
-    "DeepSeek agents",
-    "Argon"
-  ],
+  "scope": "Simplified collaborator presentation and title-page labels only; scientific chapters/results unchanged",
   "designated_main_author": null,
-  "citation_metadata": "Collective entity used for software and preferred paper citations; validated against official CFF schema",
+  "citation_metadata": "Same collaborator list for software and preferred paper citation; alphabetical agent names; CFF schema validated",
   "paper": {
-    "sha256": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
+    "sha256": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1",
     "pages": 64,
     "changed_pages": [
       1,
       60
     ],
-    "production_checks": "passed; zero undefined references/citations, missing glyphs or overfull boxes"
+    "production_checks": "passed"
   },
   "scientific_chapters_code_results": "unchanged",
   "original_sealed_release_v4": "unchanged",
   "remote_push_performed": false,
-  "record_phase": "Attribution preparation before initial publication; recorded push flag describes that phase."
+  "record_phase": "Attribution preparation before initial publication; recorded push flag describes that phase.",
+  "collaborators": [
+    "Drefetr",
+    "magna-nz",
+    "Argon",
+    "Astra",
+    "Claude",
+    "DeepSeek",
+    "Sol"
+  ]
 }

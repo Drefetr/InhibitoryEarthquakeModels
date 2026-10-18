@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
+  "pdf_sha256": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1",
   "pages": 64,
   "reviewer": "Codex root; no external independent review claimed",
   "all_pages_rendered": true,
@@ -88,7 +88,7 @@
     ]
   },
   "supplement": {
-    "sha256": "9d6fc288a57f5090cda6f869509cfee0319ede579a68230183954da5b3bdf6f9",
+    "sha256": "e7bc9dfdb2b37c1fe442cfd1445cc66d4d705db2d538feb51df07f240d4e5f03",
     "pages_rendered_and_readably_inspected": [
       1,
       2
@@ -102,7 +102,7 @@
   "findings": [],
   "local_renders": "Private local attribution-preparation workspace, outside publication tree",
   "attribution_revision": {
-    "change": "Collective human--AI collaboration; no designated main human author",
+    "change": "One Collaborators list, GitHub links, alphabetical agent names; removed additional title-page framing",
     "all_pages_rendered": true,
     "changed_pages_readably_inspected": [
       1,
@@ -181,5 +181,15 @@
       ]
     },
     "findings": []
+  },
+  "titlepage_simplification": {
+    "changed_pages_readably_inspected": [
+      1,
+      60
+    ],
+    "full_pdf_rendered": true,
+    "unchanged_pages": 62,
+    "findings": [],
+    "github_links": "Both title-page handles point to their requested GitHub profiles"
   }
 }

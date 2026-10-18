@@ -3,8 +3,8 @@
   "engine_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
   "historical_cache": "unsnapshotted; no historical exact replay claim",
   "pdfs": {
-    "manuscript.pdf": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
-    "explanatory_supplement.pdf": "9d6fc288a57f5090cda6f869509cfee0319ede579a68230183954da5b3bdf6f9"
+    "manuscript.pdf": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1",
+    "explanatory_supplement.pdf": "e7bc9dfdb2b37c1fe442cfd1445cc66d4d705db2d538feb51df07f240d4e5f03"
   },
   "python": "3.13.4",
   "dependencies": {
@@ -20,7 +20,7 @@
     "PyYAML": "6.0.3",
     "threadpoolctl": "3.6.0"
   },
-  "route": "scripts/build_paper.py; latest attribution rebuild and raw logs retained outside publication tree",
+  "route": "scripts/build_paper.py; current title-page simplification build and renders retained outside publication tree",
   "warnings": "Fontconfig default configuration warning retained in raw logs; no missing glyph/undefined/overfull warnings.",
   "platform_family": "Windows",
   "privacy_note": "Detailed host OS build omitted; engine and scientific dependency versions retained for reproducibility."

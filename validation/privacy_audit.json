@@ -160,5 +160,10 @@
     "pdf_pages": 64,
     "scope": "New paper/citation/disclosure and staged files rescanned after attribution update; remaining candidates match reviewed mathematical/LaTeX/compressed-byte false positives."
   },
-  "record_phase": "Prepublication audit snapshot. Zero-commit/no-push/ref counts describe that audit phase, not the ongoing live repository state."
+  "record_phase": "Prepublication audit snapshot. Zero-commit/no-push/ref counts describe that audit phase, not the ongoing live repository state.",
+  "titlepage_simplification": {
+    "all_tracked_files_and_PDF_surfaces_rescanned": true,
+    "new_or_unresolved_findings": 0,
+    "links": "Requested GitHub profile URLs only"
+  }
 }

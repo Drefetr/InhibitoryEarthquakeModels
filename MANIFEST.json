@@ -1,6 +1,6 @@
 {
   "edition": "0.1.0-review public staging",
-  "manuscript_sha256": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a",
+  "manuscript_sha256": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1",
   "files": [
     {
       "path": ".gitattributes",
@@ -29,8 +29,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1095,
-      "sha256": "2a88af1184ea1c0a1a40380c38adec945eb714f03796c2d641547747e3369c21"
+      "bytes": 1186,
+      "sha256": "fe22ec65cd28754fbb031fe6d2a2cc586680ce1af327b5822878f4eb28733bbe"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CONTRIBUTORS.md",
-      "bytes": 1753,
-      "sha256": "10cbbe97085ef14ec37f340729deb31a7f1d998f5135299114e7691e97bd024d"
+      "bytes": 1360,
+      "sha256": "b0f5281669d7a3af8e916c17ade6f4665511b593b6d737b8e6da354f166ea462"
     },
     {
       "path": "docs/code.md",
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/provenance.md",
-      "bytes": 2184,
-      "sha256": "fbbd9c80d80421111bff2e8e3b2cb941220b025ecbc65e8b56cf83f6a01de6e5"
+      "bytes": 2194,
+      "sha256": "b3feeb82a4417b4b69cf54d96d8bf38c82e524cf1ae2412e83be17b4184f3a96"
     },
     {
       "path": "docs/reproducibility.md",
@@ -289,8 +289,8 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1150,
-      "sha256": "049389db56611fe0e7da9797c8a95b8ee12c1fc9677b4c8c6a4077722f04831f"
+      "bytes": 1126,
+      "sha256": "da045a8cc7a875f453715af587b4b5ee97aabe80b45761436c2cbecaf81caf7e"
     },
     {
       "path": "LICENSES/CC-BY-4.0.txt",
@@ -299,8 +299,8 @@
     },
     {
       "path": "LICENSES/README.md",
-      "bytes": 884,
-      "sha256": "fa97a18ede072ff8907592eb84a342f8c366cfb9eb6167c97dd139edefdde6e8"
+      "bytes": 860,
+      "sha256": "209824f3b570f9e867395fd54ac841a2d0416c682180dd2a08ced1a93bc09c5d"
     },
     {
       "path": "LICENSES/source.json",
@@ -404,8 +404,8 @@
     },
     {
       "path": "paper/manuscript.pdf",
-      "bytes": 486371,
-      "sha256": "0aa8e8e4811157c82c9bc20dff4ed3802ceae0f3f5230e744539142f382acc0a"
+      "bytes": 485465,
+      "sha256": "6c41dd71077437c11cb9b8e31f02fd3b4dfa4ebb1dabf9c11bbabf576df8e9f1"
     },
     {
       "path": "paper/source/abstract.tex",
@@ -414,8 +414,8 @@
     },
     {
       "path": "paper/source/appendices.tex",
-      "bytes": 23075,
-      "sha256": "cccf4ab92375bda0916b4f303412b4e47459e339f79ab0a542517f996d501f41"
+      "bytes": 22884,
+      "sha256": "bf9af315dfb4a8c1f29364be91169bcdf051550965873700c06014931239bdb1"
     },
     {
       "path": "paper/source/chapters/01_introduction.tex",
@@ -469,8 +469,8 @@
     },
     {
       "path": "paper/source/main.tex",
-      "bytes": 1252,
-      "sha256": "d99be4a51a9f1b0870565b3026760a78bfd88c607dd874aeffb067d78243f556"
+      "bytes": 1191,
+      "sha256": "077804314465ee31d2e1d8c8e0c0d89e84018ef53160523628c605bbb6b3bddc"
     },
     {
       "path": "paper/source/preamble.tex",
@@ -484,8 +484,8 @@
     },
     {
       "path": "paper/supplements/explanatory_supplement.pdf",
-      "bytes": 49114,
-      "sha256": "9d6fc288a57f5090cda6f869509cfee0319ede579a68230183954da5b3bdf6f9"
+      "bytes": 49113,
+      "sha256": "e7bc9dfdb2b37c1fe442cfd1445cc66d4d705db2d538feb51df07f240d4e5f03"
     },
     {
       "path": "paper/supplements/explanatory_supplement.tex",
@@ -574,8 +574,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4359,
-      "sha256": "3d6925a349eb4615ad73dece3accb9d4eba2904afc6c3304f80c9ef0ef3c5fd9"
+      "bytes": 4250,
+      "sha256": "9217533105758efbecfc5129f65fcf29cc336923788aee42d50de074d4cf395a"
     },
     {
       "path": "requirements-gpu.txt",
@@ -634,8 +634,8 @@
     },
     {
       "path": "validation/attribution_revision.json",
-      "bytes": 1026,
-      "sha256": "d30e47801e9f406d054e27acb7bfa597f3f6412f3e515f72d4204271c542ef83"
+      "bytes": 884,
+      "sha256": "244bc8632eab43da1098f2d467f418ad5330b792687fbe38b2a403d467b5d919"
     },
     {
       "path": "validation/command_results.json",
@@ -674,13 +674,13 @@
     },
     {
       "path": "validation/privacy_audit.json",
-      "bytes": 5718,
-      "sha256": "a3fa82c23c2eb7c6b2dbbfb18fea7ae72ce599f5049f7ec0bee84049a753278e"
+      "bytes": 5905,
+      "sha256": "c9a3aba72c45b4ace5089e392a031e940d81e643514ae5393f4ab4736c239d8f"
     },
     {
       "path": "validation/production_checks.json",
       "bytes": 511,
-      "sha256": "4c3fb84e61fbd295be4cde5fa853b60d3cda74e89c23e921bdc30174a301e8ad"
+      "sha256": "22486059d16ca0ea80e4fd43f319e03b06f3d74e061f728007a8b34fe65c52fb"
     },
     {
       "path": "validation/publication_scan.json",
@@ -694,8 +694,8 @@
     },
     {
       "path": "validation/toolchain.json",
-      "bytes": 1145,
-      "sha256": "dbbd15515e6a3a5c3de58d0363efb3cdd951ae610e90844d63104a628a8ad168"
+      "bytes": 1157,
+      "sha256": "5c5f34fa60c55bcd3540257aa321977bcaf75518f85e1c6c9f4244a3b66d289e"
     },
     {
       "path": "validation/unit_tests.txt",
@@ -704,8 +704,8 @@
     },
     {
       "path": "validation/visual_review.json",
-      "bytes": 2874,
-      "sha256": "7df38377eae3a17672c87415ee7ce7d28f2364d610a54e5163d68fdc213d2710"
+      "bytes": 3187,
+      "sha256": "a29c0fa1073ce6415b5533c3dd9caa86969dc022517f91896c266d5525db8d8b"
     }
   ],
   "excluded": [
@@ -721,5 +721,13 @@
   ],
   "scope": "Repository payload identity; no claim to full historical scientific replication.",
   "privacy_audit": "validation/privacy_audit.json",
-  "collective_attribution": "Inhibitory Earthquake Models collaboration"
+  "collaborators": [
+    "Drefetr",
+    "magna-nz",
+    "Argon",
+    "Astra",
+    "Claude",
+    "DeepSeek",
+    "Sol"
+  ]
 }

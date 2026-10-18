@@ -4,7 +4,7 @@ Research manuscript and numerical implementation for **Stability and identificat
 
 The work studies restricted stability and identification results, nuisance sensitivity, and predictive evidence for earthquake point-process models with inhibition and triggering. Predictive preference does not establish a physical inhibition mechanism. This is a research release for independent review.
 
-**A human--AI collaboration.** Human collaborators: [Drefetr](https://github.com/Drefetr) and [magna-nz](https://github.com/magna-nz). AI collaborators: Claude, Astra, Sol, DeepSeek agents and Argon. Neither human is designated the main author.
+**Collaborators:** [Drefetr](https://github.com/Drefetr), [magna-nz](https://github.com/magna-nz); Argon, Astra, Claude, DeepSeek, Sol.
 
 **AI assistance:** the bulk of the work was performed by AI agents. Claude and Astra developed the initial outline and specification; Sol coordinated Sol and DeepSeek subagents; Astra and Argon provided review. AI review is distinct from independent external peer review. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
