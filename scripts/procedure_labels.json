@@ -1,0 +1,10 @@
+{
+  "scope": "Display text only. Never replace the saved JSON keys or engine procedure identifiers.",
+  "rows": [
+    {"saved_key": "Fixed-eta oracle", "display": "Known laws (fixed eta)", "latex": "Known laws (fixed $\\eta$)", "plot": "Known laws (fixed eta)", "method_context": "Fully specified pair of laws; distinct from eta-estimated supplied-nuisance procedure."},
+    {"saved_key": "Eta fit; background supplied", "display": "Eta estimated; nuisances supplied", "latex": "$\\eta$ estimated; nuisances supplied", "plot": "Eta estimated;\nnuisances supplied", "method_context": "Inhibition estimated; background, triggering, mark-law and kernel nuisances supplied."},
+    {"saved_key": "Level fit; trend supplied", "display": "Level estimated; trend supplied", "latex": "Level estimated; trend supplied", "plot": "Level estimated;\ntrend supplied", "method_context": "Level and inhibition estimated; trend and other generating nuisances supplied."},
+    {"saved_key": "Level and trend fit", "display": "Level and trend estimated", "latex": "Level and trend estimated", "plot": "Level and trend estimated", "method_context": "Level, trend and inhibition estimated; triggering/mark/kernel nuisances supplied."},
+    {"saved_key": "Historical fuller fit", "display": "Historical fuller fitted procedure", "latex": "Historical fuller fitted procedure", "plot": "Historical fuller\nfitted procedure", "method_context": "Different earlier recipe with additional fitted/searched components; not an independent replication."}
+  ]
+}

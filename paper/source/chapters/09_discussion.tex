@@ -1,9 +1,9 @@
-\chapter{Discussion and Limits of Inference}
+\chapter{Discussion and limits of inference}
 \label{ch:discussion}
 
-\section{What the Theory Separates}
+\section{What the theory separates}
 
-The mathematical results delimit several distinct regimes. Finite positive-mode systems admit the stated first-moment stability conclusions under their link, mark and subcritical-triggering assumptions. Finite-horizon approximation does not establish an interchange of stationary and infinite-mode limits. Exact-memory counterexamples apply to specified no-feedback submodels, and the linear-response calculation concerns an auxiliary frozen-slope system. Full-law identifiability also requires assumptions stronger than those available in an observed finite catalogue. These are substantive restricted conclusions; none alone establishes physical shared memory. The preceding mathematical chapters state their assumptions and proofs.
+The mathematical results delimit several distinct regimes. Finite positive-mode systems admit the stated first-moment stability conclusions under their link, mark and subcritical-triggering assumptions. Finite-horizon approximation does not establish an interchange of stationary and infinite-mode limits. Exact-memory counterexamples apply to specified no-feedback submodels, and the linear-response calculation concerns an auxiliary frozen-slope system. Full-law identifiability also requires assumptions stronger than those available in an observed finite catalogue. The preceding mathematical chapters state their assumptions and proofs.
 
 This separation matters for the empirical discussion. A physical model may contain loading or initial-stress memory while a finite catalogue lacks power to distinguish it from a restricted alternative. A diagnostic family may improve its training score because its likelihood geometry favours extra structure, without thereby identifying the full physical law. A small held-out loss may be numerically controlled yet limited as statistical evidence when folds overlap or were inspected. Conversely, a non-rejection is not evidence of equality. Failure to distinguish two recipes leaves a set of explanations: the data may be insufficient, the candidate may be misspecified, the optimizer may be imperfect, or the tested effect may be small over the observed horizon. The controlled studies weaken some specific explanations, but do not select a unique physical one.
 
@@ -13,13 +13,13 @@ Synthetic diagnostics further clarify, but do not erase, the inferential gap. A 
 
 The transformed marks add another qualification. The magnitude excess has an exponential law, while the stress and productivity transforms have finite first and infinite second moments at the declared generating parameters. That does not prevent bounded-indicator Monte Carlo summaries, but it invalidates unqualified use of Fisher-information shortcuts based on second moments. Computational stability and statistical efficiency therefore have to be defended under the declared scoring rule, not inferred from formal differentiability alone.
 
-\section{What Regional Nonclosure Means}
+\section{What regional nonclosure means}
 
 Proposition~\ref{prop:regional_nonclosure} and Figure~\ref{fig:pooling} give a precise reason to examine the scale of aggregation. Summing locally inhibited background contributions generally differs from inhibiting a summed national history. Two regional configurations can have the same total depletion but different aggregate local intensities; one national coefficient cannot restore information already discarded by summation. The effective depletion depends nonlinearly on regional history and background shares.
 
 This is conditional algebra, not evidence that pooling caused the observed predictive failure. Restricted regional configurations can admit closure, while the aggregation of triggering and the conditioning on unobserved regional labels introduce further questions. The catalogue audit has not fitted a spatial conditional intensity or measured a geological stress-transfer mechanism. Its event-only maps motivate an adequacy question without answering it.
 
-\section{An Explicitly Optional Locality Extension}
+\section{An explicitly optional locality extension}
 
 One possible extension would compare, on the same region-labelled observations, three deliberately matched candidates: no inhibition, pooled inhibition across regions, and local inhibition. For a given regional history, schematic intensities could be written as
 \begin{align}
@@ -32,7 +32,7 @@ One possible extension would compare, on the same region-labelled observations, 
 where \(H_k\) includes the trigger amplitude and must be defined identically across alternatives. A fair comparison would match spatial backgrounds, triggering families with a serious Omori baseline, mark and history rules, observation rules, and fitting effort. With region label \(r_i\) for event \(i\), every candidate would use the same joint score
 \begin{equation}
  \ell=\sum_i\log\lambda_{r_i}(t_i-)
-      -\sum_k\int_0^T\lambda_k(t)\,dt
+      -\sum_k\int_0^T\lambda_k(t)\,\dif t
       +\sum_i\log f(m_i).
  \label{eq:proposed-spatial-score}
 \end{equation}
@@ -40,7 +40,7 @@ The integrals include quiet regions and quiet intervals. Omitting them would rew
 
 This is a proposed extension rather than a completed experiment. The present conclusions do not depend on its outcome. Any future region and training choices would need to be declared before new test outcomes, avoiding selection on the losses already observed. Nor is there a promise that local formulation would recover a physical mechanism.
 
-\section{Contribution and Limits}
+\section{Contribution and limits}
 
 Taken together, the work makes a connected contribution in three parts. First, restricted mathematics establishes first-moment results for finite-mode systems and separates those results from unresolved nonlinear infinite-memory questions. Second, finite-history likelihood calculations and null-calibration controls show that detection is background sensitive and that a numerical score advantage must be separated from sampling calibration. Third, the archived observed exercise supplies held-out score evidence unfavourable to the current inhibited recipes, while source and temporal sensitivities narrow the explanations available for that failure.
 

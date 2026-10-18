@@ -1,6 +1,6 @@
 # Saved predictive fits: table proposal
 
-All values come from accepted iteration-27 selected fits. Display values are rounded; full precision, raw solver lineage and source pointers are in `fit_pod_parameters.json`. No fitting or likelihood evaluation was run.
+All values come from accepted iteration-27 selected fits. Display values are rounded; full-precision selected parameter fields, retained solver fields and source pointers are in `predictive_parameters.json`. This companion is a selected extract, not the complete omitted solver lineage or underlying historical authority. No fitting or likelihood evaluation was run.
 
 | Origin | Family | a | d | n | eta | r | Kernel |
 |---|---|---:|---:|---:|---:|---:|---|

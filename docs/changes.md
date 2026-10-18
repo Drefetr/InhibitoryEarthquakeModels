@@ -1,0 +1,3 @@
+# Manuscript readability update
+
+Improved public-source navigation and availability labels; added the continuous spectral representation citation and normalized temporal Omori density; clarified project origins and parameter-file naming; aligned procedure display labels, local response notation, headings and tables. The explanatory supplement remains separate. Mathematical content, scientific engine/data/settings, numerical results, collaborator credits and licence scope are unchanged. Only Figure7.1 display labels changed. See the public source guide and reproducibility instructions for accessible evidence and remaining input limitations.

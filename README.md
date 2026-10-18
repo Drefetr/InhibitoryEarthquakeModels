@@ -51,3 +51,5 @@ Project-owned software: **MIT**. Current paper, original figures, prose document
 Sealed v4 remains unchanged. This public edition adds confirmed attribution and disclosure and documents the smaller distribution. See [provenance](docs/provenance.md) and [validation](validation/README.md).
 
 Publication privacy checks are recorded in [validation/privacy_audit.json](validation/privacy_audit.json). The only engine adaptations are portable interpreter discovery in two optional launchers and the associated public protocol binding; original scientific pins remain separately recorded.
+
+See the [manuscript change note](docs/changes.md) and [public source guide](docs/public_readability.md).

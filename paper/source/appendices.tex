@@ -17,7 +17,7 @@ The saved metadata defines the exact geographic, depth, magnitude, event-type an
 
 Table~\ref{tab:authority_map} gives the archive-relative entry points needed to inspect the main claims. Narrative summaries point to their underlying machine-readable outputs. A source report establishes what was reported and retained; a hash establishes byte consistency. Neither alone certifies a physical mechanism or every historical execution.
 
-The public per-authority register \path{paper/supplements/source_availability.json} records which files are included here and which remain references to the research archive. The historical source index is retained as metadata in \path{provenance/historical_v4_source_index.json}; its old included paths describe release v4, not this repository. The compact public repository retains the reusable numerical implementation and selected result summaries, rather than the complete investigation record. No third-party event records or earlier manuscript PDF are redistributed.
+The \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/paper/supplements/source_availability.json}{public availability register} records which files are included here and which remain references to the research archive. The historical source index is retained as metadata in \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/provenance/historical_v4_source_index.json}{historical source index}; its old included paths describe release v4, not this repository. The compact public repository retains the reusable numerical implementation and selected result summaries, rather than the complete investigation record. No third-party event records or earlier manuscript PDF are redistributed.
 
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.20\textwidth-2\tabcolsep\relax}@{}}
 \caption{Canonical source map. Display names identify archive-relative authorities; stable IDs map to the full paths in the source index. This is not a promise that every historical payload is embedded in a compact manuscript release.}\label{tab:authority_map}\\
@@ -56,66 +56,66 @@ Heterogeneity and source sensitivity & \texttt{S20}: \nolinkurl{research_report.
 
 
 \section{Stable source supplement identifiers}\label{sec:source-supplements}
-The identifiers below replace internal report-title fragments in the main text. Each points to the exact archived document, not to a proposition in this manuscript. The public repository retains their stable identifiers and historical paths as provenance metadata; the public availability register identifies the subset actually included. Historical documentary reports are not all distributed here. These are documentary sources, not newly reproduced scientific runs.
+The identifiers below retain the identity of historical documentary sources. Clicking a source-supplement link reaches this internal PDF table; it does not open an external archival file. The main mathematical arguments are given in Chapters~\ref{ch:models}--\ref{ch:inference}. The public repository retains their stable identifiers and historical paths as provenance metadata; the public availability register identifies the subset actually included. The register contains three included S files, one partial representation and twenty-three not distributed. S18 is an operational adaptation; S24 is a metadata extract. The repository guide \path{docs/public_readability.md} gives concise code, settings and saved-summary entry points, including the separate \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/main/paper/supplements/explanatory_supplement.pdf}{E04 explanatory supplement}. These are documentary sources, not newly reproduced scientific runs.
 % Exact archive paths: supplements/source_evidence/; supplements/source_index.json
 
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.09\textwidth}>{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.09\textwidth-2\tabcolsep\relax}@{}}
-\caption{Stable documentary source keys and display filenames. Full original archive-relative paths are retained in the source index for provenance.}\label{tab:source-keys}\\
+\caption{Stable documentary source keys, display filenames and public status. Full original archive-relative paths are retained in the source index for provenance.}\label{tab:source-keys}\\
 \toprule Key & Archived document \\ \midrule\endfirsthead
 \toprule Key & Archived document \\ \midrule\endhead
-\hypertarget{S01}{}\label{source:S01}\texttt{S01} & \nolinkurl{summary.json} \\
+\hypertarget{S01}{}\label{source:S01}\texttt{S01} & \nolinkurl{summary.json}. \textit{Not distributed} \\
 % Exact archive paths: iteration_12/results/aggregate/2026-10-16T061247128773_0000/summary.json
-\hypertarget{S02}{}\label{source:S02}\texttt{S02} & \nolinkurl{reference_score_geometry.md} \\
+\hypertarget{S02}{}\label{source:S02}\texttt{S02} & \nolinkurl{reference_score_geometry.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_13/reports/reference_score_geometry.md
-\hypertarget{S03}{}\label{source:S03}\texttt{S03} & \nolinkurl{restricted_score_bound.md} \\
+\hypertarget{S03}{}\label{source:S03}\texttt{S03} & \nolinkurl{restricted_score_bound.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_13/reports/restricted_score_bound.md
-\hypertarget{S04}{}\label{source:S04}\texttt{S04} & \nolinkurl{stable_process_irregular_score.md} \\
+\hypertarget{S04}{}\label{source:S04}\texttt{S04} & \nolinkurl{stable_process_irregular_score.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_13/reports/stable_process_irregular_score.md
-\hypertarget{S05}{}\label{source:S05}\texttt{S05} & \nolinkurl{positive_eta_response.md} \\
+\hypertarget{S05}{}\label{source:S05}\texttt{S05} & \nolinkurl{positive_eta_response.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_15/reports/positive_eta_response.md
-\hypertarget{S06}{}\label{source:S06}\texttt{S06} & \nolinkurl{power_response_corollary.md} \\
+\hypertarget{S06}{}\label{source:S06}\texttt{S06} & \nolinkurl{power_response_corollary.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_15/reports/power_response_corollary.md
-\hypertarget{S07}{}\label{source:S07}\texttt{S07} & \nolinkurl{power_engine.py} \\
+\hypertarget{S07}{}\label{source:S07}\texttt{S07} & \nolinkurl{power_engine.py}. \textit{Not distributed} \\
 % Exact archive paths: iteration_16/code/power_engine.py
-\hypertarget{S08}{}\label{source:S08}\texttt{S08} & \nolinkurl{research_report.md} \\
+\hypertarget{S08}{}\label{source:S08}\texttt{S08} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_16/reports/research_report.md
-\hypertarget{S09}{}\label{source:S09}\texttt{S09} & \nolinkurl{completed_evaluation.md} \\
+\hypertarget{S09}{}\label{source:S09}\texttt{S09} & \nolinkurl{completed_evaluation.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_19/reports/completed_evaluation.md
-\hypertarget{S10}{}\label{source:S10}\texttt{S10} & \nolinkurl{restricted_history.py} \\
+\hypertarget{S10}{}\label{source:S10}\texttt{S10} & \nolinkurl{restricted_history.py}. \textit{Included} \\
 % Exact archive paths: iteration_20/code/restricted_history.py
-\hypertarget{S11}{}\label{source:S11}\texttt{S11} & \nolinkurl{research_report.md} \\
+\hypertarget{S11}{}\label{source:S11}\texttt{S11} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_22/reports/research_report.md
-\hypertarget{S12}{}\label{source:S12}\texttt{S12} & \nolinkurl{A_amplitude_proposition.md} \\
+\hypertarget{S12}{}\label{source:S12}\texttt{S12} & \nolinkurl{A_amplitude_proposition.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_23/reports/A_amplitude_proposition.md
-\hypertarget{S13}{}\label{source:S13}\texttt{S13} & \nolinkurl{background_balance_corollary.md} \\
+\hypertarget{S13}{}\label{source:S13}\texttt{S13} & \nolinkurl{background_balance_corollary.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_23/reports/background_balance_corollary.md
-\hypertarget{S14}{}\label{source:S14}\texttt{S14} & \nolinkurl{research_report.md} \\
+\hypertarget{S14}{}\label{source:S14}\texttt{S14} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_24/completion/reports/research_report.md
-\hypertarget{S15}{}\label{source:S15}\texttt{S15} & \nolinkurl{research_report.md} \\
+\hypertarget{S15}{}\label{source:S15}\texttt{S15} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_25/completion/reports/research_report.md
-\hypertarget{S16}{}\label{source:S16}\texttt{S16} & \nolinkurl{research_report.md} \\
+\hypertarget{S16}{}\label{source:S16}\texttt{S16} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_26/completion/reports/research_report.md
-\hypertarget{S17}{}\label{source:S17}\texttt{S17} & \nolinkurl{adequacy.py} \\
+\hypertarget{S17}{}\label{source:S17}\texttt{S17} & \nolinkurl{adequacy.py}. \textit{Included} \\
 % Exact archive paths: iteration_27/code/adequacy.py
-\hypertarget{S18}{}\label{source:S18}\texttt{S18} & \nolinkurl{observed_frozen.json} \\
+\hypertarget{S18}{}\label{source:S18}\texttt{S18} & \nolinkurl{observed_frozen.json}. \textit{Included adaptation} \\
 % Exact archive paths: iteration_27/configs/observed_frozen.json
-\hypertarget{S19}{}\label{source:S19}\texttt{S19} & \nolinkurl{research_report.md} \\
+\hypertarget{S19}{}\label{source:S19}\texttt{S19} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_27/reports/research_report.md
-\hypertarget{S20}{}\label{source:S20}\texttt{S20} & \nolinkurl{research_report.md} \\
+\hypertarget{S20}{}\label{source:S20}\texttt{S20} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_28/reports/research_report.md
-\hypertarget{S21}{}\label{source:S21}\texttt{S21} & \nolinkurl{A_theorems.tex} \\
+\hypertarget{S21}{}\label{source:S21}\texttt{S21} & \nolinkurl{A_theorems.tex}. \textit{Not distributed} \\
 % Exact archive paths: iteration_4/manuscript_revisions/A_theorems.tex
-\hypertarget{S22}{}\label{source:S22}\texttt{S22} & \nolinkurl{B_propositions.tex} \\
+\hypertarget{S22}{}\label{source:S22}\texttt{S22} & \nolinkurl{B_propositions.tex}. \textit{Not distributed} \\
 % Exact archive paths: iteration_4/manuscript_revisions/B_propositions.tex
-\hypertarget{S23}{}\label{source:S23}\texttt{S23} & \nolinkurl{C_identifiability.md} \\
+\hypertarget{S23}{}\label{source:S23}\texttt{S23} & \nolinkurl{C_identifiability.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_4/reports/C_identifiability.md
-\hypertarget{S24}{}\label{source:S24}\texttt{S24} & \nolinkurl{catalogue_metadata.json} \\
+\hypertarget{S24}{}\label{source:S24}\texttt{S24} & \nolinkurl{catalogue_metadata.json}. \textit{Partial metadata} \\
 % Exact archive paths: iteration_5/data/processed/catalogue_metadata.json
-\hypertarget{S25}{}\label{source:S25}\texttt{S25} & \nolinkurl{research_report.md} \\
+\hypertarget{S25}{}\label{source:S25}\texttt{S25} & \nolinkurl{research_report.md}. \textit{Not distributed} \\
 % Exact archive paths: iteration_5/reports/research_report.md
-\hypertarget{S26}{}\label{source:S26}\texttt{S26} & \nolinkurl{SUPERVISOR_REVIEW_ADDENDUM.txt} \\
+\hypertarget{S26}{}\label{source:S26}\texttt{S26} & \nolinkurl{SUPERVISOR_REVIEW_ADDENDUM.txt}. \textit{Not distributed} \\
 % Exact archive paths: review_handoff/2026-10-18/deepseek_cli_review_20261018-115244/SUPERVISOR_REVIEW_ADDENDUM.txt
-\hypertarget{S27}{}\label{source:S27}\texttt{S27} & \nolinkurl{research_handoff.md} \\
+\hypertarget{S27}{}\label{source:S27}\texttt{S27} & \nolinkurl{research_handoff.md}. \textit{Not distributed} \\
 % Exact archive paths: review_handoff/2026-10-18/output/research_handoff.md
 \bottomrule
 \end{longtable}
@@ -150,11 +150,13 @@ $X$ & Latent physical stress, including specified loading, initial state and eve
 $B(t)$ & Independently specified diagnostic background; it may be nonstationary and is not the physical loading closure. \\
 $G_s(t),H_e(t)$ & Marked diagnostic depletion and normalized triggering features based on past history. \\
 $\eta$ & Nonnegative diagnostic inhibition coefficient; it is not automatically the original physical stress parameter. \\
-$n$ & Physical mean productivity $n=\mathbb E_F\kappa(M)<1$; in the diagnostic convention $\mathbb E_F\kappa(Q)=1$ and $n$ is the coefficient outside $H_e$. \\
+$n$ & Physical mean productivity $n=\E _F\kappa(M)<1$; in the diagnostic convention $\E _F\kappa(Q)=1$ and $n$ is the coefficient outside $H_e$. \\
 $\ell,F$ & In Chapter~\ref{ch:inference}, log-likelihood and its negative; $F$ elsewhere denotes the mark law and $\ell$ the auxiliary response slope. Local definitions fix these uses. \\
 $A=e^a,p_i$ & Background amplitude and fitted background mixture weight at event $i$. The weights are not identified causal parent labels. \\
+$a_{\mathrm{rel}},\beta_{\mathrm{rel}}$ & Auxiliary-response coefficient $(1-n)\tau^{-\alpha}$ and exponent $1-\alpha$; $a$ remains the background intercept. \\
+$\gamma$ & Feedback gain $m_1\ell$ in the auxiliary response; the stress-mark exponent is separately defined in the generating law. \\
 $\alpha$ & Fractional relaxation index where used, with its permitted range stated in the relevant model. \\
-$\beta$ & Excess-mark rate in the exponential mark model; locally $\beta=1-\alpha$ in the auxiliary response. A plug-in mark-rate estimate is not automatically a joint marked-intensity MLE. \\
+$\beta$ & Excess-mark rate in the exponential mark model; the Lyapunov weight in Theorem~\ref{thm:finite_mode} is a separate local use. A plug-in mark-rate estimate is not automatically a joint marked-intensity MLE. \\
 \bottomrule
 \end{longtable}
 

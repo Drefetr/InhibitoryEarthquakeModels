@@ -21,7 +21,7 @@ Between events the coordinates relax according to
 \end{equation}
 The ground event process \(N\) has compensator
 \begin{equation}\label{eq:physical-compensator}
-\Lambda(t)=\int_0^t\bigl\{\Psi(X(s^-))+H(s^-)\bigr\}\,ds .
+\Lambda(t)=\int_0^t\bigl\{\Psi(X(s^-))+H(s^-)\bigr\}\,\dif s .
 \end{equation}
 Thus the intensity is evaluated immediately before a possible event and does not include the outcome of that event.
 
@@ -32,7 +32,7 @@ If an event is accepted at time \(T_i\), a fresh mark \(M_i\) is drawn from a fi
 \end{equation}
 The functions \(g,\kappa\geq0\) may depend on different aspects of the same mark and may therefore be correlated. Their first moments are denoted by
 \[
-m_1=\mathbb E_F g(M),\qquad n=\mathbb E_F\kappa(M).
+m_1=\E _F g(M),\qquad n=\E _F\kappa(M).
 \]
 The subcritical condition \(n<1\) will control the expected branching size. Marks affect future event rates, but an accepted event cannot change the probability of its own acceptance.
 
@@ -40,7 +40,7 @@ The stability theorem permits a positive nondecreasing link $\Psi$ that is Lipsc
 \begin{equation}\label{eq:physical-link}
 \Psi(x)=e^{a+bx},\qquad b\geq0.
 \end{equation}
-Consequently the loading \(\rho\) acts physically through its effect on the coordinates and hence on \(X\); there is no separate multiplicative loading function in \eqref{eq:physical-compensator}. Model \eqref{eq:finite-flow}--\eqref{eq:physical-link}, with constant \(\rho\) and fixed \(\Psi\), is the autonomous finite-mode model used in the stability and approximation results. See \sourcesupp{S21}.
+Consequently the loading \(\rho\) acts physically through its effect on the coordinates and hence on \(X\); there is no separate multiplicative loading function in \eqref{eq:physical-compensator}. Model \eqref{eq:finite-flow}--\eqref{eq:physical-link}, with constant \(\rho\) and fixed \(\Psi\), is the autonomous finite-mode model used in the stability and approximation results.
 
 \section{Memory kernels and exact relaxation}
 
@@ -51,11 +51,11 @@ h(t)=-\Phi'(t)=\sum_jw_j\vartheta_je^{-\vartheta_jt}.
 \end{equation}
 Thus \(\Phi(0)=1\), \(\Phi\) is completely monotone, and \(h\) is a probability density:
 \[
-\int_0^\infty h(t)\,dt=1-\Phi(\infty)=1.
+\int_0^\infty h(t)\,\dif t=1-\Phi(\infty)=1.
 \]
 For arbitrary finite initial coordinates, the coordinate solution gives
 \begin{align}
-X(t)&=\sum_jw_jZ_j(0)e^{-\vartheta_jt}+\rho\int_0^t\Phi(u)\,du
+X(t)&=\sum_jw_jZ_j(0)e^{-\vartheta_jt}+\rho\int_0^t\Phi(u)\,\dif u
 -\sum_{0<T_i\leq t}g(M_i)\Phi(t-T_i),\label{eq:finite-X-mild}\\
 H(t)&=\sum_jw_jU_j(0)e^{-\vartheta_jt}
 +\sum_{0<T_i\leq t}\kappa(M_i)h(t-T_i).\label{eq:finite-H-mild}
@@ -107,13 +107,13 @@ The baseline \(B(t)\) is deterministic at fixed parameters and specified indepen
 
 This section adopts a convention change once and for all: diagnostic productivity is scaled to have unit mean,
 \[
-\mathbb E_F\kappa(Q)=1,
+\E _F\kappa(Q)=1,
 \]
-while the coefficient \(n\) is retained \emph{outside} \(H_e\) in \eqref{eq:diagnostic-intensity}. In the physical model, by contrast, \(n=\mathbb E_F\kappa(M)<1\) is the mean carried by the productivity marks themselves. The diagnostic normalisation removes that mean from the marks and displays it explicitly as a coefficient. This is a bookkeeping convention, not an assertion that realised productivity is one, and it is not used to reinterpret the autonomous physical stability theorem.
+while the coefficient \(n\) is retained \emph{outside} \(H_e\) in \eqref{eq:diagnostic-intensity}. In the physical model, by contrast, \(n=\E _F\kappa(M)<1\) is the mean carried by the productivity marks themselves. The diagnostic normalisation removes that mean from the marks and displays it explicitly as a coefficient. This is a bookkeeping convention, not an assertion that realised productivity is one, and it is not used to reinterpret the autonomous physical stability theorem.
 
 The physical exponential link \eqref{eq:physical-link} embeds loading through \(X\): a constant \(\rho\) shifts the physical stress state and therefore changes \(\Psi(X)\). The time-dependent baseline \(B(t)\) in \eqref{eq:diagnostic-intensity} is an independently specified background. It does not replace \(\Psi(X)\) in the autonomous invariant-law theorem; that theorem does not cover externally varying \(B(t)\).
 
-The shared subfamily imposes the identity \(h_e=-\Phi_s'\). This has substantive model content: the instantaneous excitation density is the negative derivative of the same kernel that governs stress relaxation. Consequently the decay of past stress and the contribution of a mark to the future compensator come from one memory structure, including its normalisation. Choices of \(\Phi_s\) and \(h_e\) that do not satisfy this identity define a separate-memory model. Normalization alone does not impose their equality. See \sourcesupp{S22}.
+The shared subfamily imposes the identity \(h_e=-\Phi_s'\). This has substantive model content: the instantaneous excitation density is the negative derivative of the same kernel that governs stress relaxation. Consequently the decay of past stress and the contribution of a mark to the future compensator come from one memory structure, including its normalisation. Choices of \(\Phi_s\) and \(h_e\) that do not satisfy this identity define a separate-memory model. Normalization alone does not impose their equality.
 
 A ground process records only the event times \(T_i\), whereas a marked process records the pairs \((T_i,Q_i)\). The ground law is a projection of the marked law. The event-time contribution to a joint marked likelihood, evaluated using observed past marks, is a different object from the marginal likelihood of times alone. Event times alone generally do not identify \(g\) and \(\kappa\) separately, nor their within-mark dependence, without an additional mark model. Conversely, the marked likelihood includes both ground acceptance probabilities and mark densities. Since marks are fresh after acceptance, past marks enter \eqref{eq:diagnostic-intensity} through the strict sums \eqref{eq:diagnostic-sums}, while a newly drawn mark first affects the future. This observational distinction is essential: marginalizing to times alone and evaluating a joint marked likelihood answer different questions.
 

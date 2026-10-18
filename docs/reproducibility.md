@@ -27,3 +27,5 @@ Output directories must be new. Automated production checks do not replace visua
 No fitting, simulation, bootstrap, catalogue download or historical research-history scoring ran during public preparation. Tests use hand-constructed examples. Historical v4 records and new preparation checks are distinguished.
 
 The public observed protocol retains the historical scientific design but binds portable interpreter-discovery variants of two optional launchers. `provenance/historical_observed_protocol.json` retains the original byte-sealed protocol. No numerical Python authority or scientific setting was changed for publication privacy.
+
+For manuscript navigation, public summary targets and explicit archival omissions, see the [public source and availability guide](public_readability.md). E04 remains a separate linked explanatory supplement. The historical synthetic/reference banks and full historical M16 authority are not supplied by the aggregate summaries.

@@ -1,8 +1,8 @@
-\chapter{Likelihood, Profiling and Calibrated Inference}\label{ch:inference}
+\chapter{Likelihood, profiling and calibrated inference}\label{ch:inference}
 
 The marked likelihood provides the common bridge from structural and visibility questions to fitted inference. It records event times, pre-event intensities, the complete observation window, and the mark factors under the same mark model. Likelihood geometry can then be separated into three questions: whether a score direction has finite second moment, whether amplitude profiling gives a well-defined finite-history optimization, and how the rejection probability of a calibrated rule responds when the generating inhibition changes.
 
-\section{The Full Marked Likelihood and a Score Bound}
+\section{The full marked likelihood and a score bound}
 
 For an observed marked history \((T_i,Q_i)_{i=1}^{N(T)}\), write \(G_i=G_s(T_i-)\) and \(H_i=H_e(T_i-)\), so the event at \(T_i\) is excluded from both. With the common mark density \(p_Q\),
 \begin{equation}
@@ -10,22 +10,22 @@ For an observed marked history \((T_i,Q_i)_{i=1}^{N(T)}\), write \(G_i=G_s(T_i-)
 =
 \sum_{i=1}^{N(T)}
 \log\left\{B(T_i)e^{-\eta G_i}+nH_i\right\}
--\int_0^T\left\{B(t)e^{-\eta G_s(t)}+nH_e(t)\right\}dt
+-\int_0^T\left\{B(t)e^{-\eta G_s(t)}+nH_e(t)\right\}\dif t
 +\sum_{i=1}^{N(T)}\log p_Q(Q_i).
 \label{eq:full-likelihood}
 \end{equation}
-Every event term uses its pre-event stress and trigger history, the time integral covers the full horizon, and no first event is deleted. The mark sum belongs to the full likelihood. The first two terms form its event-time contribution, evaluated on the observed marked history; they are not the marginal time-only likelihood. The mark sum cancels in a contrast only when both candidates evaluate the same marks under the same mark law and support; it is constant in ground-rate coordinates when that mark law is held fixed. Ground-rate equality without equality of mark laws is insufficient for equality of marked likelihoods. The likelihood is conditioned on the declared starting history, rather than on the observed count (\sourcesupp{S12}).
+Every event term uses its pre-event stress and trigger history, the time integral covers the full horizon, and no first event is deleted. The mark sum belongs to the full likelihood. The first two terms form its event-time contribution, evaluated on the observed marked history; they are not the marginal time-only likelihood. The mark sum cancels in a contrast only when both candidates evaluate the same marks under the same mark law and support; it is constant in ground-rate coordinates when that mark law is held fixed. Ground-rate equality without equality of mark laws is insufficient for equality of marked likelihoods. The likelihood is conditioned on the declared starting history, rather than on the observed count.
 
 For example, let a magnitude excess \(Q\ge0\) have exponential density \(\beta e^{-\beta Q}\), and let
 \[
 \kappa(Q)=(1-r)e^{r\beta Q},\qquad 0\le r<1.
 \]
-Then \(\mathrm E\kappa=1\), and the raw triggering amplitude is
+Then \(\E \kappa=1\), and the raw triggering amplitude is
 \(n(1-r)e^{r\beta Q}\). Changing \(\beta\) while holding \(r\) fixed changes both the future mark distribution and the raw productivity exponent. To preserve a raw law \(C e^{cQ}\) on the observed history under a changed \(\beta'\), one must instead use
 \[
 r'=c/\beta',\qquad n'=C/(1-r'),
 \]
-subject to \(\beta'>c\) and the branching constraints. This can preserve the event-time likelihood contribution evaluated on the observed marked history; it does not preserve the full marked law. A mark-only estimate from a training prefix is also not automatically the joint marked-process maximum-likelihood estimate, since the ground-rate term can depend on \(\beta\) through productivity (\sourcesupp{S25}).
+subject to \(\beta'>c\) and the branching constraints. This can preserve the event-time likelihood contribution evaluated on the observed marked history; it does not preserve the full marked law. A mark-only estimate from a training prefix is also not automatically the joint marked-process maximum-likelihood estimate, since the ground-rate term can depend on \(\beta\) through productivity.
 
 For fixed nuisance parameters, the inhibition score is
 \begin{equation}
@@ -33,21 +33,21 @@ U_\eta=\ell_\eta
 =\int_0^T
 -\frac{B(t)e^{-\eta G_s(t)}G_s(t)}
 {B(t)e^{-\eta G_s(t)}+nH_e(t)}
-\left\{dN(t)-\lambda_\eta(t)dt\right\}.
+\left\{\dif N(t)-\lambda_\eta(t)\dif t\right\}.
 \label{eq:eta-score}
 \end{equation}
 At \(\eta=0\), this is the score for the declared boundary direction, with the ordinary Hawkes law as reference. The next bound shows that raw heavy-tailed marks need not imply an infinite variance for this particular intensity-weighted score.
 
 \begin{proposition}[Restricted finite score variance]
 \label{prop:score_bound}
-On \([0,T]\), with empty initial history and \(\eta\geq0\), let \(0<B(t)\le B_{\max}<\infty\), \(n>0\), let \(\kappa>0\) almost surely with \(\mathrm E\kappa=1\), and let \(h_e(u)>0\) for \(0\le u\le T\). Assume the same parents contribute to \(G_s\) and \(H_e\), with nonnegative \(g\) and \(\Phi_s\), finite mean event count, \(C_T=\int_0^T\Phi_s(u)^2/h_e(u)\,du<\infty\), and \(m=\mathrm E[g(Q)^2/\kappa(Q)]<\infty\). Then the score \eqref{eq:eta-score} is square integrable and its predictable variance is
+On \([0,T]\), with empty initial history and \(\eta\geq0\), let \(0<B(t)\le B_{\max}<\infty\), \(n>0\), let \(\kappa>0\) almost surely with \(\E \kappa=1\), and let \(h_e(u)>0\) for \(0\le u\le T\). Assume the same parents contribute to \(G_s\) and \(H_e\), with nonnegative \(g\) and \(\Phi_s\), finite mean event count, \(C_T=\int_0^T\Phi_s(u)^2/h_e(u)\,\dif u<\infty\), and \(m=\E [g(Q)^2/\kappa(Q)]<\infty\). Then the score \eqref{eq:eta-score} is square integrable and its predictable variance is
 \[
-\mathrm E_\eta U_\eta^2
+\E _\eta U_\eta^2
 =
-\mathrm E_\eta\int_0^T
-\frac{(B e^{-\eta G_s}G_s)^2}{\lambda_\eta}\,dt
+\E _\eta\int_0^T
+\frac{(B e^{-\eta G_s}G_s)^2}{\lambda_\eta}\,\dif t
 \le
-\frac{B_{\max}^2}{n}C_T\,\mathrm E_\eta N(T)m<\infty.
+\frac{B_{\max}^2}{n}C_T\,\E _\eta N(T)m<\infty.
 \]
 \end{proposition}
 
@@ -72,12 +72,12 @@ When \(H_e=0\) there are no preceding parents and both displayed quantities are 
 Integrating and applying Tonelli's theorem bounds the expected bracket by
 \[
 \frac{B_{\max}^2}{n}C_T
-\mathrm E_\eta\sum_{T_i<T}\frac{g(Q_i)^2}{\kappa(Q_i)}.
+\E _\eta\sum_{T_i<T}\frac{g(Q_i)^2}{\kappa(Q_i)}.
 \]
-Fresh marks are drawn independently after acceptance, so the last expectation equals \(\mathrm E_\eta N(T)m\), although marks may influence future event counts. The stochastic-integral score is therefore an \(L^2\) martingale with the stated variance.
+Fresh marks are drawn independently after acceptance, so the last expectation equals \(\E _\eta N(T)m\), although marks may influence future event counts. The stochastic-integral score is therefore an \(L^2\) martingale with the stated variance.
 \end{proof}
 
-Raw \(\mathrm E g^2\) or \(\mathrm E\kappa^2\) may be infinite while the intensity-weighted ratio has finite moment. Positive \(n\) and matched triggering parents supply the required comparison history; the bound is not uniform as \(n\downarrow0\) or as the kernel-ratio integral grows (\sourcesupp{S03}).
+Raw \(\E  g^2\) or \(\E \kappa^2\) may be infinite while the intensity-weighted ratio has finite moment. Positive \(n\) and matched triggering parents supply the required comparison history; the bound is not uniform as \(n\downarrow0\) or as the kernel-ratio integral grows.
 
 \paragraph{Example at the synthetic mark parameters.}
 For \(Q\sim\operatorname{Exp}(\beta)\),
@@ -103,9 +103,9 @@ matched-parent, finite-horizon and kernel-ratio conditions remain essential to t
 the bound is not uniform near the simultaneous zero boundary, and
 no joint Fisher-information, central-limit or Wilks conclusion follows.
 
-At the simultaneous boundary \(n=\eta=0\), the conclusion can fail. Take a constant Poisson background \(B>0\), marks \(Q\sim\operatorname{Exp}(\beta)\), and \(g(Q)=e^{\gamma(Q-1)}\) with \(\gamma<\beta\le2\gamma\). The first stress-mark moment is finite while the second is infinite. For one exponential relaxation mode of rate \(k>0\), the resulting positive shot noise has a stationary version of mean \(B\mathrm Eg/k\); copies with the same future points and marks have differences that decay exactly as \(e^{-kt}\). Thus a first-moment stable state process is compatible with the following score irregularity. On the positive-probability event of exactly one event at \(S<T\), the pre-event stress is zero and the score contribution has the form
+At the simultaneous boundary \(n=\eta=0\), the conclusion can fail. Take a constant Poisson background \(B>0\), marks \(Q\sim\operatorname{Exp}(\beta)\), and \(g(Q)=e^{\gamma(Q-1)}\) with \(\gamma<\beta\le2\gamma\). The first stress-mark moment is finite while the second is infinite. For one exponential relaxation mode of rate \(k>0\), the resulting positive shot noise has a stationary version of mean \(B\E g/k\); copies with the same future points and marks have differences that decay exactly as \(e^{-kt}\). Thus a first-moment stable state process is compatible with the following score irregularity. On the positive-probability event of exactly one event at \(S<T\), the pre-event stress is zero and the score contribution has the form
 \[
-U_0=g(Q)\int_S^T B(t)\Phi_s(t-S)\,dt.
+U_0=g(Q)\int_S^T B(t)\Phi_s(t-S)\,\dif t.
 \]
 The fresh mark is independent of that event configuration, and the integral is strictly positive on a positive-probability set of \(S\). Hence the score has infinite second moment. At positive \(\eta\), even with \(n=0\),
 \[
@@ -113,17 +113,17 @@ The fresh mark is independent of that event configuration, and the integral is s
 \le B G_s^2e^{-\eta G_s}
 \le\frac{4B}{e^2\eta^2},
 \]
-so integrable \(B\) controls the score bracket without a raw second mark moment. This regularization is not uniform as \(\eta\downarrow0\) and does not establish null-boundary asymptotic theory (\sourcesupp{S04} and \sourcesupp{S05}).
+so integrable \(B\) controls the score bracket without a raw second mark moment. This regularization is not uniform as \(\eta\downarrow0\) and does not establish null-boundary asymptotic theory.
 
 Finite score variance alone is not a central limit theorem. It also does not establish differentiability in quadratic mean for the full searched model or a regular information matrix at the boundary. The pathwise second derivative contains terms whose expectations may fail even when the martingale-score bracket is finite.
 
-\section{Nuisance Projection and Local Information}
+\section{Nuisance projection and local information}
 
 Suppose the relevant scores are square integrable. Define the ensemble inner product
 \[
 \langle f,h\rangle_0
 =
-\mathrm E_0\int_0^T\lambda_0(t)f(t)h(t)\,dt.
+\E _0\int_0^T\lambda_0(t)f(t)h(t)\,\dif t.
 \]
 For a nuisance parameter \(\zeta\), the score integrand is
 \(f_\zeta=\partial_\zeta\lambda_0/\lambda_0\). If the nuisance scores span a closed subspace, the residual after projecting \(f_\eta\) onto that subspace is the efficient-score integrand. In finite nonsingular notation,
@@ -137,7 +137,7 @@ When nuisance scores are redundant, a generalized inverse and its range conditio
 
 This projection gives a quantitative meaning to masking by fitted background and triggering. Slowly varying depletion can resemble a background trend, while post-event depletion can resemble a triggering scale or productivity. It also shows why effective information is an ensemble object: it requires integrability and a reference law, not merely the algebra of one fixed path. At \(\eta=0\), the information contributed by an independently parameterized stress-kernel direction is zero, because
 \(\partial_\theta\lambda=-\eta B e^{-\eta G_s}\partial_\theta G_s\).
-An \(O(\eta^2)\) information statement away from zero requires a justified uniform moment bound for that derivative; the zero first derivative alone is not enough (\sourcesupp{S23}).
+An \(O(\eta^2)\) information statement away from zero requires a justified uniform moment bound for that derivative; the zero first derivative alone is not enough.
 
 A related calculation can be made on one fixed reference path without the ensemble expectation. For \(B=\exp(a+dx)\), the four null log-intensity directions are
 \[
@@ -146,13 +146,13 @@ s_d=\frac{xB}{\lambda_0},\quad
 s_n=\frac{H_e}{\lambda_0},\quad
 s_\eta=-\frac{BG_s}{\lambda_0}.
 \]
-The realized Gram matrix \(J_{ij}=\int_0^T\lambda_0s_is_j\,dt\) is positive semidefinite. Its residual inhibition norm after projecting on \((s_a,s_d,s_n)\) is the minimum of
-\(\int\lambda_0(s_\eta-b_as_a-b_ds_d-b_ns_n)^2dt\).
+The realized Gram matrix \(J_{ij}=\int_0^T\lambda_0s_is_j\,\dif t\) is positive semidefinite. Its residual inhibition norm after projecting on \((s_a,s_d,s_n)\) is the minimum of
+\(\int\lambda_0(s_\eta-b_as_a-b_ds_d-b_ns_n)^2\dif t\).
 If \(G_s=c_0+c_1x+c_2H_e/B\), that residual is exactly zero. This algebra explains how depletion can resemble a fitted level, trend and triggering component.
 
-On two frozen reference paths, the archived residual/raw squared-norm ratios were approximately \(10.82\%\) and \(3.26\%\). These are two realized-path projections, rather than estimates of ensemble Fisher information. The paths and their calibrations differ; their ordering does not establish that greater exposure reduces expected information. Additional score directions can only reduce the residual for the same path and inner product, but no power decomposition follows from that projection fact (\sourcesupp{S02}).
+On two frozen reference paths, the archived residual/raw squared-norm ratios were approximately \(10.82\%\) and \(3.26\%\). These are two realized-path projections, rather than estimates of ensemble Fisher information. The paths and their calibrations differ; their ordering does not establish that greater exposure reduces expected information. Additional score directions can only reduce the residual for the same path and inner product, but no power decomposition follows from that projection fact.
 
-\section{Conditional Amplitude Profiling}
+\section{Conditional amplitude profiling}
 
 Fix one observed marked history and fix the trend coefficient \(d\) and inhibition \(\eta\). Put
 \[
@@ -160,7 +160,7 @@ q_i=\exp\{d x(T_i)-\eta G_i\},
 \qquad
 c_i=nH_i,
 \qquad
-J=\int_0^T\exp\{d x(t)-\eta G(t)\}\,dt,
+J=\int_0^T\exp\{d x(t)-\eta G(t)\}\,\dif t,
 \]
 and let \(A=\exp(a)\) with \(A\in[L,U]\), where \(L=e^{-12}\) and \(U=1\). The negative event-time contribution to the joint marked log-likelihood, omitting the common mark constant and writing \(K\) for the full-window triggering compensator, is
 \begin{equation}
@@ -217,7 +217,7 @@ V_d=AJ_x-\sum_i x(T_i)p_i,
 \qquad
 V_\eta=-AJ_G+\sum_i G_ip_i,
 \]
-where \(J_x\) and \(J_G\) integrate \(x(t)\) and \(G(t)\) against the background weight. Here \(J_x=\int_0^Tx(t)e^{dx(t)-\eta G(t)}dt\) and \(J_G=\int_0^TG(t)e^{dx(t)-\eta G(t)}dt\). At fixed \(d\), implicit differentiation in an interior-amplitude region gives
+where \(J_x\) and \(J_G\) integrate \(x(t)\) and \(G(t)\) against the background weight. Here \(J_x=\int_0^Tx(t)e^{dx(t)-\eta G(t)}\dif t\) and \(J_G=\int_0^TG(t)e^{dx(t)-\eta G(t)}\dif t\). At fixed \(d\), implicit differentiation in an interior-amplitude region gives
 
 \[
 \frac{\partial a_*}{\partial\eta}
@@ -225,7 +225,7 @@ where \(J_x\) and \(J_G\) integrate \(x(t)\) and \(G(t)\) against the background
 \]
 The numerator has no universal sign. An amplitude curve that also refits trend has a different total derivative. The identity \(AJ=\sum_i p_i\) equates integrated fitted background with event-wise background mixture weights; these weights are not observed physical parent labels or a stationary balance law. With empty prehistory and positive background, the first event has \(c_1=0\), so \(p_1=1\). No initial quiet interval or first event can be discarded from this argument.
 
-These are local envelope and implicit formulas. Active endpoint transitions require one-sided treatment, and none of them implies that every starting point reaches the global profile minimum (\sourcesupp{S12} and \sourcesupp{S13}).
+These are local envelope and implicit formulas. Active endpoint transitions require one-sided treatment, and none of them implies that every starting point reaches the global profile minimum.
 
 Stable evaluation also matters for the conditional proof. In logarithmic coordinates compute \(\log\lambda_i\) by a log-sum-exp of \(a+\log q_i\) and \(\log c_i\). When \(c_i=0\), the mathematically positive background gives \(p_i=1\), even if exponentiating \(\log q_i\) underflows. A numerical zero is not evidence that the exact objective is flat. The same amplitude algebra holds with positive quadrature weights, but agreement between quadrature orders at selected points is a numerical sensitivity check rather than a rigorous global integration bound.
 
@@ -236,20 +236,20 @@ Feedback detection and testing equality of memories are different tasks. The fir
 
 A calibration recipe must match the complete statistic actually computed. Under a fitted null, this means simulating new marked catalogues, refitting the allowed nuisance parameters under both candidates, repeating the declared kernel search and using the same failure and selection rules. A reference distribution for one nuisance block cannot be substituted for another. Such a plug-in procedure is a proposed finite-sample method; the present score bounds do not prove its uniform validity over a composite null or near weak identification. Non-rejection of shared memory cannot confirm that restriction without evidence that meaningful separate-memory alternatives are distinguishable.
 
-The distinction between supplied and estimated nuisances is equally substantive. A likelihood ratio between two fully specified laws addresses a simple testing problem. A composite null can change its background and other permitted parameters, admitting alternative explanations that the simple null excludes. Superior calibrated detection with supplied generating values therefore does not measure purely avoidable fitting inefficiency. It combines different statistical questions with different procedures; neither an arbitrary optimizer improvement nor fixing real-data nuisance values without justification is guaranteed to recover the supplied-law performance (\sourcesupp{S26}).
+The distinction between supplied and estimated nuisances is equally substantive. A likelihood ratio between two fully specified laws addresses a simple testing problem. A composite null can change its background and other permitted parameters, admitting alternative explanations that the simple null excludes. Superior calibrated detection with supplied generating values therefore does not measure purely avoidable fitting inefficiency. It combines different statistical questions with different procedures; neither an arbitrary optimizer improvement nor fixing real-data nuisance values without justification is guaranteed to recover the supplied-law performance.
 
-\section{Response of a Calibrated Fixed-Rule Test}
+\section{Response of a calibrated fixed-rule test}
 
 Calibrated inference starts with a complete-data decision rule rather than with a particular fitted parameter value. Let \(I(\mathcal H)\in\{0,1\}\) be a fixed bounded measurable rejection indicator defined on every admissible marked history. The reference bank, tuning and model-selection procedure, critical threshold, treatment of empty histories, and any auxiliary randomization law are fixed independently of the true generating inhibition. The rule may estimate nuisances or select a model from the data, because these operations are part of the same measurable mapping from history to \(\{0,1\}\); what is held fixed is the rule as the generating \(\eta\) varies. Define
 \[
-p(\eta)=\mathrm E_\eta I(\mathcal H).
+p(\eta)=\E _\eta I(\mathcal H).
 \]
 
 \begin{proposition}[Positive-inhibition response of a fixed rule]
 \label{prop:power_response}
-Fix empty history, a common fresh mark law with finite nonnegative transforms, \(\mathrm E\kappa=1\), \(0\le n<1\), nonnegative kernels bounded on the finite window with normalized \(h_e\), and a deterministic nonnegative background with \(\mathcal B=\int_0^TB(t)dt<\infty\). Hold all these generating nuisances fixed as \(\eta\) varies. Then \(p(\eta)\) is continuously differentiable for \(\eta>0\), and
+Fix empty history, a common fresh mark law with finite nonnegative transforms, \(\E \kappa=1\), \(0\le n<1\), nonnegative kernels bounded on the finite window with normalized \(h_e\), and a deterministic nonnegative background with \(\mathcal B=\int_0^TB(t)\dif t<\infty\). Hold all these generating nuisances fixed as \(\eta\) varies. Then \(p(\eta)\) is continuously differentiable for \(\eta>0\), and
 \[
-p'(\eta)=\mathrm E_\eta[I(\mathcal H)S_\eta]
+p'(\eta)=\E _\eta[I(\mathcal H)S_\eta]
 =\mathrm{Cov}_\eta(I(\mathcal H),S_\eta).
 \]
 Moreover,
@@ -265,21 +265,21 @@ Moreover,
 \begin{proof}
 Let \(P_0\) be the noninhibited Hawkes law. Its mean count is at most \(\mathcal B/(1-n)\), and it dominates each inhibited construction. On a finite path the likelihood ratio is
 \[
-L_\eta=\exp\left\{\int_0^TB(1-e^{-\eta G_s})dt\right\}
+L_\eta=\exp\left\{\int_0^TB(1-e^{-\eta G_s})\dif t\right\}
 \prod_i\frac{Be^{-\eta G_i}+nH_i}{B+nH_i}\le e^{\mathcal B}.
 \]
 At actual event times the reference intensity is positive almost surely; where both intensities vanish away from events, set their likelihood ratio to one. The stopped density martingale is uniformly bounded and hence defines the changed law. Its score \(S_\eta=\partial_\eta\log L_\eta=U_\eta\) satisfies
 \[
-\mathrm E_\eta S_\eta=0,\qquad
-\mathrm E_\eta S_\eta^2\le\frac{4\mathcal B}{e^2\eta^2},
+\E _\eta S_\eta=0,\qquad
+\E _\eta S_\eta^2\le\frac{4\mathcal B}{e^2\eta^2},
 \]
 by the positive-inhibition bracket bound, without a raw stress-mark second moment.
 
 For clarity, write
 \[
 \begin{aligned}
- \mathcal B&=\int_0^T B(t)\,\mathrm{d}t,
- &J_\eta&=\int_0^T B(t)(1-e^{-\eta G_s(t)})\,\mathrm{d}t,\\
+ \mathcal B&=\int_0^T B(t)\,\dif t,
+ &J_\eta&=\int_0^T B(t)(1-e^{-\eta G_s(t)})\,\dif t,\\
  q_i(\eta)&=\frac{B_i e^{-\eta G_i}+c_i}{B_i+c_i},
  &c_i&=nH_i\geq0,
 \end{aligned}
@@ -308,17 +308,17 @@ The product rule, without division by any $q_i$, therefore yields
 \]
 The same bound applies to $|\partial_\eta(L_\eta I)|$ for the fixed bounded
 indicator. It is integrable under the reference law because
-$\mathbb E_0N(T)\leq\mathcal B/(1-n)$. The bound is for the derivative of
+$\E _0N(T)\leq\mathcal B/(1-n)$. The bound is for the derivative of
 $L_\eta$, not its logarithm. The finite-path derivative is continuous in $\eta$. Dominated convergence gives
-\(p'(\eta)=\mathrm E_0[I\partial_\eta L_\eta]=\mathrm E_\eta[IS_\eta]\).
+\(p'(\eta)=\E _0[I\partial_\eta L_\eta]=\E _\eta[IS_\eta]\).
 No derivative of the data-dependent fitted outputs is taken: \(I\) is the same mapping on every history. The mean-zero score gives the covariance identity. Cauchy--Schwarz with \(\mathrm{Var}(I)=p(1-p)\) gives the stated bounds.
 \end{proof}
 
 The covariance has no proved sign. Stronger generating inhibition need not increase detection probability for a particular calibrated rule. Positive \(\eta\) gives local differentiability and moment control, not monotonic power and not control as \(\eta\downarrow0\). Unknown, failed, capped, or otherwise unresolved computational outcomes remain unknown; they must not be recorded as nonrejections. Conditioning on completed cases estimates a different functional from the unconditional \(p(\eta)\) defined by the fixed rule.
 
-The proposition also does not compare a simple hypothesis with a known generating law to a composite hypothesis whose nuisances are fitted. Those are different operating characteristics, with different permitted null explanations and decision rules. An oracle that knows the nuisance values and a composite rule that estimates them are not the same test function, so their performance gap is not by itself pure fitting waste (\sourcesupp{S06}).
+The proposition also does not compare a simple hypothesis with a known generating law to a composite hypothesis whose nuisances are fitted. Those are different operating characteristics, with different permitted null explanations and decision rules. An oracle that knows the nuisance values and a composite rule that estimates them are not the same test function, so their performance gap is not by itself pure fitting waste.
 
-\section{Scope and Unresolved Inference}
+\section{Scope and unresolved inference}
 
 Taken together, the results separate four questions. Exact marked-law equality shows that zero feedback leaves a separately varied stress kernel unidentified; the restricted active-inhibition experiment can identify the inhibition parameter and kernel in an idealized full-law sense; the restricted score can remain square integrable even when raw mark moments diverge; and a calibrated fixed rule has a local covariance response at positive inhibition. Amplitude profiling adds a unique conditional optimization in \(A\), while leaving the remaining trend--inhibition surface without a global certificate.
 

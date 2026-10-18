@@ -2,6 +2,8 @@
 \usepackage[a4paper,margin=27mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,amsmath,amssymb,hyperref}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}
 \setlength{\emergencystretch}{2em}
 \title{Release-v4 explanatory supplement (E04)}
 \author{}
@@ -14,31 +16,31 @@ they do not replace the scientific procedures or establish a stationary
 nonlinear exact-memory theorem.
 
 \subsection{Compensator cancellation}
-With physical productivity $\mathbb E\kappa=n$, scalar initialization
+With physical productivity $\E \kappa=n$, scalar initialization
 $X_0\Phi$, zero initial excitation and no additional prehistory, set
 $f=X_0\Phi+\rho(1*\Phi)$ and write $X$ for post-event stress in ordinary
-time convolutions. Then $X=f-\Phi*\mathrm dN_g$ and
-$\lambda=\Psi(X_-)+h*\mathrm dN_\kappa$.
+time convolutions. Then $X=f-\Phi*\dif N_g$ and
+$\lambda=\Psi(X_-)+h*\dif N_\kappa$.
 The deterministic resolvent identities are
 \[
 Q_\gamma+nR_\gamma*h=R_\gamma,\qquad
 Q_\gamma+\gamma R_\gamma*\Phi=\Phi.
 \]
-Substituting $\mathrm dM_g=\mathrm dN_g-m_1\lambda\,\mathrm dt$
-and $\mathrm dM_\kappa=\mathrm dN_\kappa-n\lambda\,\mathrm dt$
+Substituting $\dif M_g=\dif N_g-m_1\lambda\,\dif t$
+and $\dif M_\kappa=\dif N_\kappa-n\lambda\,\dif t$
 into the right-hand side $S$ of the manuscript's compensated identity gives
 \[
 \begin{aligned}
 S={}&X_0Q_\gamma+\rho(1*Q_\gamma)+\gamma R_\gamma*X
--m_1R_\gamma*\Psi-Q_\gamma*\mathrm dN_g\\
-&+m_1Q_\gamma*\lambda-m_1R_\gamma*h*\mathrm dN_\kappa
+-m_1R_\gamma*\Psi-Q_\gamma*\dif N_g\\
+&+m_1Q_\gamma*\lambda-m_1R_\gamma*h*\dif N_\kappa
 +m_1nR_\gamma*h*\lambda\\
-={}&X_0Q_\gamma+\rho(1*Q_\gamma)-Q_\gamma*\mathrm dN_g
+={}&X_0Q_\gamma+\rho(1*Q_\gamma)-Q_\gamma*\dif N_g
 +\gamma R_\gamma*X.
 \end{aligned}
 \]
 Here the first kernel relation combines the compensators, after which
-$\lambda-\Psi=h*\mathrm dN_\kappa$ cancels the remaining terms.
+$\lambda-\Psi=h*\dif N_\kappa$ cancels the remaining terms.
 The second relation makes the first three final terms
 $X-\gamma R_\gamma*X$, so $S=X$. This reasoning does not require
 independence of the two mark martingales. Predictable intensities still
@@ -51,11 +53,11 @@ For $n=0$, $m_1=\ell=\gamma=\tau=X_0=\rho=1$ and
 $\alpha=1/2$, take $\Psi(X)=X$ on the positive range of the path. Then
 \[
 \Phi(t)=e^t\operatorname{erfc}(\sqrt t),\qquad
-X(t)=\Phi(t)+\int_0^t\Phi(u)\,\mathrm du,\qquad
+X(t)=\Phi(t)+\int_0^t\Phi(u)\,\dif u,\qquad
 \widehat Q(s)=\widehat R(s)=\frac1{s+\sqrt s+1}.
 \]
-Although no raw event occurs, $\mathrm dM_g=-X\,\mathrm dt$ and
-$-R*\mathrm dM_g=R*X$. The nonlinear residual is zero, giving
+Although no raw event occurs, $\dif M_g=-X\,\dif t$ and
+$-R*\dif M_g=R*X$. The nonlinear residual is zero, giving
 \[
 X=Q+1*Q+R*X.
 \]
@@ -71,8 +73,8 @@ needed. These are fixed-parameter evaluations, not simulated catalogues.
 \subsection{The likelihood-product envelope}
 At fixed generating nuisances, let
 \[
-\mathcal B=\int_0^TB(t)\,\mathrm dt,\quad
-J_\eta=\int_0^TB(t)(1-e^{-\eta G_s(t)})\,\mathrm dt,\quad
+\mathcal B=\int_0^TB(t)\,\dif t,\quad
+J_\eta=\int_0^TB(t)(1-e^{-\eta G_s(t)})\,\dif t,\quad
 q_i=\frac{B_i e^{-\eta G_i}+c_i}{B_i+c_i},\quad c_i=nH_i.
 \]
 At actual reference events $B_i+c_i>0$ almost surely. On
@@ -90,7 +92,7 @@ As $0\le q_i\le1$ and $0\le J_\eta\le\mathcal B$,
 \end{aligned}
 \]
 No event factor is divided out. Since
-$\mathbb E_0N(T)\le\mathcal B/(1-n)$, this is an integrable envelope
+$\E _0N(T)\le\mathcal B/(1-n)$, this is an integrable envelope
 for differentiating the expectation of $L_\eta I$ with the fixed bounded
 rejection indicator $I$. It is a derivative bound for $L_\eta$, not
 $\log L_\eta$. It requires neither integrability of $\sum_iG_i$ nor
@@ -100,7 +102,7 @@ remain in force.
 
 \subsection{Why the small-set clock is shared}
 For one common Poisson measure with intensity
-$\mathrm ds\,\mathrm du\,F(\mathrm dm)$, the no-proposal event in
+$\dif s\,\dif u\,F(\dif m)$, the no-proposal event in
 $[0,t]\times[0,\Lambda_R]\times\mathsf M$ has probability
 $e^{-\Lambda_Rt}$ because $F(\mathsf M)=1$. Both event-free flows from the
 specified sublevel set have rates at most $\Lambda_R$. The first accepted

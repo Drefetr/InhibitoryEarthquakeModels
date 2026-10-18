@@ -3,6 +3,6 @@ test_kernel_normalisation (test_public_core.CoreTests.test_kernel_normalisation)
 test_poisson_exact_exposure (test_public_core.CoreTests.test_poisson_exact_exposure) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 1.433s
+Ran 3 tests in 1.761s
 
 OK

@@ -79,7 +79,11 @@ for ax,key,title,xlim in zip(axes,['alternative_frequency','heldout_null_size'],
         ax.errorbar(v,4-i,xerr=[[v-lo],[hi-v]],fmt='o',color=BLUE if key=='alternative_frequency' else ORANGE,capsize=3,markersize=5)
         ax.text(xlim[1]-.4,4-i+.19,f"{r['rejections']}/{r['requested']}",ha='right',fontsize=9)
     ax.set(xlim=xlim,ylim=(-.55,4.65),xlabel='Percent',title=title); ax.grid(axis='x',alpha=.15)
-axes[0].set_yticks(range(5),[x[0] for x in methods[::-1]]); axes[1].axvline(5,color=GRAY,ls=':',lw=1)
+# Display names are separate from historical keys used by derived-data serialization.
+procedure_labels=json.loads((Path(__file__).with_name('procedure_labels.json')).read_text(encoding='utf8'))['rows']
+if [row['saved_key'] for row in procedure_labels] != [name for name,_ in methods]:
+    raise ValueError('Procedure display map must preserve the saved five-row order')
+axes[0].set_yticks(range(5),[row['plot'] for row in procedure_labels[::-1]]); axes[1].axvline(5,color=GRAY,ls=':',lw=1)
 fig.tight_layout(w_pad=1.5)
 save(fig,'detection','Nominal conditional Clopper-Pearson intervals for five finite procedures, each with its own 999-reference bank on the same query identities. Intervals exclude bank and selection uncertainty.',[p19,p21,p26],{name:m for name,m in methods})
 

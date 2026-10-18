@@ -25,3 +25,11 @@ service-account*.json
 *.out
 *.blg
 *.bbl
+
+# Local review/handoff records are not publication payload.
+/validation/argon_public_readability/
+/review_history/
+/REPLY_TO_ARGON*
+/COMPLETED_DISPOSITIONS.json
+/NATIVE_SWARM_LEDGER.json
+/paper/supplements/response_to_referee.md

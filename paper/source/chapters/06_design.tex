@@ -1,11 +1,11 @@
-\chapter{Design and Interpretation of the Finite-History Experiment}
+\chapter{Design and interpretation of the finite-history experiment}
 \label{ch:design}
 
 This chapter specifies the finite-history experiment used to study detection of the diagnostic inhibition term. The quantity of primary interest is a diagnostic inhibition parameter, \(\eta\), not the physical loading parameter of the original process model. The distinction is substantive. Within the diagnostic family, a positive \(\eta\) suppresses the background contribution after the specified history feature is represented. It does not identify the original physical loading parameter, nor does it establish a unique physical mechanism. The experiment is therefore an inference study about a class of fitted laws, not a reconstruction of a complete physical loading history.
 
 The synthetic construction is model-correct relative to the laws it generates: histories are produced from the stated marked point-process model, evaluated under that model, and compared without introducing an external observation model. Geography, changing observation practices, and missing parents are deliberately omitted. Consequently, agreement or disagreement among procedures on these histories measures behavior within a specified filtration and law class. It cannot by itself establish that the same procedures are adequate for a catalogue affected by spatial heterogeneity, reporting changes, or genealogical incompleteness.
 
-\section{The Diagnostic Law and Its History}
+\section{The diagnostic law and its history}
 
 For a history \(\mathcal H_t\), let
 \begin{equation}
@@ -34,9 +34,27 @@ The numerical kernels are positive normalized finite spectral mixtures. They rep
  H_e(t)&=\sum_{t_i<t}(1-r)e^{\beta r m_i}h_e(t-t_i).
  \label{eq:diagnostic-features}
 \end{align}
-The relaxation kernel has the form \(\Phi_s(u)=\sum_qw_qe^{-\rho_qu}\), with positive weights summing to one. The corresponding triggering density is \(h_e(u)=\sum_qv_q\zeta_qe^{-\zeta_qu}\), with positive weights summing to one and positive rates. Thus \(\Phi_s(0)=1\) and \(\int_0^\infty h_e(u)\,du=1\). Sharing the relaxation parameters means using a common survival kernel and its negative derivative as the triggering density, rather than setting the two functions equal. The stress-mark normalization is the declared magnitude-six reference when \(M_0=5\). These formulas are explicit in \sourcesupp{S10} and \sourcesupp{S17}. Conclusions therefore apply to the finite mixture that was used, not automatically to every exact infinite-mode limit.
+The relaxation kernel has the form \(\Phi_s(u)=\sum_qw_qe^{-\rho_qu}\), with positive weights summing to one. The corresponding triggering density is \(h_e(u)=\sum_qv_q\zeta_qe^{-\zeta_qu}\), with positive weights summing to one and positive rates. Thus \(\Phi_s(0)=1\) and \(\int_0^\infty h_e(u)\,\dif u=1\). Sharing the relaxation parameters means using a common survival kernel and its negative derivative as the triggering density, rather than setting the two functions equal. The stress-mark normalization is the declared magnitude-six reference when \(M_0=5\). These formulas are explicit in \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/engine/iteration_20/code/restricted_history.py}{public restricted-history implementation} (\texttt{S10}) and \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/engine/iteration_27/code/adequacy.py}{public observed implementation} (\texttt{S17}). Conclusions therefore apply to the finite mixture that was used, not automatically to every exact infinite-mode limit.
 
 \paragraph{Finite spectral recipe.}
+For \(0<\alpha<1\) and the dimensionless rate variable $r$, the continuous representation
+\citep[Eqs.~(2.12)--(2.13)]{Mainardi2014} is
+\[
+ E_\alpha(-t^\alpha)=\int_0^\infty e^{-rt}K_\alpha(r)\,\dif r,
+ \qquad
+ K_\alpha(r)=\frac{\sin(\pi\alpha)}{\pi}
+ \frac{r^{\alpha-1}}{r^{2\alpha}+2r^\alpha\cos(\pi\alpha)+1}.
+\]
+Writing $r=e^v$ gives the log-rate density
+\[
+ K_\alpha(e^v)e^v=
+ \frac{\sin(\pi\alpha)}{2\pi\{\cosh(\alpha v)+\cos(\pi\alpha)\}}.
+\]
+For the scaled relaxation $E_\alpha(-(t/\tau)^\alpha)$, the rates are
+$e^v/\tau$. The following finite rule applies trapezoidal weights on the
+stated log-rate grid, halves its endpoints, truncates and renormalizes.
+The continuous representation and this numerical discretization are distinct;
+the citation does not provide a universal likelihood- or inference-error bound.
 The generating relaxation uses log rates \(v_j=0.4j\), \(j=-97,\ldots,97\), and rates \(\rho_j=e^{v_j}/\tau\) in days\(^{-1}\), with \(\alpha=0.5\) and \(\tau=1\) day. Before normalization its weights are
 \[
  \widetilde w_j=\frac{0.4\sin(\pi\alpha)}{2\pi\{\cosh(\alpha v_j)+\cos(\pi\alpha)\}},
@@ -60,7 +78,7 @@ with \(\beta=2.849401764894274\). The normalized productivity factor is
 \]
 This normalization gives unit mean productivity at the reference scale and makes the mark contribution positive. The exponential excess itself has finite moments. It is the exponential stress and productivity transforms that have finite first but infinite second moments at the declared parameters. That feature motivates bounded-indicator simulation checks rather than variance formulas or finite-information shortcuts based only on the raw marks.
 
-\section{Generating Histories and Evaluating Both Laws}
+\section{Generating histories and evaluating both laws}
 
 The main generating experiment has duration \(T=24394\) days, begins with an empty prehistory, and produces random event counts. Counts are not conditioned on a target total; in particular, the design does not condition on a 913-event count. The generating nuisance parameters include
 \[
@@ -84,7 +102,7 @@ For observed event times \(t_i\) and marks \(m_i\), the marked point-process log
 =
 \sum_{i:t_i\le T}\log\lambda_\eta(t_i-)
 -
-\int_0^T\lambda_\eta(t)\,dt
+\int_0^T\lambda_\eta(t)\,\dif t
 +
 \sum_{i:t_i\le T}\log f_\beta(m_i).
 \label{eq:marked-likelihood}
@@ -104,7 +122,7 @@ whereas a fitted procedure uses its selected maxima to form
 \end{equation}
 The hats denote the declared finite fitting recipe, rather than a proof that a global maximum has been found. The oracle contrast need not be nonnegative; a fitted statistic with an exact eligible null floor is nonnegative. Their numerical scales and critical values cannot be exchanged.
 
-\section{Reference Calibration and Inferential Scope}
+\section{Reference calibration and inferential scope}
 
 For a method, each null calibration uses \(999\) reference null history identifiers and a separate bank of \(1{,}000\) null query histories. The same reference identities are reused across methods, but each method fits and scores its own statistic on those histories. The \(150\) stronger alternative histories are also held in common across procedures. Reference histories are not scored as queries. For a query statistic \(D_q\), the reported rank probability is
 \begin{equation}
@@ -119,11 +137,11 @@ The reported summaries condition on the realized reference banks and generating 
 
 The null value \(\eta=0\) lies on the boundary of the permitted nonnegative parameter space. The usual interior-parameter Wilks argument does not apply directly. This study uses empirical matched-null calibration rather than asserting a chi-squared reference law. The inferential calculations are based on the separately calibrated procedures and their realized reference distributions. Because each rejection decision is a bounded indicator, conditional Monte Carlo standard errors remain meaningful even when individual marked histories are heavy tailed. This does not imply that a finite joint Fisher information exists for the fitted model.
 
-\section{Numerical Controls and Completed Evidence}
+\section{Numerical controls and completed evidence}
 
 The evaluation retains the full event clock, including extreme histories, rather than replacing generated histories with summaries. Required optimizer starts must resolve; an unresolved calculation stopped at a cap is recorded as unknown and is never converted into a non-rejection. Selected-point likelihood and intensity comparisons were checked across integration orders and backends, and direct likelihood contrasts were used where possible to reduce cancellation between nearly equal large integrals. Numerical envelopes serve as sensitivity controls for these calculations. They are not a universal quadrature bound and do not establish global maxima for an optimization.
 
-The completed oracle, supplied-nuisance, estimated-background and level-only evaluations each retain all \(2{,}149\) declared histories. No failed or extreme history is removed to obtain these denominators. Reporting policies, inclusion rules, and provenance for the numerical controls are recorded in the appendix. The completed-history evaluation and its reference-calibration conventions are documented in \sourcesupp{S09}; the matched synthetic construction and likelihood accounting are recorded in \sourcesupp{S11}, and the final reporting structure is recorded in \sourcesupp{S16}.
+The completed oracle, supplied-nuisance, estimated-background and level-only evaluations each retain all \(2{,}149\) declared histories. No failed or extreme history is removed to obtain these denominators. Reporting policies, inclusion rules, and provenance for the numerical controls are recorded in the appendix. The completed-history evaluation and its reference-calibration conventions are documented in \hyperlink{S09}{archival \texttt{S09} (not distributed)}; the matched synthetic construction and likelihood accounting are recorded in \hyperlink{S11}{archival \texttt{S11} (not distributed)}, and the final reporting structure is recorded in \hyperlink{S16}{archival \texttt{S16} (not distributed)}.
 
 \paragraph{Procedure-specific estimation.}
 The completed supplied-trigger studies hold \(n,r,\beta,\alpha_e,\tau_e\) and the stress kernel fixed. The eta-only procedure uses starts \(0\) and \(0.2\) over \(\eta\in[0,3]\). The level-and-trend procedure runs two null optimizations in \((a,d)\in[-12,0]\times[-2,2]\) and selects the better null fit. It then runs two alternative optimizations from that one fit, initialized at \(\eta=0\) and \(\eta=0.2\). Thus level-and-trend has four prescribed optimizations; the two procedures together have six. Both use L-BFGS-B with \(\mathrm{maxiter}=100\), \(\mathrm{maxls}=40\), \(\mathrm{ftol}=10^{-10}\) and \(\mathrm{gtol}=2\times10^{-6}\). Failure alone enables the same-start CPU retries (line-search limits 40 then 200), followed by bounded Powell; the supplied-trigger procedures never free \(n\). Every prescribed start must resolve, the exact matching null remains eligible, and selected order 16 values are checked independently at CPU order 32 to tolerance \(10^{-4}\).
@@ -136,3 +154,5 @@ The positive-gap history geometry retains initial and terminal quiet exposure. W
 The portable methods supplement and machine-readable settings in \texttt{supplements/}
 % Exact companion paths: supplements/methods_supplement.md; supplements/methods_settings.json
  distinguish the generating kernel, the historical fuller calibration, the supplied-trigger procedures, the level-only profile and the observed predictive search. They record estimated and supplied coordinates, bounds, starts, quadrature, recovery and unresolved availability limits at their respective accepted versions. The metadata arrays are deterministic evaluations of the documented mixture rule, not new event histories or refits.
+
+The \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/paper/data/detection.json}{public detection summary} and the \hyperref[sec:source-supplements]{availability guide} provide public entry points. Saved summaries do not replace the omitted full authorities or historical history banks.
