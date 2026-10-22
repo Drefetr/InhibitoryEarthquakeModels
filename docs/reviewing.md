@@ -1,5 +1,5 @@
 # Independent review
 
-Start with the paper's assumptions and limitations. The supplement expands equation (3.13), Proposition 5.3's product envelope, the common-clock event and paired MCSE convention.
+Start with the paper's assumptions and limitations. Read the [F nuisance addendum](../paper/supplements/f_nuisance_addendum.pdf) alongside the continuation section in Chapter 7 and the [follow-up scope note](F_followup.md); historical 123/150 and 68/150 results belong to different numerical recipes from the new 122/150 and 65/150 definite rejections. In the latter joint-nuisance cell, 82 are non-rejections and three remain unknown. Incomplete null coverage is a limitation, not a resolved negative decision. The original explanatory supplement expands equation (3.13), Proposition 5.3's product envelope, the common-clock event and paired MCSE convention.
 
 Report mathematical findings with assumptions and derivation; report numerical findings with a minimal input, command, environment and expected result. Distinguish building the paper, regenerating a plot, evaluating a fixed history and running a full study. AI review and agent agreement are not external academic peer review.

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "scope": "Editorial wording and PDF navigation corrections only; no new scientific execution.",
+  "base_commit": "5ab396fbc9a8df432cf76ec42512e4344e6abdf6",
+  "snapshot_status": "uncommitted working-tree snapshot at pre-commit validation; no additional verified Git commit at that point; not a statement of current Git status",
+  "pdfs": {
+    "paper/manuscript.pdf": {
+      "sha256": "4762a29abb8d78d16f228e9aa9f3cf318d0bcdb8b583261e07423df4b68cd572",
+      "pages": 65
+    },
+    "paper/supplements/f_nuisance_addendum.pdf": {
+      "sha256": "d0d3b1cd8f936d25f9cb3c89e9a4fc9deeff526609961fa2c940fc17d523e3d2",
+      "pages": 7
+    },
+    "paper/supplements/explanatory_supplement.pdf": {
+      "sha256": "97a00ec685d0ac432d7647114292daf655f235b2c23cd407d6b96549ef5879f3",
+      "pages": 2
+    }
+  },
+  "changed_tex_sources": {
+    "paper/source/preamble.tex": "22475a3585c3e62615fb4f0061a4412d4946979f8d2be895f7794ba4e92b10ef",
+    "paper/supplements/f_nuisance_addendum/results.tex": "f04ad002a111d48d97d9a55bcee30a953c69c96a0171e590d6fbbb5fe6b97a65"
+  },
+  "findings": {
+    "B-F-01": "Clarified separate source-reported input-identity/case-role metadata check, not reproduced here, versus no paired historical/continuation outcome comparison.",
+    "E-NAV-01": "Loaded heading packages before hyperref; corrected four bookmark destinations."
+  },
+  "build": {
+    "engine": "Tectonic 0.17.0",
+    "engine_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+    "targets_built": 3,
+    "exit_code": 0,
+    "log_warning_matches": 0,
+    "renderer": "PyMuPDF 1.28.2",
+    "comparison_dpi": 110
+  },
+  "manuscript": {
+    "bookmarks_checked": 64,
+    "heading_on_target_pages": 64,
+    "corrected_destinations": [
+      {
+        "section": "2.3",
+        "before_pdf_page": 11,
+        "after_pdf_page": 12
+      },
+      {
+        "section": "7.3",
+        "before_pdf_page": 44,
+        "after_pdf_page": 45
+      },
+      {
+        "section": "8.2",
+        "before_pdf_page": 47,
+        "after_pdf_page": 48
+      },
+      {
+        "section": "9.4",
+        "before_pdf_page": 55,
+        "after_pdf_page": 56
+      }
+    ],
+    "production_checks_passed": true,
+    "pages": 65,
+    "all_pages_text_and_pixels_unchanged": true,
+    "internal_links": {
+      "checked": 209,
+      "unresolved": 0,
+      "out_of_range": 0,
+      "name_page_mismatches": 0
+    },
+    "named_destination_table_entries_checked": 268,
+    "named_destination_table_unresolved_or_out_of_bounds": 0
+  },
+  "f_addendum": {
+    "pages": 7,
+    "changed_rendered_pages": [
+      5,
+      6
+    ],
+    "changed_pages_individually_viewed": true,
+    "visual_findings": [],
+    "counts_and_scientific_qualifications_unchanged": true
+  },
+  "explanatory_supplement": {
+    "pages": 2,
+    "source_and_shipped_pdf_unchanged": true,
+    "rebuilt_text_and_pixels_match": true
+  },
+  "visual_coverage": {
+    "pages": 74,
+    "unchanged_pages_covered_by_prior_individual_review_and_exact_pixel_identity": 72,
+    "changed_pages_individually_viewed": 2
+  },
+  "limitations": [
+    "The separate metadata check remains source-reported; it was not rerun.",
+    "No historical banks, fits, calibration, ranks or resampling were replayed.",
+    "Existing scientific qualifications remain in force.",
+    "Prior validation files retain their historical PDF bindings."
+  ],
+  "independent_verification": {
+    "wording": "accepted",
+    "bookmarks": "accepted",
+    "build_and_render": "accepted",
+    "all_64_bookmarks_matched_to_heading_blocks": true,
+    "corrected_destination_pages_individually_viewed": [
+      12,
+      45,
+      48,
+      56
+    ]
+  }
+}

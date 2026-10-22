@@ -730,10 +730,10 @@
       },
       "public_path": "provenance/catalogue_snapshot_metadata.json",
       "status": "partially-represented",
-      "scope_note": "Named metadata extract; per-event records removed. Expected pin is the historical full file; public pin belongs only to this extract.",
+      "scope_note": "Named metadata extract; per-event records and transient response cookie/request-identifier headers removed. Expected pin is the historical full file; public pin belongs only to this extract.",
       "verified_public_pin": {
-        "sha256": "1ebff42b90d356dc4a0b119aa317817726e3e3e6804d803b436446428bfb2259",
-        "bytes": 16755
+        "sha256": "dfa383127a329fde6e543db23aab741baba6874847397e32f64076ab33d6755d",
+        "bytes": 16618
       }
     },
     {

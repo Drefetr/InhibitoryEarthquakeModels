@@ -577,6 +577,14 @@
       "public_sha256": "f08ebeddf0a7c210dba42748f5e578d2d8d189476cb8c69e1da4e41dff5eb63c",
       "kind": "public-protocol-binding",
       "reason": "Bind portable launcher bytes; preserve original scientific design and retain exact historical protocol separately."
+    },
+    {
+      "path": "provenance/catalogue_snapshot_metadata.json",
+      "original_sha256": "a166602040591234639bdf1acc69a509603bbab53e54948619a1c011fc98492d",
+      "previous_public_sha256": "1ebff42b90d356dc4a0b119aa317817726e3e3e6804d803b436446428bfb2259",
+      "public_sha256": "dfa383127a329fde6e543db23aab741baba6874847397e32f64076ab33d6755d",
+      "kind": "metadata-privacy-redaction",
+      "reason": "Public extract omits per-event records; remove transient Set-Cookie and CF-RAY response headers while retaining retrieval, selection, source and scientific input identities."
     }
   ]
 }

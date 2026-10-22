@@ -393,8 +393,7 @@
           "cf-cache-status": "HIT",
           "Age": "59",
           "Vary": "Accept-Encoding",
-          "Access-Control-Allow-Origin": "*",
-          "CF-RAY": "a4ad75021913684f-SYD"
+          "Access-Control-Allow-Origin": "*"
         },
         "response_bytes": 33838,
         "sha256": "cc02463be5f73f1ba4c9e0ae0c4930243575d79b5006da44fb5cb98b5f98c546",
@@ -429,7 +428,6 @@
           "Content-Type": "text/html;charset=utf-8",
           "Pragma": "no-cache",
           "Cache-Control": "no-cache",
-          "Set-Cookie": "XSRF-TOKEN=481f9030-55c1-4c87-9928-cfce62a363ba; Path=/metadata",
           "Vary": "Accept-Encoding",
           "Access-Control-Expose-Headers": "Content-Security-Policy, Location",
           "Access-Control-Max-Age": "600",

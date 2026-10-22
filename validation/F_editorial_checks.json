@@ -1,0 +1,416 @@
+{
+  "recorded_utc": "2026-10-22T04:21:44.801541+00:00",
+  "edition": "22 October 2026 manuscript and F addendum local review candidate",
+  "base_commit": "5ab396fbc9a8df432cf76ec42512e4344e6abdf6",
+  "scope": "Actual editorial build, full rendering, visual inspection, fixed-input checks and saved-display replay. No new fits, simulations, calibration, resampling, catalogue acquisition or scientific campaign. No theorem certification or external academic peer review.",
+  "research_execution": "19 October 2026 UTC; 20 October in New Zealand at completion. Original scientific outputs remain separate and unchanged.",
+  "build": {
+    "engine_version": "Tectonic 0.17.0",
+    "engine_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "command_template": "python -B scripts/build_paper.py --engine /path/to/tectonic --output /new/output/directory",
+    "started_utc": "2026-10-22T04:17:32.3154077Z",
+    "finished_utc": "2026-10-22T04:17:46.2110051Z",
+    "targets": [
+      {
+        "target": "main",
+        "exit_code": 0,
+        "log_sha256": "b1a9e9fd8fba762a31296fd07fee915f477a98affd914bf854a4b15403c7dec9",
+        "findings": {
+          "warnings": [],
+          "overfull_boxes": 0,
+          "underfull_boxes": 0,
+          "undefined": 0,
+          "missing_glyphs": 0
+        }
+      },
+      {
+        "target": "explanatory_supplement",
+        "exit_code": 0,
+        "log_sha256": "09edb36eb3995284f66c2a2b919932439748e9b857dbce0388bebf1b99da9e7f",
+        "findings": {
+          "warnings": [],
+          "overfull_boxes": 0,
+          "underfull_boxes": 0,
+          "undefined": 0,
+          "missing_glyphs": 0
+        }
+      },
+      {
+        "target": "f_nuisance_addendum",
+        "exit_code": 0,
+        "log_sha256": "ae8fdec535792af647bc9134ddc4f9dfe541c0436212c7aafe246d7046d090a3",
+        "findings": {
+          "warnings": [],
+          "overfull_boxes": 0,
+          "underfull_boxes": 0,
+          "undefined": 0,
+          "missing_glyphs": 0
+        }
+      }
+    ],
+    "historical_cache": "Not snapshotted; byte-identical cross-environment historical builds are not promised.",
+    "baseline_explanatory_supplement": "Recompiled successfully; canonical previously accepted PDF and source retained byte for byte."
+  },
+  "render": {
+    "renderer": "Poppler pdftoppm 26.09.0",
+    "renderer_sha256": "0c7853d56bc7a0679417b2f84d58608c1c381c4ec712b07c8e4e29d36582f67e",
+    "source_checks": {
+      "duplicate_labels": [],
+      "undefined_cross_references": [],
+      "missing_bibliography_keys": [],
+      "missing_main_figures": []
+    },
+    "documents": [
+      {
+        "path": "paper/manuscript.pdf",
+        "sha256": "5f617f17949d2e176be85b648c152fe12713fedfeda34bd6673c414d2cfc5f12",
+        "pages": 65,
+        "render_dpi": 120,
+        "checks": {
+          "overfull_boxes": 0,
+          "underfull_boxes": 0,
+          "undefined_warnings": 0,
+          "missing_glyph_warnings": 0,
+          "replacement_characters": 0,
+          "text_near_physical_edge": [],
+          "warnings": [],
+          "renderer_stderr_bytes": 0
+        },
+        "all_pages_visually_reviewed": true,
+        "visual_method": "All pages individually inspected on pair03; final changed manuscript page46 individually re-inspected, with exact PNG identity verified for all other64 manuscript and all7 addendum pages.",
+        "rendered_page_sha256": [
+          "28475fe3ea669d25ef82195c5ff94c7c62c68026f311fca2d5d704dd0c684eac",
+          "3450a876f258c26abd59a430c5baa1c2bee7e37731cc62fa653c16cda18e66ff",
+          "b63e66a67b3e067c879b23919076ac1b9880517e7f7bb4d14bfb5b987f1ca440",
+          "412be2c0de3f39e5a1b3e6faf5839ede7558834982be3ebd61a8fbef2759e31e",
+          "1d43edc815629619792b461a271ba77b0117092e3ebcd9d7262f6992b8ae675e",
+          "4d8ea3f0e80e073b1ee56f0dac3a997047e02c9a55298ee95a8130d4192347e2",
+          "2e4bc25ebc11b380528f947a4e09bcf481c4663e98869fc366671a35131cd543",
+          "820ef2a5a00585119f6fff94116d71cb408701a7b7dbab66107f0f35e56b19dd",
+          "df5cfbf13421044dcafd19b4a17e3bae873fa42f85af96779125b481e6d39fc0",
+          "6766803d227f76451090a0da4cd5a685a95f6eb1eea0b4386f2be862449aeee9",
+          "7c85a5d291bc79a7e5c1add58924958861453383c2b3740bd12b2582df4d0596",
+          "857d3e299a05875b6889f50fc3d117a812d468f83da769b3243d83896f37bc6c",
+          "6fd15feb490ffd2a5d49642039203d1b0739870b3dba3603efe316991f0c6b51",
+          "f16ac482e4e698be44653a1cb224a845d91c6514903e500e0537371f386a7b9d",
+          "358c9d58b16baca8758dde20744509a488e0be1b7da13db1abd255605e1dd77f",
+          "d4cbb5113af1c8f664ab0ad7ed15b2913ad6b27ccacfa67c96b4c3739deb6cf4",
+          "fda6f2983a8eaf886d2efeaca975f85a8464426eaac9038cafd203cb52f43b15",
+          "b30b327e83d1519e998607479832464524d16a023fcba2bf6fcdfa21b1934dd8",
+          "163769dd9a6d6007ea6250dfc4ce5e7cf8af7f36911b8807ea616427537f5504",
+          "7a0d4dd419a3d25bc9975a332ef353bc9269f646e62904b58597399d992d57da",
+          "2a32b8118b0a37dc72b858c2271ef210065a5e6bb7c635e366a194638bd368ec",
+          "94f162c9dabd7b7cd1d3e173c16863a21bf879339ba0f4ba77d7bedd493c5d02",
+          "47c5ddda1753a7a42d31725bf32e20da1f6b8d9bf3e5fefdbfec20d1f34fcbe8",
+          "e35fcda3b3d74a54efa8914788758bd3a30a8f43f093464c95d430520b1e73b1",
+          "aad8a647ce1e0f25e6dacad77d6d0e271e2b25fe102ae1431d00e35e625861f0",
+          "66b31c02543beb177b7892d7a9d73c29494222a737d35c0d2d91a593730f82a9",
+          "320e0b47c4771b9c402a4f23dec4a4ed163ba8661c5382a5491c78831f24503c",
+          "579541059900b86745b2cde3d15b88e19d148f45cdacaf2647643b11af9fb4c9",
+          "aec7070f0a116f316216dc04e7274b686d17d6dafecdbf4ab36fd43e925a7009",
+          "2e559e294c64dc0ebf566c0e034ce5f866b713a7616350da226884b36919289f",
+          "a54d84af03b125a56df2f37eed1beca87f4d8fabac852e91658ae8e1d325a491",
+          "206c568c59faf8c3ac3f8934435968416778b0856cc6ab1a162aa3e6e4896cd3",
+          "c99b9bc01e4f6287bbf8f7de326f4538900d1686cfd62ac275f41fcdcb80883d",
+          "a05de50e0b2632db10703e7cfdfe154e28af73b94f5e18cac14da8a50d1123ef",
+          "c1becd9f4db63c92bb5f746e04f806a07a64abec14846bf53a861bf9418505c0",
+          "17869cbcf51c61234c137bd976de1caf2b073d39a54079a3a99f2e2b7a4662b2",
+          "649df34e7175a6c7533389f0eefcc65d88c4bd3bc5c0167de0cc723a43b25c21",
+          "7feb7d2fbd2a8a0838ddaf29a94bef646c54ab1397955200c226c99ff6df152e",
+          "f16243253928d0b359ee67624e75815a68c016a437743b283aed87b2525f6c45",
+          "b8653b634f9224587f1b6cde78a1a0221fbabc7999b60bb41faecd67cf6bbc54",
+          "b9c804861f654e011c832a7364e253d8edea9975fed40c5612c18c92864ddf47",
+          "dc724d39e6539723a70ac54a2d2a9ff6137123629321a5c1a1f771f56e9d63ac",
+          "ed7c9b452dffc5a776296f75e5ef6781bcfb1cc5e9d72e7d3a8b486d245890a7",
+          "c632636aefd85d2292fc0b9032a04c953c5f0b02c663a1228fac7787773dd549",
+          "92d5777017340939a49e5da6aeadca86b55c7d0092338ba3526921919937a7f2",
+          "6f44a5b0d4daa826e4a93b8312c8c8f4428bfdb42f81adbc17cf8fe292d6132f",
+          "9397976bf7d7ef7a639069b2180a4d1795a5c8807778befb91d1bfa2de78117d",
+          "a3a2cc371e179cb7a9c471036a50697a3eb9ae12f810adfd67260e69f1d733cf",
+          "c465bf93e8e5c6d604de1e847d86e8245f39ce9024ab96306943014993c21523",
+          "9e1dbfce5271d0f3844081d241c382c4aaf5e723de857de31b90b22063646069",
+          "2308bee5d49e09ffbdd508580dd3a52d4f0a7c48211a0db8c4925dafafba12dd",
+          "fb19e9522553b16e4847149256bcb8f828fac905e5f14919fc5503df2379cf11",
+          "20fe5a69a068dea189811ad1946508f7d0ee2915e6543802f1dd43d84536c416",
+          "1d9204fbbbb75a8fdb897b95fe2b30ed326313e38bf4e7bd405724271297e591",
+          "726d48c29a0254027c9561bc558e8b7b9dd050f23fb12ae59b2570c1b55e152f",
+          "8f25927ee9c6bf1dc770a23272301ae9e0ce049cf4d985a8d44bbb8dc550c5b6",
+          "a6a04646a0ee90cf3408c41c4b0288d7bd7abf87ef42d97763212cd42225a2a2",
+          "40a9f38295a9ee26a684db696dd200751c445c9a34cc5ed0f42a96ca64b92fa9",
+          "d470375e03e9588cd3e5836e789e7353a6f0899c1cd86ce708e373edcc1dfe1b",
+          "ae706b197b9b09a61fc2f9d59cbf66114fdb1c134248752e446de8c466645bfc",
+          "59ed55426368a7b93857158bc3b6e5897001d88963009c3e2f0893a6a258840d",
+          "863c98db56d796aa418f3c54e3bde160ff51ce91430b16240aa68a2793afea22",
+          "e7781c40dd48f5ac860086597279bd21acef2f33280c1b249214195664ab1d70",
+          "46be1d13a1d18dac54d349a58976eedbeb85e86aca66c4b6342761cfef5f20c3",
+          "3b7bf37f58913f59aea1a178f69fa73f361e077f210ec1dbb576d6fbb2fb80a5"
+        ]
+      },
+      {
+        "path": "paper/supplements/f_nuisance_addendum.pdf",
+        "sha256": "d70ad3dc1b3045edde5b974f42a66a4c3940c0971da7399b02dc576173f08cc6",
+        "pages": 7,
+        "render_dpi": 120,
+        "checks": {
+          "overfull_boxes": 0,
+          "underfull_boxes": 0,
+          "undefined_warnings": 0,
+          "missing_glyph_warnings": 0,
+          "replacement_characters": 0,
+          "text_near_physical_edge": [],
+          "warnings": [],
+          "renderer_stderr_bytes": 0
+        },
+        "all_pages_visually_reviewed": true,
+        "visual_method": "All pages individually inspected on pair03; final changed manuscript page46 individually re-inspected, with exact PNG identity verified for all other64 manuscript and all7 addendum pages.",
+        "rendered_page_sha256": [
+          "ff0b81d209af4fc35a93e5c162b778662ac920dfd761a0016b85fb4f49e424f4",
+          "fa65012b44e4a7a7516964b9c28c3169dc9d4cbd1f37d681024a32dd308b1607",
+          "1aa9cd341727234b7809fdd8d334da4085aea992fa9fd7600418f4209345d967",
+          "12ce3101f014ed692b0a357af3672795e87f8de937d7232075ce1ba1ff4da0eb",
+          "38beaee72f433e7fde788ab8010f4fc7b7a15f435487d18c5d77eb5cbe1f3dfc",
+          "b903930aaea3941c8a7d5d7028e6a08fa6214becb18f3c066b08edcdef2f8d78",
+          "966926638dfce759afa4bb46d883416f19b847f3be62cb8f0f946b4327569658"
+        ]
+      }
+    ]
+  },
+  "deterministic": {
+    "status": "passed",
+    "versions": {
+      "python": "3.13.4",
+      "mpmath": "1.3.0",
+      "sympy": "1.14.0",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3"
+    },
+    "commands": [
+      {
+        "name": "unittest",
+        "command": "python -B -m unittest discover -s tests -v",
+        "exit_code": 0,
+        "elapsed_seconds": 10.95683340006508
+      },
+      {
+        "name": "mathematics",
+        "command": "python -B scripts/check_mathematics.py --output /new/output/mathematics.json",
+        "exit_code": 0,
+        "elapsed_seconds": 6.252026000060141
+      }
+    ],
+    "unit_tests_passed": 3,
+    "mathematics_sha256": "0257db75bcb53fd54f08f3db810239d42e180e590afc61c1e48d3491fab6adeb",
+    "mathematics_scope": "Selected deterministic algebra/quadrature/derivative/arithmetic examples; not a general theorem or experiment certification."
+  },
+  "saved_display_replay": {
+    "status": "saved_values_and_images_reproduced_with_expected_input_provenance_hash_difference",
+    "environment": {
+      "python": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "matplotlib": "3.11.2",
+      "numpy": "2.2.6",
+      "Pillow": "12.0.0"
+    },
+    "commands": [
+      {
+        "target": "tables",
+        "exit_code": 0,
+        "elapsed_seconds": 0.20361809991300106
+      },
+      {
+        "target": "matrix",
+        "exit_code": 0,
+        "elapsed_seconds": 4.992055300157517
+      },
+      {
+        "target": "geometry",
+        "exit_code": 0,
+        "elapsed_seconds": 5.739707499975339
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "F_MATRIX_ACCOUNTING.csv",
+        "kind": "table",
+        "byte_equal": true,
+        "replay_sha256": "186a80edba01189ba6f2bad3ed9730d8208e6e02e7235926867c6f6311e44d53",
+        "supplied_sha256": "186a80edba01189ba6f2bad3ed9730d8208e6e02e7235926867c6f6311e44d53"
+      },
+      {
+        "name": "F_BOOTSTRAP_ENDPOINT_SENSITIVITY.csv",
+        "kind": "table",
+        "byte_equal": true,
+        "replay_sha256": "b0b455840e2bc62a1053f3e1eeb34ba66bfa35b8b5f463aeb886bfeb20ca053e",
+        "supplied_sha256": "b0b455840e2bc62a1053f3e1eeb34ba66bfa35b8b5f463aeb886bfeb20ca053e"
+      },
+      {
+        "name": "F_RESULT_TABLES.json",
+        "kind": "table",
+        "byte_equal": false,
+        "replay_sha256": "7f1eab4201a8ea07a9fd68312c2bfc5fe30ed5daef7d3e94835ce58b34d3e2a2",
+        "supplied_sha256": "37a8da3e0df262d4488182506a9ab6de5dd81e7a6e1487434bf3474fa8178c97"
+      },
+      {
+        "name": "F04_planned_denominator_bounds.png",
+        "kind": "PNG",
+        "byte_equal": true,
+        "RGBA_pixel_equal": true,
+        "replay_sha256": "207665944a2a7962fa5a634941c64650c3590e48e25c48231dd4bb181950bbe1",
+        "supplied_sha256": "207665944a2a7962fa5a634941c64650c3590e48e25c48231dd4bb181950bbe1"
+      },
+      {
+        "name": "profile_meshes.png",
+        "kind": "PNG",
+        "byte_equal": true,
+        "RGBA_pixel_equal": true,
+        "replay_sha256": "f63f7d4f7db828a01092b22296db4ec52910040c332ff1e514a7433b40f9f688",
+        "supplied_sha256": "f63f7d4f7db828a01092b22296db4ec52910040c332ff1e514a7433b40f9f688"
+      },
+      {
+        "name": "geometry_and_derivative_steps.png",
+        "kind": "PNG",
+        "byte_equal": true,
+        "RGBA_pixel_equal": true,
+        "replay_sha256": "4d48b6a1f97e8e46c16bc85861ef53b6f069872fa753affb36219f8e96f7d601",
+        "supplied_sha256": "4d48b6a1f97e8e46c16bc85861ef53b6f069872fa753affb36219f8e96f7d601"
+      }
+    ],
+    "difference_diagnosis": {
+      "only_JSON_top_level_difference": "input",
+      "actual_replay_input": {
+        "name": "summary.json",
+        "sha256": "32115580a78d41484af0e6b2862979620437dca737704689aad1e1991ce1df86"
+      },
+      "supplied_original_input": {
+        "name": "summary.json",
+        "sha256": "456a3c1f7af9c54bcbbd2e72d1141ac48308eb31184a3f0058da8316cd67b102"
+      },
+      "reason": "Companion summary.json is semantically identical compactJSON with different bytes from original prettyJSON. Exporter correctly records actualinputSHA; all result values/CSVoutputhashes identical.",
+      "all_JSON_fields_except_input_exact_equal": true,
+      "disposition": "Raw JSON byte comparison remains false; semantic accounting replay passes. Do not silently claim all3tables byteidentical."
+    },
+    "limits": "Displays saved summary values only. No historical RNG, raw histories, reference-bank ranks, resampling endpoints or fits were regenerated."
+  },
+  "source_bindings": [
+    {
+      "path": "paper/source/abstract.tex",
+      "sha256": "7e659cdbf5b108b226196025894a8c82dc88463d57d036d2bb0c68d2e98628ae"
+    },
+    {
+      "path": "paper/source/appendices.tex",
+      "sha256": "001666205d4f4f4e4967b4c9c5c59bd2191d7b20dfd12b23affeca242302cdbc"
+    },
+    {
+      "path": "paper/source/chapters/01_introduction.tex",
+      "sha256": "0696bba259c358cf65d6334f167f5b57b56f33a68e42b5b4481f25a7da49b9c6"
+    },
+    {
+      "path": "paper/source/chapters/02_models.tex",
+      "sha256": "9cbd5259cd96fb93028fb69db6835f9f8053d0533b5d63e7edb3e3629f000b67"
+    },
+    {
+      "path": "paper/source/chapters/03_stability.tex",
+      "sha256": "fd5faa32d61b4d5334438384da1947eb9db03b5a7680d3c9978ce346ce1bf923"
+    },
+    {
+      "path": "paper/source/chapters/04_identifiability.tex",
+      "sha256": "7abf38bada4e476118de00829390c5e802e3e5a9d84031deed615bde34ea18eb"
+    },
+    {
+      "path": "paper/source/chapters/05_inference.tex",
+      "sha256": "38d628c553d2825e337d593bfab0fd048fdd481dc171d6aab76e98139f589c1b"
+    },
+    {
+      "path": "paper/source/chapters/06_design.tex",
+      "sha256": "116036791da3b5da12e690d3c2a3472ecd4f048195e1f9fbb46007a6d2acdd2d"
+    },
+    {
+      "path": "paper/source/chapters/07_synthetic.tex",
+      "sha256": "9e42cf72b0792727085600f339a76fae9a4b74c960427044ab2eed408b84b856"
+    },
+    {
+      "path": "paper/source/chapters/08_observed.tex",
+      "sha256": "1d10d908648f17962b21088efc72ac835ffd8da9c3f24c78909113d7f6ce4710"
+    },
+    {
+      "path": "paper/source/chapters/09_discussion.tex",
+      "sha256": "1bc70fb80b5306da62a95b9b23df02e17936f07827a211e834eb162b4500bb35"
+    },
+    {
+      "path": "paper/source/chapters/10_conclusion.tex",
+      "sha256": "9390770f2e4c583773ca16b276a0bf7f36d91c648c4cd82abf4e6792cf6dff4f"
+    },
+    {
+      "path": "paper/source/main.tex",
+      "sha256": "5ed2d6d582d67fbdd23bba75e78e30a5ab24feae6821aea64a893f3a4fc50501"
+    },
+    {
+      "path": "paper/source/preamble.tex",
+      "sha256": "127bce3d25d72d10e8271abd818467ea4edf1ad552e6af3c49eefb75b95d3a47"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/data/F_BOOTSTRAP_ENDPOINT_SENSITIVITY.csv",
+      "sha256": "b0b455840e2bc62a1053f3e1eeb34ba66bfa35b8b5f463aeb886bfeb20ca053e"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/data/F_MATRIX_ACCOUNTING.csv",
+      "sha256": "186a80edba01189ba6f2bad3ed9730d8208e6e02e7235926867c6f6311e44d53"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/data/F_RESULT_TABLES.json",
+      "sha256": "37a8da3e0df262d4488182506a9ab6de5dd81e7a6e1487434bf3474fa8178c97"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/data/geometry_summary.json",
+      "sha256": "3ce939e5d8da61527e2a2c4b5c92679249f662d06e442b4fed9ed6dfce2e2a5b"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/data/summary.json",
+      "sha256": "32115580a78d41484af0e6b2862979620437dca737704689aad1e1991ce1df86"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/figures/F04_calibration01/F04_planned_denominator_bounds.png",
+      "sha256": "207665944a2a7962fa5a634941c64650c3590e48e25c48231dd4bb181950bbe1"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/figures/F_geometry06_v2/geometry_and_derivative_steps.png",
+      "sha256": "4d48b6a1f97e8e46c16bc85861ef53b6f069872fa753affb36219f8e96f7d601"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/figures/F_geometry06_v2/profile_meshes.png",
+      "sha256": "f63f7d4f7db828a01092b22296db4ec52910040c332ff1e514a7433b40f9f688"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/main.tex",
+      "sha256": "c8501e5ba0531d7d00cb148fe6f1b562e702af8d674e5e1bf54d45ec5a7bd69c"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/README.md",
+      "sha256": "96860640b3c8bbfef0e197737d7e0674131ce6a20ab559e08326921dfbce8bce"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/results.tex",
+      "sha256": "8fdb449148e760ddae105f738691259d0baedeaa7d0aa425ee61a8bae516c468"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/tools/f_geometry_report.py",
+      "sha256": "90557d3193960ae6aba9b1cad012fc8e4857b4db720adc580b11c69817f42227"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/tools/f_saved_plot04.py",
+      "sha256": "4a5b631455df8915f747ba69c78a404b9fe88de7a8d173d41bc18974beaab6e5"
+    },
+    {
+      "path": "paper/supplements/f_nuisance_addendum/tools/f_saved_tables04.py",
+      "sha256": "70accfd80d42fc986037be6c4dbcc5ce36f91aae9d51c72b03918cffae2f30dc"
+    }
+  ],
+  "remaining_limits": [
+    "Null coverage is incomplete and missingness nonrandom; no calibrated-size or size-matched power conclusion.",
+    "Full-pair interaction point summaries and MCSE remain unavailable; geometry is partial and conditional.",
+    "Posthoc continuation-pilot comparison changes reference calibration, without isolating reference-bank size.",
+    "Raw catalogues, history banks, full resampling chunks and procedure execution environment are excluded; compact saved-display replay is not full scientific reproduction.",
+    "Detailed native review and execution records are kept locally outside the publication payload. Original baseline validation records remain historical."
+  ]
+}

@@ -50,3 +50,7 @@ This table is generated from the current public register. Original archive paths
 | S25 | not-distributed | Not distributed |
 | S26 | not-distributed | Not distributed |
 | S27 | not-distributed | Not distributed |
+
+## Separate F continuation
+
+The [dated F addendum](../paper/supplements/f_nuisance_addendum.pdf), [editable source and reproduction guide](../paper/supplements/f_nuisance_addendum/README.md), and [scope note](F_followup.md) report the completed bounded continuation with explicit unknown outcomes. Its supplied/supplied alternative estimates eta; it is not the historical fixed-eta oracle. The new compact derived summaries, tables and three figures are separate from the unchanged historical detection/paired inputs and S/M availability registers. Raw history banks, provider transcripts and operational review histories are not included.

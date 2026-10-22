@@ -9,3 +9,5 @@ Before a later publication, inspect staged files, not just filenames or working-
 Project-relative provenance paths such as iteration/code/config names remain because they identify scientific authorities. Personal machine roots, home directories and hostnames are not needed for reproduction. Older local audit/build material has been moved outside the public tree and is not a release asset.
 
 The findings and limits are in ../validation/privacy_audit.json. Pattern matching cannot guarantee detection of every possible sensitive value. Repository visibility and future commit metadata require separate attention when publishing. The recorded audit state is historical; inspect the live branch for later changes.
+
+The 22 October 2026 follow-up removes a saved response cookie and transient request identifier from the catalogue metadata extract. Retrieval dates, selection rules and scientific input identities are unchanged. Historical source pins remain preserved; the availability register, extraction manifest public variant and payload manifest bind the sanitized extract. This current-payload cleanup does not rewrite previously published Git history.
