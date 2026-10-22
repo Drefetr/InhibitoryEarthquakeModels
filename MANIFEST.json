@@ -69,8 +69,8 @@
     },
     {
       "path": "docs/privacy.md",
-      "bytes": 1948,
-      "sha256": "5b2a2ac763e285c0686365a2768ac8dffc437a826b1506812955843793ce15e0"
+      "bytes": 2395,
+      "sha256": "ee31e184c6b5b74362c0398e47e290c3cef749beecc6d726cd98e15c70c92e6b"
     },
     {
       "path": "docs/provenance.md",
@@ -614,18 +614,18 @@
     },
     {
       "path": "paper/supplements/source_availability.json",
-      "bytes": 32377,
-      "sha256": "959a5d991dc8ac3a30c56b3e0c1675da8d616101302f6738bf7bc26329d59a34"
+      "bytes": 32434,
+      "sha256": "0c1d46c98d0154ef6be87acd57b8ba329fd08a64d0c2b8dab0284bee60a22a78"
     },
     {
       "path": "provenance/catalogue_snapshot_metadata.json",
-      "bytes": 16755,
-      "sha256": "1ebff42b90d356dc4a0b119aa317817726e3e3e6804d803b436446428bfb2259"
+      "bytes": 16618,
+      "sha256": "dfa383127a329fde6e543db23aab741baba6874847397e32f64076ab33d6755d"
     },
     {
       "path": "provenance/extraction_manifest.json",
-      "bytes": 25415,
-      "sha256": "3ff3e5243094f107f9afe9cc9e9943e445a9d1e0287ee6db25e6e81e647a2cf0"
+      "bytes": 26017,
+      "sha256": "e8fc852a9d7086bef5a093c7dc4aa210eb30d22df7ac1bb4c6697df932f89c96"
     },
     {
       "path": "provenance/fdsn_snapshot_metadata.json",
