@@ -8,7 +8,8 @@ The work studies restricted stability and identification results, nuisance sensi
 
 **AI assistance:** the bulk of the work was performed by AI agents. Claude Opus 5.5 and GPT 6.0 Astra developed the initial outline and specification; GPT 6.1 Sol coordinated GPT 6.1 Sol and DeepSeek 4.1 Flash subagents; GPT 6.0 Astra and Gemini 4.0 Argon provided review. AI review is distinct from independent external peer review. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
-- [Paper](paper/manuscript.pdf) and [explanatory supplement](paper/supplements/explanatory_supplement.pdf).
+- [Paper](paper/manuscript.pdf), [explanatory supplement](paper/supplements/explanatory_supplement.pdf), and [F nuisance addendum](paper/supplements/f_nuisance_addendum.pdf).
+- [F follow-up scope and findings](docs/F_followup.md): a separately labelled, incomplete continuation; historical results remain preserved.
 - [Reproduction instructions](docs/reproducibility.md), [methods](paper/supplements/methods_supplement.md), [data sources and terms](docs/data.md), [limitations](docs/limitations.md).
 - [Contribution guidelines](CONTRIBUTING.md) and [citation metadata](CITATION.cff).
 

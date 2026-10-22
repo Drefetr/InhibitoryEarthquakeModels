@@ -1,0 +1,206 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,hyperref}
+\graphicspath{{./}}
+% Editorial revision; scientific execution dates stated below.
+\newcommand{\FActualDate}{22 October 2026 revision}
+\newcommand{\FProfileFigure}{figures/F_geometry06_v2/profile_meshes.png}
+\newcommand{\FDerivativeFigure}{figures/F_geometry06_v2/geometry_and_derivative_steps.png}
+\title{F continuation: background nuisance estimation}
+\author{}
+\date{\FActualDate}
+\begin{document}
+\maketitle
+\noindent This manuscript companion reports a bounded exploratory continuation;
+it does not replace the historical results in the paper. Existing credits and
+licence scopes remain unchanged. This editorial revision is dated 22 October
+2026. Scientific execution occurred on 19 October 2026 UTC (20 October in
+New Zealand at completion); no new scientific computation accompanies this
+revision.
+
+\section*{Question and four procedures}
+The question is whether background nuisance treatment changes a fixed finite
+inhibition procedure, and whether conditional likelihood compensation or
+numerical stopping sensitivity helps explain the observed differences.
+No physical or causal explanation follows merely from a favourable contrast.
+All alternatives estimate inhibition $\eta$; the null fixes $\eta=0$.
+\begin{center}
+\begin{tabular}{lll}\toprule
+Cell & Free null coordinates & Free alternative coordinates\\\midrule
+$I_{00}$ & none & $\eta$\\
+$I_{10}$ & $a$ & $(a,\eta)$\\
+$I_{01}$ & $d$ & $(d,\eta)$\\
+$I_{11}$ & $(a,d)$ & $(a,d,\eta)$\\\bottomrule
+\end{tabular}
+\end{center}
+Here $a,d$ are background log level and trend; other parameters are supplied
+according to the pinned law. Supplied/supplied is not a fixed-$\eta$ oracle.
+The original procedure is distinct from the separately labelled solver
+and geometry diagnostics.
+
+\section*{Strict marked-history accounting}
+For a fixed observed history, write
+\[
+ \lambda(t)=\exp\{a+d x(t)-\eta G(t)\}+nH(t),\qquad
+ \ell=\sum_i\log\lambda(t_i^-)+\sum_i\log f_\beta(q_i)
+       -\int_0^T\lambda(t)\,dt .
+\]
+Here $x(t)=2t/(24394\,\mathrm{days})-1$ is the actual affine
+observation coordinate, with $t$ measured in days; it is not $1/t$ or a
+Taylor approximation.
+Only earlier events enter $G(t_i^-),H(t_i^-)$. The current mark affects later
+history, not its own event intensity. Initial quiet and terminal exposure,
+all earlier parents and the exact supplied projected/paired clock convention
+are retained. No clock or mark repair is introduced.
+
+The direct contrast retains event and complete compensator accounting.
+With the same supplied $n$, trigger kernel/productivity and mark law, trigger
+exposure and common mark terms cancel between null and alternative. This is
+an explicit cancellation, not a reason to omit those terms in comparisons
+that change them. Event-log terms cannot be additively allocated to latent
+causes. The primary numerical procedure is order 16 with mandatory order-32
+and other prescribed controls. A finite candidate does not override an
+unresolved optimizer or control status. Bounded recipes establish neither
+global optima nor equal effective complexity.
+
+\section*{Conditional amplitude profile}
+Fix $d,\eta,n$, kernels, mark law and history, and let
+\[
+ A=e^a,\quad u_i=e^{d x_i-\eta G_i},\quad v_i=nH_i,\quad
+ Q=\int_0^T e^{d x(t)-\eta G(t)}dt,\quad C=n\int_0^TH(t)dt .
+\]
+The ground negative log likelihood, omitting only the common mark constant,
+is $L(A)=AQ-\sum_i\log(Au_i+v_i)+C$. Hence
+\[
+ L_A=Q-\sum_i\frac{u_i}{Au_i+v_i},\qquad
+ L_{AA}=\sum_i\left(\frac{u_i}{Au_i+v_i}\right)^2\geq0 .
+\]
+Convexity holds in $A$, not generally in $a$. With
+$p_i=Au_i/(Au_i+v_i)$, $L_{aa}=AQ-\sum_i p_i(1-p_i)$ can be negative.
+The constrained profile uses $A\in[e^{-12},1]$: a nonnegative lower-end
+$L_A$ selects the lower boundary; a nonpositive upper-end $L_A$ selects the
+upper boundary; otherwise a bracketed scalar root is used. When every
+$v_i=0$, $N/Q$ gives the unconstrained stationary point, restricted to the
+allowed interval; an empty history selects the lower boundary.
+
+The implementation reports actual derivative/KKT tolerance, amplitude
+bracket width, stopping reason and exact/approximate status. Its parameter
+named \texttt{a\_tolerance} gates width in $A$, not absolute error in $a$.
+Interior acceptance can be curvature/bracket-width limited; it must not be
+described as meeting a fixed derivative threshold alone. The conditional
+mesh fixes the remaining parameters and is not a confidence region.
+The $\eta=0$ analytic background branch and positive-$\eta$ quadrature branch
+have a separately recorded numerical seam. All four prescribed difference
+steps are retained, with truncation/cancellation and boundary-domain cautions;
+no best step repairs a scientific acceptance rule.
+
+\section*{Realized-event geometry}
+At a fixed point the event log-intensity columns are
+\[
+ c_i=(p_i,\;p_i x_i,\;-p_iG_i),\qquad
+ Z=W^{1/2}C_{\rm event} .
+\]
+Main06 uses $W=I_N$, so every actual event weight is one. The factors
+$p_i$ already enter the event columns; quadrature weights are separate.
+The raw Gram matrix is $Z^\top Z$. Nonzero weighted columns are normalized
+by their Euclidean norms before numerical SVD/projection. If $\widetilde z_\eta$
+is the scaled inhibition column and $P_{a,d}$ the numerical least-squares
+projection on the scaled nuisance columns, the reported residual is
+\[
+ r_\eta=\frac{\|(I-P_{a,d})\widetilde z_\eta\|_2^2}
+                  {\|\widetilde z_\eta\|_2^2} .
+\]
+This is a \emph{squared} residual fraction, not a norm ratio. A zero
+inhibition column is explicitly undefined for interpretation, despite its
+reported zero convention. The event Gram excludes compensator derivatives
+and random-history variation: it is not a full observed Hessian, ensemble
+Fisher information, sampling covariance, global identification theorem or
+causal quantity. Low residuals describe conditional path overlap only.
+
+\section*{Completed portions and missing work}
+The independently reviewed geometry stage is partial: six of 11 cases
+completed, two timed out, one was started-unknown at the tree-RSS stop and
+two were unattempted. All 11 remain in accounting and figures. The saved
+portion has 253 of 396 solver rows and 840 of 1,540 profile points, with
+840 corresponding order-32 controls. Two old failure witnesses were
+intentionally selected separately from nine metadata extrema; neither
+selection estimates population prevalence or detection probability.
+
+The old witnesses reproduced maxls=40 ABNORMAL returns; diagnostic
+maxls=100 returned success at unchanged objective and essentially unchanged
+parameters. This is stopping-flag sensitivity, not proof of the precise old
+cause, gradient convergence or a corrected production outcome. No old
+unresolved status is promoted, and maxls=100 is not substituted into calibration.
+
+The separate ended nine-case full-procedure tail run produced seven complete
+cases and 31 of 36 controlled method outcomes. One finite candidate lacked
+final controls and four methods were absent; all five remain unknown.
+The large alternative case timed out during its Powell control, while the
+largest null case failed the unchanged internal 128 MiB feature-cache limit.
+An external 2 GiB tree lease did not relax that internal limit or repair the
+saved failure. These stress cases do not demonstrate complete bank coverage.
+
+\begin{figure}[p]
+\centering\includegraphics[width=\textwidth]{\FProfileFigure}
+\caption{All 11 planned geometry cases, including explicit missing panels.
+Conditional profile NLL is not a confidence region; colour saturation is
+labelled in the reviewed image.}
+\end{figure}
+\begin{figure}[p]
+\centering\includegraphics[width=\textwidth]{\FDerivativeFigure}
+\caption{Realized-event overlap and all saved $\eta=0$ derivative steps.
+Positive absolute errors use a log display; exact zeros, if any, are listed
+separately without floors, clipping or imputation. Selected old witnesses
+remain distinct. Neither panel establishes a causal mechanism.}
+\end{figure}
+
+\section*{Calibration and uncertainty contract}
+Let $R$ be the planned reference count, $K$ the controlled reference indices,
+$U=R-|K|$, and $E_q=\sum_{r\in K}\mathbf 1\{T_r\geq T_q\}$ for a controlled
+query statistic. The add-one rank interval is
+\[
+ p_q\in\left[\frac{1+E_q}{R+1},\frac{1+E_q+U}{R+1}\right].
+\]
+Ties use $\geq$. An uncontrolled query remains unknown. An upper endpoint
+at most $\alpha$ gives a definite rejection; a lower endpoint above $\alpha$
+gives a definite non-rejection; otherwise the decision remains unknown.
+For $N$ planned queries, $k$ definite rejections and $u$ unknowns give
+accounting bounds $[k/N,(k+u)/N]$, not sampling confidence intervals.
+
+For the paired nuisance interaction,
+\[
+ D_i=I_i^{00}-I_i^{10}-I_i^{01}+I_i^{11},\qquad
+ \overline D=N^{-1}\sum_iD_i,\qquad
+ \operatorname{MCSE}=\sqrt{\frac{\sum_i(D_i-\overline D)^2}{N(N-1)}} .
+\]
+The declared point summary requires all planned paired rows resolved and
+$N\geq2$; it is conditional on the fixed reference bank, not a survivor-only
+estimate or reference-bank uncertainty measure.
+
+The executed method used 2,000 shared-reference and paired-query resamples
+as a separately gated descriptive sensitivity analysis, not automatic
+confirmatory, simultaneous or unconditional coverage. Historical independence
+is source-reported, and adaptive pilot/cost-query reuse remains relevant.
+Both production jobs ended before final calibration. Independent review
+reconstructed base decisions, replayed all 2,000 shared-reference plans and
+checked all 80 chunk hashes. It independently recalculated eight declared
+query-replicate witnesses.
+A separate audit checked all 120 saved endpoint quantiles. This does not mean
+every resampled query statistic was independently recalculated.
+
+\input{results.tex}
+
+\section*{Availability and bounded interpretation}
+The 2,149 reused bank byte/clock identities were reverified; the historical
+RNG and generating process were not replayed. The private NPZ bank is not
+included in source-only material. Exact excluded inputs, settings and receipts
+are required for historical reproduction; constructed fixtures are separate.
+The accompanying saved summary, accounting tables and figures document the
+reported numerical checkpoint; they do not replace the omitted raw inputs.
+
+Conditional overlap, solver flags and controlled calibration outcomes must be
+interpreted together with failures and missing tails. They do not identify
+physical inhibition or justify an automatic cache change, retry, new bank,
+broader search or next cycle. Any such work remains a separately reviewed
+proposal. This companion makes no claims about the other research tracks.
+\end{document}

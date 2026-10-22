@@ -1,4 +1,4 @@
-"""Build paper and supplement; no scientific code is executed."""
+"""Build the paper and both supplements; no scientific code is executed."""
 from pathlib import Path
 import argparse,hashlib,json,shutil,subprocess,platform
 ROOT=Path(__file__).resolve().parents[1]
@@ -7,8 +7,13 @@ engine=shutil.which(a.engine) or str(Path(a.engine).resolve());version=subproces
 if version!='Tectonic 0.17.0':raise SystemExit('Expected Tectonic 0.17.0; got '+version)
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
 record={'engine':str(engine),'engine_version':version,'engine_sha256':hashlib.sha256(Path(engine).read_bytes()).hexdigest(),'platform':platform.platform(),'historical_cache':'unsnapshotted; no historical exact replay claim','commands':[]}
-for source,name in [(ROOT/'paper/source/main.tex','manuscript.pdf'),(ROOT/'paper/supplements/explanatory_supplement.tex','explanatory_supplement.pdf')]:
- target=out/source.stem;target.mkdir();cmd=[engine,source.name,'--outdir',str(target),'--keep-logs','--keep-intermediates','--makefile-rules',str(target/'dependencies.mk')]
+sources=[(ROOT/'paper/source/main.tex','manuscript.pdf','main'),(ROOT/'paper/supplements/explanatory_supplement.tex','explanatory_supplement.pdf','explanatory_supplement'),(ROOT/'paper/supplements/f_nuisance_addendum/main.tex','f_nuisance_addendum.pdf','f_nuisance_addendum')]
+for source,name,subdir in sources:
+ target=out/subdir;target.mkdir()
+ # An intentionally empty outline file avoids a perpetual rerun warning for
+ # the unnumbered supplements; the manuscript replaces it with its outlines.
+ (target/(source.stem+'.out')).write_bytes(b'')
+ cmd=[engine,source.name,'--outdir',str(target),'--keep-logs','--keep-intermediates','--makefile-rules',str(target/'dependencies.mk')]
  proc=subprocess.run(cmd,cwd=source.parent,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
  (target/'console.log').write_text(proc.stdout,encoding='utf-8');record['commands'].append({'command':cmd,'cwd':str(source.parent),'exit_code':proc.returncode})
  (out/'build_record.json').write_text(json.dumps(record,indent=2));print(proc.stdout)

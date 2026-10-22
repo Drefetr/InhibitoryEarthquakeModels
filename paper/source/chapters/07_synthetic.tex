@@ -1,11 +1,11 @@
 \chapter{Matched-law detection studies}
 \label{ch:synthetic}
 
-This chapter reports what the matched synthetic studies establish about detecting marked stress sensitivity when parts of the background and triggering process are estimated. All comparisons concern the stated law class and finite numerical implementation. The common alternative bank contains \(150\) stronger histories, and each procedure has \(1{,}000\) null queries with \(999\) separately identified null references. Success is a calibrated rejection on an alternative history; the null rejection rate counts rejections among uninhibited query histories. Figure~\ref{fig:detection} summarizes the detection rates and their conditional binomial intervals.
+This chapter reports what the matched synthetic studies establish about detecting marked stress sensitivity when parts of the background and triggering process are estimated. The historical comparisons below concern their stated law class and finite numerical implementation; the subsequent F continuation is reported separately at the end of the chapter. The common alternative bank contains \(150\) stronger histories, and each procedure has \(1{,}000\) null queries with \(999\) separately identified null references. Success is a calibrated rejection on an alternative history; the null rejection rate counts rejections among uninhibited query histories. Figure~\ref{fig:detection} summarizes the detection rates and their conditional binomial intervals.
 
 \begin{table}[tbp]
 \centering
-\caption{Detection on the common stronger alternative bank and null rejection on \(1{,}000\) null queries. Intervals are nominal \(95\%\) Clopper--Pearson intervals conditional on the fixed bank and law.}
+\caption{Historical detection on the common stronger alternative bank and null rejection on \(1{,}000\) null queries. Intervals are nominal \(95\%\) Clopper--Pearson intervals conditional on the fixed bank and law.}
 \label{tab:main-detection}
 \small
 \setlength{\tabcolsep}{4pt}
@@ -32,7 +32,7 @@ The realized null rates lie between \(4.4\%\) and \(5.0\%\). In row order, the c
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=\linewidth]{detection.pdf}
-\caption{Matched-null detection on the same 150 stronger alternatives. Error bars are nominal conditional 95\% binomial intervals. Each procedure has its own 999 reference statistics and 1,000 separate null queries; adaptive selection and reference-bank uncertainty are omitted.}
+\caption{Historical matched-null detection on the same 150 stronger alternatives. Error bars are nominal conditional 95\% binomial intervals. Each procedure has its own 999 reference statistics and 1,000 separate null queries; adaptive selection and reference-bank uncertainty are omitted.}
 \label{fig:detection}
 \end{figure}
 
@@ -67,9 +67,9 @@ The level-and-trend comparison is more informative when the two procedures are p
 
 There is no pathwise dominance. The level-only procedure detects on \(61\) histories where the combined procedure does not, while the reverse occurs on \(6\). The \(55\)-history marginal gap is real for this realized paired bank, but the paired arrangement shows that it is not produced by a uniform improvement. Among the \(999\) null reference scores for the level-only procedure, \(604\) were exactly zero. Ties and the add-one rank rule are therefore material in that calibration. Different null thresholds can alter the comparison and must be considered when interpreting the paired decisions.
 
-A ten-history raw-statistic pilot contained six null and four alternative histories. On that small pilot, level-only contraction exceeded trend-only contraction on four alternatives. This is a descriptive diagnostic of local score behavior, not a calibrated power comparison. The experiment does not contain a fully calibrated trend-only row, so the level-only discordance cannot be assigned uniquely to trend. The absence of that row does not imply that trend-only would perform best, nor does it automatically identify trend-only calibration as the best next experiment. A fair decision among procedures would require its own reference bank and calibration under the same reporting rules.
+A ten-history raw-statistic pilot contained six null and four alternative histories. On that small pilot, level-only contraction exceeded trend-only contraction on four alternatives. This is a descriptive diagnostic of local score behavior, not a calibrated power comparison. That historical experiment does not contain a fully calibrated trend-only row, so the level-only discordance cannot be assigned uniquely to trend. The absence of that row does not imply that trend-only would perform best, nor does it automatically identify trend-only calibration as the best next experiment. A fair decision among procedures would require its own reference bank and calibration under the same reporting rules.
 
-All \(1{,}150\) decisions in the reported detection-and-null evaluation resolved under the empirical numerical envelopes. That is a completeness statement for this realized study, not a rigorous universal bound on numerical integration or optimization. The selected-ten pilot is documented in \hyperlink{S15}{archival \texttt{S15} (not distributed)}. The paired detection table and matched-null results are documented in \hyperlink{S16}{archival \texttt{S16} (not distributed)}.
+All \(1{,}150\) decisions in the reported historical detection-and-null evaluation resolved under the empirical numerical envelopes. That is a completeness statement for this realized study, not a rigorous universal bound on numerical integration or optimization. The selected-ten pilot is documented in \hyperlink{S15}{archival \texttt{S15} (not distributed)}. The paired detection table and matched-null results are documented in \hyperlink{S16}{archival \texttt{S16} (not distributed)}.
 
 
 \begin{figure}[!htbp]
@@ -81,7 +81,7 @@ All \(1{,}150\) decisions in the reported detection-and-null evaluation resolved
 
 \section{Diagnostics and limits of explanation}
 
-A separate audit examined ten selected difficult completed histories using a larger iteration limit and a Powell search. The largest phase improvement in negative log likelihood was \(1.94995664\times10^{-8}\), and the largest direct generalized-likelihood-ratio change was \(3.89681745\times10^{-8}\), below the declared diagnostic screens of \(0.001\) for phase negative log likelihood and \(0.1\) for the direct statistic. These histories were selected because they were difficult, so the audit is neither representative of the full bank nor a global optimization guarantee. Within the audited set, however, it weakens an explanation of the fitted-law gap based on inadequate optimizer stopping. It does not eliminate the possibility of optimizer limitations on other histories.
+A separate audit examined ten selected difficult completed histories using a larger iteration limit and a Powell search. The largest phase improvement in negative log likelihood was \(1.94995664\times10^{-8}\), and the largest direct generalized-likelihood-ratio change was \(3.89681745\times10^{-8}\), below the declared diagnostic screens of \(0.001\) for phase negative log likelihood and \(0.1\) for the direct statistic. These histories were selected because they were difficult, so the audit is neither representative of the full bank nor a global optimization guarantee. Within the audited set, however, it weakens an explanation of the fitted-law gap based on inadequate optimizer stopping. It does not eliminate the possibility of optimizer limitations on other histories. This selected-ten audit concerns the historical recipe; the later F solver diagnostics and unresolved outcomes are separately reported in the addendum.
 
 Two pre-existing fixed-history score projections onto \(a\), \(d\), and \(n\) retain \(10.82\%\) and \(3.26\%\) of weighted \(\eta\) squared-score norms. These percentages show local overlap between the directions in which the background parameters and the diagnostic parameter move the score. They are not ensemble Fisher information, not fractions of statistical power, and not an explanation of the observed \(38\%\) fitted detection rate.
 
@@ -90,3 +90,63 @@ Saved likelihood accounting provides one further descriptive check: estimating b
 Taken together, the matched studies locate a substantial change in calibrated detection when background parameters are estimated: under the stated synthetic law, the stronger alternatives are distinguishable with supplied laws and with \(\eta\) alone estimated, while fitting background components changes the calibrated detection outcome. The experiments cannot separate the unavoidable difficulty of a composite statistical problem from recoverable loss in a particular fitted procedure. They are controlled matched-law tests rather than empirical physical discovery, and the reported boundaries follow from that design. The scoped contribution is a reproducible, numerically explicit assessment of where the marked-sensitivity signal is retained or attenuated by estimation, together with the calibration limits needed to read it. 
 
 The \href{https://github.com/Drefetr/InhibitoryEarthquakeModels/blob/3e76a174cf4f58ce601c6c9640c4d0c11168813f/paper/data/detection.json}{public detection summary} and the \hyperref[sec:source-supplements]{availability guide} provide public entry points. Saved summaries do not replace the omitted full authorities or historical history banks.
+
+\section{A bounded four-procedure continuation}
+\label{sec:f-continuation}
+
+The accompanying \emph{F continuation: background nuisance estimation}
+addendum (22 October 2026 revision; scientific execution on 19 October UTC)
+reports a subsequent exploratory study. It uses the same pinned catalogue
+and clock identities as the historical level-only and level-and-trend
+studies, but fits a separately frozen finite numerical procedure with its
+own mandatory solver and control rules. Every alternative estimates
+\(\eta\); the background log level \(a\) and trend \(d\) are supplied or
+estimated in a four-cell design. The supplied/supplied cell is therefore
+distinct from the fixed-\(\eta\) known-law benchmark above.
+
+\begin{table}[H]
+\centering
+\caption{Separate F continuation: decisions on all 150 planned alternative
+queries at \(\alpha=0.05\). These counts belong to the new finite procedure,
+not the historical table or its conditional binomial intervals.}
+\label{tab:f-continuation}
+\small
+\begin{tabular}{@{}lrrr@{}}\toprule
+Background nuisance fitted & Reject & Non-reject & Unknown\\\midrule
+Neither (\(I_{00}\)) & 150 & 0 & 0\\
+Level only (\(I_{10}\)) & 122 & 28 & 0\\
+Trend only (\(I_{01}\)) & 150 & 0 & 0\\
+Level and trend (\(I_{11}\)) & 65 & 82 & 3\\\bottomrule
+\end{tabular}
+\end{table}
+
+All 2,149 identities remain registered, but only 7,068 of 8,596 planned
+method outcomes have controlled statistics; 1,528 remain unknown. The
+null-query rejection accounting bounds are \([0.030,0.407]\),
+\([0.035,0.412]\), \([0.031,0.414]\) and \([0.031,0.411]\) in cell order,
+using all 1,000 planned null queries. These are missing-decision bounds,
+not confidence intervals. History cost, traversal and stopping rules make
+missingness nonrandom. The continuation has not established its empirical
+null size, and its alternative rejection fractions do not establish a
+size-matched power ranking. Its full-pair interaction point mean and MCSE
+remain unavailable. All 2,000 descriptive shared-reference/paired-query
+resamples completed; their endpoint quantiles do not supply certified coverage.
+
+A posthoc lineage check within the continuation fixed its original
+25-query pilot cohort. The same level-only query fits and statistics gave
+6 definite rejections, 11 non-rejections and 8 unknowns under the pilot
+reference calibration, then 19, 6 and 0 under the expanded calibration.
+This is calibration-dependent decision accounting. That 25-query cohort
+is distinct from the earlier 25-pair \(\eta\)-planning sample reported
+above. Neither comparison is an independent replication.
+
+The trend-only cell now provides a bounded comparison under the new
+procedure; it does not retrospectively explain the historical level-only
+discordance. The addendum retains partial geometry diagnostics, failures,
+methods and availability limits. The results support sensitivity to the
+specified nuisance and calibration treatment, without identifying an
+unavoidable loss, a physical mechanism or a universal benefit from a
+particular nuisance restriction. The historical counts, intervals and
+figures above remain results of their original recipes and are not pooled
+with or overwritten by this continuation.
+
